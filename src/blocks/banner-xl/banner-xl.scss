@@ -1,0 +1,98 @@
+.banner-xl {
+  $block-name:                &; // #{$block-name}__element
+
+  @media (max-width: $screen-md - 1) {
+    height: 676px;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  &__row {
+
+    @media (max-width: $screen-md - 1) {
+      // flex-direction: column;
+      // justify-content: space-between;
+      gap: 40px 0;
+      height: 100%;
+    }
+  }
+
+  &__text-col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+    @include col-offset(md, 1);
+    @include col(md, 4);
+
+    @media (max-width: $screen-md - 1) {
+      padding-top: 60px;
+      text-align: center;
+    }
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+      justify-content: center;
+      align-items: flex-start;
+
+      & > * {
+        margin: 0;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      gap: 1rem 0;
+    }
+  }
+  &__img-col {
+    //@include col-offset(xs, 1);
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 5);
+
+    @media (max-width: $screen-md - 1) {
+      margin-top: auto;
+    }
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: auto;
+    }
+  }
+
+  &__img {
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom center;
+
+      @media (max-width: $screen-md - 1) {
+        max-width: 450px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__text {
+
+    @media (max-width: $screen-md - 1) {
+      @include visually-hidden;
+    }
+  }
+}
