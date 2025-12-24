@@ -1,0 +1,534 @@
+/* cormorant-garamond-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cormorant-garamond-v21-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* cormorant-garamond-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/cormorant-garamond-v21-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-200 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/inter-v20-cyrillic_latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v20-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v20-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.page {
+  font-size: $font-size;
+
+  @media screen and (min-width: $screen-lg) {
+    //font-size: $font-size--dt;
+    font-size: calc(1rem + ((1vw - 0.9rem) * 1.0833));
+    /* Where: 1.0833 = 100 * font-size_difference / viewport_width_difference */
+
+    /* Safari resize fix */
+    min-height: 0vw;
+  }
+
+
+  // @media screen and (min-width: 3820px) {
+  //   font-size: 2.625rem;
+  // }
+}
+
+body {
+  // ТОЛЬКО типографика!
+  font-family: $font-family;
+  //font-size: $font-size;
+  line-height: $line-height;
+  word-break: break-word;
+  text-align: left;
+  text-wrap: pretty; // balance
+  text-decoration-skip-ink: auto;
+  color: $text-color;
+  background-color: $body-bg;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // text-rendering: optimizeLegibility;
+  // Partial support in Android browser versions is due to a serious bug where text-rendering: optimizeLegibility causes custom web fonts to not render!!!
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  line-height: 1.2;
+}
+
+.h1,
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: $font-size--h1;
+  font-family: $font-family--headings;
+  font-weight: 400;
+  line-height: 1.2;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 60px;
+    margin-bottom: 26px;
+    //font-size: $font-size--h1 * 1.5;
+    font-size: calc(3.75rem + ((1vw - 0.9rem) * 4.1667));
+    /* Where: 4.1667 = 100 * font-size_difference / viewport_width_difference */
+    /* Safari resize fix */
+    min-height: 0vw;
+  }
+
+  // @media screen and (min-width: 3820px) {
+  //   font-size: 10rem;
+  // }
+}
+
+.h2,
+h2 {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  font-size: $font-size--h2;
+  font-family: $font-family--headings;
+  font-weight: 400;
+  line-height: 1.1;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    //font-size: $font-size--h2 * 1.4666;
+    font-size: calc(1.875rem + ((1vw - 0.9rem) * 3.5417));
+    /* Where: 3.5417 = 100 * font-size_difference / viewport_width_difference */
+
+    min-height: 0vw;/* Safari resize fix */
+    line-height: 1.2;
+  }
+
+  // @media screen and (min-width: 3820px) {
+  //   font-size: 7.1875rem;
+  // }
+}
+
+.h3,
+h3 {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  font-size: $font-size--h3;
+  font-family: $font-family--headings;
+  font-weight: 500;
+  line-height: 1.3;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: $font-size--h3 * 1.8;
+    line-height: 1.2;
+  }
+}
+
+.h4,
+h4 {
+  margin-top: 22px;
+  margin-bottom: 16px;
+  font-size: $font-size--h4;
+  font-family: $font-family;
+  font-weight: 600;
+  line-height: 1.5;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-size: $font-size--h4 * 1.25;
+    line-height: 1.3;
+  }
+}
+
+.h5,
+h5 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: $font-size--h5;
+  font-family: $font-family;
+  font-weight: 600;
+  line-height: $line-height;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: $font-size--h5 * 1.1429;
+  }
+}
+
+.h6,
+h6 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: $font-size--h6;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.4;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: $font-size--h6 * 1.1429;
+  }
+}
+
+// Display section
+.display-4 {
+  margin-top: 22px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-family: $font-family--headings;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+}
+
+.p,
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address,
+figure {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  //font-size: $font-size;
+  font-size: 1rem;
+  font-family: $font-family;
+  font-weight: 200;
+  line-height: $line-height;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    //font-size: $font-size * 1.1429;
+
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p {
+  // http://clagnut.com/blog/2395
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
+a {
+  text-decoration-skip-ink: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  padding-left: 1.3em;
+  // для решения проблемы с float img есть 2 варианта
+  //overflow: hidden;
+  //или list-style-position: inside;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+li {
+  line-height: inherit;
+}
+
+hr {
+  box-sizing: content-box; // Проблема Firefox
+  height: 0;               // Пробл ема Firefox
+  overflow: visible;       // Проблема Edge и IE
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+.small,
+small {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: $font-size-sm;
+  line-height: 1.4;
+}
+
+sub,
+sup {
+  font-size: 70%;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 64px;
+  margin: 30px 0;
+  font-size: 16px;
+  font-family: $font-family--headings;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: right;
+  hyphens: none;
+
+  @media screen and (min-width: $screen-md) {
+    padding-left: 210px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    padding-left: 453px;
+    font-size: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-size: 20px 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: svg-load('../blocks/sprite-svg/svg/quote.svg');
+
+    @media screen and (min-width: $screen-lg) {
+      width: 31px;
+      height: 31px;
+      background-size: 31px 29px;
+    }
+  }
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 0;
+
+  @media (min-width: $screen-sm) {
+    margin-left: 1.5rem;
+  }
+
+  & + dt {
+    margin-top: 0.5em;
+  }
+}
+
+// samp,
+code,
+kbd,
+pre {
+  // font-family: $font-family--monospace;
+}
+
+code {
+  padding: 0.06em 0.3em;
+  color: $text-color;
+  background-color: rgba(#000, 0.08);
+  border-radius: $border-radius;
+}
+
+kbd {
+  padding: 0.06em 0.3em;
+  color: $text-color;
+  background-color: $gray-lightest;
+  border-radius: $border-radius;
+
+  kbd {
+    padding: 0;
+  }
+}
+
+pre {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  overflow-x: auto;
+  tab-size: 2;
+  background-color: rgba(#000, 0.08);
+
+  code {
+    background: transparent;
+  }
+}
+
+// Вложенные упорядоченные списки: 1, 2, 3, 3.1 -> 3.1.1, 3.1.2…
+// ol {
+//   list-style: none;
+//   counter-reset: something;
+//   padding-left: 32px;
+
+//   li {
+//     counter-increment: something;
+
+//     &::before {
+//       content: counters(something, ".") ". ";
+//     }
+//   }
+// }
+
+
+// Отключение излишних ссылок при помощи аттрибутов  aria-hidden="true" tabindex="-1"
+
+// Текст + номер, например: Шаг 1) Первый пункт списка…
+/* ol {
+  list-style: none;
+  counter-reset: steps;
+
+  li {
+    counter-increment: steps;
+
+    &::before {
+      content: "Шаг " counter(steps) ")";
+      margin-right: 0.5rem;
+      color: #ff6f00;
+    }
+  }
+} */
+
+// Вариант со стрелкой
+/* ul {
+  list-style-type: "→ ";
+  list-style-position: inside;
+} */
+
+// Цветные нумерованные маркеры с вложенностью
+/* ol {
+  list-style: none;
+  counter-reset: steps;
+
+  ol {
+    li {
+      &::before {
+        background: darkorchid;
+      }
+    }
+  }
+
+  li {
+    counter-increment: steps;
+
+    &::before {
+      display: inline-grid;
+      place-items: center; //IE 11 не совместим
+      content: counter(steps);
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 0.5rem;
+      line-height: 1.2em;
+      color: white;
+      background: #ff6f00;
+      border-radius: 50%;
+    }
+  }
+} */
+
+
+/* ol{
+  counter-reset: myCounter;
+
+  li:before {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 0.7em;
+    counter-increment: myCounter;
+    content: counter(myCounter)".";
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    text-align: left;
+    line-height: inherit;
+    color: $second-color;
+  }
+}
+
+ul {
+  li:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-right: 0.7em;
+    margin-top: -3px;
+    border-radius: 50%;
+    background-color: $second-color;
+
+    @media (min-width: $screen-xl) {
+      width: 5px;
+      height: 5px;
+    }
+  }
+} */
