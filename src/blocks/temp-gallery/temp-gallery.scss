@@ -37,6 +37,11 @@
 
   &__card-img {
     background: $block-bg;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   &__card-text {
