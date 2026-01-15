@@ -27,8 +27,9 @@
     "typo": [],
     "hero": [],
     "banner-xl": [],
-    "temp-gallery": [],
-    "test": []
+    "gallery-carousel": [],
+    "text-block": [],
+    "gallery-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

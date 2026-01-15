@@ -1,0 +1,18 @@
+<!--DEV
+@ @include('blocks/gallery-card/gallery-card.html', {
+  "img": "v-card-1",
+  "descr": "Натільний Хрест “Осяяння”"
+})
+-->
+
+<div class="gallery-card">
+  <div class="embed-responsive embed-responsive--3-4  gallery-card__img">
+    <picture>
+      <source srcset="img/@@img.webp" type="image/webp">
+      <img src="img/@@img.jpg" alt="" width="1139" height="1521" loading="lazy">
+    </picture>
+  </div>
+  <div class="gallery-card__text">
+    <p>@@descr</p>
+  </div>
+</div>

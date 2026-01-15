@@ -1,22 +1,21 @@
 .hero {
   position: relative;
+  max-width: $screen-xxl;
+  margin: 0 auto;
 
   $block-name:                &; // #{$block-name}__element
-
-  // & > .row {
-  // }
 
   &__text-col {
     @include col-offset(xs, 1);
     @include col(xs, 10);
     @include col-offset(md, 6);
     @include col(md, 5);
-    @include col-offset(lg, 7);
-    @include col(lg, 5);
-    @include col-offset(xl, 7.5);
-    @include col(xl, 4.5, $grid-columns, 16px);
+    @include col-offset(xl, 7);
+    @include col(xl, 5);
+    // @include col-offset(xl, 7.5);
+    // @include col(xl, 4.5, $grid-columns, 16px);
     @include col-offset(xxl, 8);
-    @include col(xxl, 4, $grid-columns, 24px);
+    @include col(xxl, 4);
   }
 
   &__img {
@@ -69,8 +68,8 @@
   &__descr {
     text-wrap: balance;
 
-    @media (max-width: $screen-lg - 1) {
-      font-size: 16px; // убрать хардкод, после доработки типографики
+    @media (min-width: $screen-xl) {
+     font-weight: 600;
     }
   }
 

@@ -294,8 +294,8 @@ a {
 .container {
   display: block;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
   background: none;
 
   @media (min-width: $screen-md) {
@@ -303,28 +303,26 @@ a {
     padding-right: 40px;
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-xl) {
     padding-left: 118px;
     padding-right: 118px;
   }
 
-  @media (min-width: $screen-xl) {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
-  @media (min-width: 2560px) {
-    padding-left: 260px;
-    padding-right: 260px;
-  }
-
-  @media (min-width: 3840px) {
-    $padding-min: 330px; // нужный отступ от краев экрана
-    //$half-screen-xxl: $screen-xxl / 2 - $padding-min;
-    $half-screen-max: 3840px / 2 - $padding-min;
+  @media (min-width: $screen-xxl) {
+    $padding-min: 118px; // нужный отступ от краев экрана
+    $half-screen-xxl: $screen-xxl / 2 - $padding-min;
     // padding: 1em calc(50% - 600px); //600px - это $screen-xl / 2 - нужный отступ от края экрана
-    padding-left: calc(50% - #{$half-screen-max});
-    padding-right: calc(50% - #{$half-screen-max});
+    padding-left: calc(50% - #{$half-screen-xxl});
+    padding-right: calc(50% - #{$half-screen-xxl});
+  }
+
+  &--max {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    @media (min-width: $screen-xxl) {
+      $padding-min: 0 !important;
+    }
   }
 }
 
@@ -336,8 +334,8 @@ a {
     $sm-grid-gutter:  $grid-gutter-width,
     $md-grid-gutter:  $grid-gutter-width,
     $lg-grid-gutter:  $grid-gutter-width,
-    $xl-grid-gutter:  32px,
-    $xxl-grid-gutter: 48px
+    $xl-grid-gutter:  $grid-gutter-width,
+    $xxl-grid-gutter: $grid-gutter-width
   );
 }
 
@@ -367,14 +365,9 @@ a {
     margin-bottom: 60px;
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-xl) {
     margin-top: 100px;
     margin-bottom: 100px;
-  }
-
-  @media (min-width: $screen-xl) {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
 }
 
@@ -397,6 +390,68 @@ a {
   }
 }
 
+.carousel-controls {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  //width: 100%;
+  height: 44px;
+
+  @media (min-width: $screen-md) {
+    top: 50%;
+    transform: translateY(-22px);
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 0;
+    margin-top: 0;
+    color: $text-color;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+
+    &:active {
+      color: $secondary-color;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+
+    @media (min-width: $screen-xl) {
+      left: -56px; //44px + 12px
+    }
+  }
+
+  .swiper-button-next {
+    right: 0;
+
+    @media (min-width: $screen-xl) {
+      right: -56px; //44px + 12px
+    }
+  }
+
+  .swiper-navigation-icon {
+    width: 11px;
+    height: 20px;
+
+    @media (min-width: $screen-xl) {
+      width: 18px;
+      height: 44px;
+    }
+  }
+
+  .swiper-button-disabled {
+    color: $text-color !important;
+    opacity: 0.35;
+  }
+}
+
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
 // background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$main-color);
 
@@ -404,8 +459,8 @@ a {
 @include col(xs, 12);
 @include col(md, 6);
 @include col(lg, 4);
-@include col(xl, 3, $grid-columns, 16px);
-@include col(xxl, 3, $grid-columns, 24px);
+@include col(xl, 3);
+@include col(xxl, 3);
 */
 
 // @media (min-width: $screen-md) {}

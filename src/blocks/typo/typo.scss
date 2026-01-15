@@ -34,6 +34,15 @@
   src: url('../fonts/inter-v20-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* inter-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v20-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* inter-600 - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -46,13 +55,8 @@
 .page {
   font-size: $font-size;
 
-  @media screen and (min-width: $screen-lg) {
-    //font-size: $font-size--dt;
-    font-size: calc(1rem + ((1vw - 0.9rem) * 1.0833));
-    /* Where: 1.0833 = 100 * font-size_difference / viewport_width_difference */
-
-    /* Safari resize fix */
-    min-height: 0vw;
+  @media screen and (min-width: $screen-xl) {
+    font-size: $font-size--dt;
   }
 
 
@@ -105,14 +109,10 @@ h1 {
   font-weight: 400;
   line-height: 1.2;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     margin-top: 60px;
     margin-bottom: 26px;
-    //font-size: $font-size--h1 * 1.5;
-    font-size: calc(3.75rem + ((1vw - 0.9rem) * 4.1667));
-    /* Where: 4.1667 = 100 * font-size_difference / viewport_width_difference */
-    /* Safari resize fix */
-    min-height: 0vw;
+    font-size: $font-size--h1 * 1.5;
   }
 
   // @media screen and (min-width: 3820px) {
@@ -129,14 +129,10 @@ h2 {
   font-weight: 400;
   line-height: 1.1;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     margin-top: 40px;
     margin-bottom: 20px;
-    //font-size: $font-size--h2 * 1.4666;
-    font-size: calc(1.875rem + ((1vw - 0.9rem) * 3.5417));
-    /* Where: 3.5417 = 100 * font-size_difference / viewport_width_difference */
-
-    min-height: 0vw;/* Safari resize fix */
+    font-size: $font-size--h2 * 1.4666;
     line-height: 1.2;
   }
 
@@ -154,7 +150,7 @@ h3 {
   font-weight: 500;
   line-height: 1.3;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: $font-size--h3 * 1.8;
@@ -168,12 +164,12 @@ h4 {
   margin-bottom: 16px;
   font-size: $font-size--h4;
   font-family: $font-family;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     margin-top: 28px;
-    margin-bottom: 16px;
+    //margin-bottom: 16px;
     font-size: $font-size--h4 * 1.25;
     line-height: 1.3;
   }
@@ -188,7 +184,7 @@ h5 {
   font-weight: 600;
   line-height: $line-height;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: $font-size--h5 * 1.1429;
@@ -220,10 +216,11 @@ h6 {
   font-weight: 500;
   line-height: 1.5;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     margin-top: 28px;
-    margin-bottom: 16px;
+    //margin-bottom: 16px;
     font-size: 20px;
+    line-height: 1.3;
   }
 }
 
@@ -244,11 +241,10 @@ figure {
   font-weight: 200;
   line-height: $line-height;
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     margin-top: 10px;
     margin-bottom: 10px;
     //font-size: $font-size * 1.1429;
-
   }
 
   &:first-child {
@@ -344,7 +340,7 @@ blockquote {
     padding-left: 210px;
   }
 
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: $screen-xl) {
     padding-left: 453px;
     font-size: 20px;
   }
@@ -362,7 +358,7 @@ blockquote {
     background-repeat: no-repeat;
     background-image: svg-load('../blocks/sprite-svg/svg/quote.svg');
 
-    @media screen and (min-width: $screen-lg) {
+    @media screen and (min-width: $screen-xl) {
       width: 31px;
       height: 31px;
       background-size: 31px 29px;
@@ -424,111 +420,3 @@ pre {
   }
 }
 
-// Вложенные упорядоченные списки: 1, 2, 3, 3.1 -> 3.1.1, 3.1.2…
-// ol {
-//   list-style: none;
-//   counter-reset: something;
-//   padding-left: 32px;
-
-//   li {
-//     counter-increment: something;
-
-//     &::before {
-//       content: counters(something, ".") ". ";
-//     }
-//   }
-// }
-
-
-// Отключение излишних ссылок при помощи аттрибутов  aria-hidden="true" tabindex="-1"
-
-// Текст + номер, например: Шаг 1) Первый пункт списка…
-/* ol {
-  list-style: none;
-  counter-reset: steps;
-
-  li {
-    counter-increment: steps;
-
-    &::before {
-      content: "Шаг " counter(steps) ")";
-      margin-right: 0.5rem;
-      color: #ff6f00;
-    }
-  }
-} */
-
-// Вариант со стрелкой
-/* ul {
-  list-style-type: "→ ";
-  list-style-position: inside;
-} */
-
-// Цветные нумерованные маркеры с вложенностью
-/* ol {
-  list-style: none;
-  counter-reset: steps;
-
-  ol {
-    li {
-      &::before {
-        background: darkorchid;
-      }
-    }
-  }
-
-  li {
-    counter-increment: steps;
-
-    &::before {
-      display: inline-grid;
-      place-items: center; //IE 11 не совместим
-      content: counter(steps);
-      width: 1.2em;
-      height: 1.2em;
-      margin-right: 0.5rem;
-      line-height: 1.2em;
-      color: white;
-      background: #ff6f00;
-      border-radius: 50%;
-    }
-  }
-} */
-
-
-/* ol{
-  counter-reset: myCounter;
-
-  li:before {
-    display: inline-block;
-    vertical-align: baseline;
-    margin-right: 0.7em;
-    counter-increment: myCounter;
-    content: counter(myCounter)".";
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 600;
-    text-align: left;
-    line-height: inherit;
-    color: $second-color;
-  }
-}
-
-ul {
-  li:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-    width: 4px;
-    height: 4px;
-    margin-right: 0.7em;
-    margin-top: -3px;
-    border-radius: 50%;
-    background-color: $second-color;
-
-    @media (min-width: $screen-xl) {
-      width: 5px;
-      height: 5px;
-    }
-  }
-} */

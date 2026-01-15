@@ -1,0 +1,14 @@
+.text-block {
+  $block-name:                &; // #{$block-name}__element
+
+  text-align: center;
+  text-wrap: balance;
+  hyphens: none;
+
+  &__col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+    @include col-offset(xxl, 2);
+    @include col(xxl, 8);
+  }
+}

@@ -1,0 +1,42 @@
+.gallery-carousel {
+  $block-name:                &; // #{$block-name}__element
+
+  // display: flex;
+  // flex-direction: column;
+  // gap: 30px 0;
+
+  // @media (min-width: $screen-xl) {
+  //   gap: 2.5rem 0;
+  // }
+  position: relative;
+
+  &__inner {
+
+    @media (min-width: $screen-md) {
+      position: relative;
+    }
+  }
+
+  &__title {
+    padding: 0 50px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__inner-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 10);
+    @include col-offset(xl, 0);
+    @include col(xl, 12);
+  }
+}

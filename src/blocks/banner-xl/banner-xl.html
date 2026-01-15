@@ -1,14 +1,55 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/banner-xl/banner-xl.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="banner-xl">content</div>
-
+@ @include('blocks/banner-xl/banner-xl.html', {
+  "color": "#fff",
+  "bgColor": "#16203b",
+  "title": "«Знаки зодіаку»",
+  "descr": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>",
+  "img": "banner-xl-img"
+})
 -->
+
+<section class="block-vm  banner-xl">
+
+  <div class="banner-xl__bg"
+       style="color: @@color; background-color: @@bgColor;">
+    <div class="container  banner-xl__content">
+      <div class="row  banner-xl__row">
+
+        <div class="banner-xl__text-col">
+          <h2 class="banner-xl__title">@@title</h2>
+          <div class="banner-xl__text">
+            @@descr
+          </div>
+
+          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+        </div>
+
+        <div class="banner-xl__img-col">
+          <div class="embed-responsive embed-responsive--1-1  banner-xl__img">
+            <picture>
+              <source srcset="img/@@img.webp" media="(min-width: 1440px)" type="image/webp">
+              <source srcset="img/@@img.png" media="(min-width: 1440px)">
+              <!-- w-1254 h-auto, h-1880 2x -->
+              <source srcset="img/@@img.webp" media="(min-width: 1280px)" type="image/webp">
+              <source srcset="img/@@img.png" media="(min-width: 1280px)">
+              <!-- w-840 h-auto -->
+              <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+              <source srcset="img/@@img.png" media="(min-width: 1024px)">
+              <!-- w-700 h-auto -->
+              <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="img/@@img.png" media="(min-width: 768px)">
+              <!-- w-570 h-auto -->
+              <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+              <source srcset="img/@@img.png" media="(min-width: 300px)">
+              <!-- w-640 h-auto -->
+
+              <img src="img/@@img.png" alt="Banner alt" width="1880" height="1880" loading="lazy">
+            </picture>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
