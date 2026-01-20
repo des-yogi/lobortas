@@ -444,6 +444,10 @@ a {
   @media (min-width: $screen-xl) {
     left: -56px; //44px + 12px
   }
+
+  .swiper-navigation-icon {
+    transform: rotate(180deg);
+  }
 }
 
 .swiper-button-next {
