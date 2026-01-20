@@ -1,11 +1,50 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-header/page-header.html')
-
 -->
 
-<header class="page-header">
-  page-header
+<header class="container  page-header">
+  <div class="page-header__inner">
+
+    <div class="page-header__menu-wrapper">
+      <button class="page-header__menu" type="button"><span>Меню</span></button>
+      <div class="dropdown">
+        <button class="page-header__lang-switcher  page-header__lang-switcher--mob  dropdown-toggle" type="button" aria-label="Language selection" data-bs-toggle="dropdown" aria-expanded="false">
+          <span>Ua</span>
+        </button>
+        <ul class="dropdown-menu  page-header__lang-menu">
+          <li class="active"><a class="dropdown-item" href="#">Ua</a></li>
+          <li><a class="dropdown-item" href="#">En</a></li>
+          <!-- <li><a class="dropdown-item" href="#">De</a></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-header__logo-wrapper">
+      <a href="index.html" class="logo" title="Lobortas Jewelry House">
+        <picture>
+          <source srcset="img/lobortas-logo.svg" media="(max-width: 767px)">
+          <img src="img/lobortas-logo-lg.svg" alt="Lobortas Jewelry logo" width="199" height="43">
+        </picture>
+      </a>
+    </div>
+
+    <div class="page-header__service-wrapper">
+      <div class="dropdown">
+        <button class="page-header__lang-switcher  page-header__lang-switcher--dt  dropdown-toggle" type="button" aria-label="Language selection" data-bs-toggle="dropdown" aria-expanded="false">
+          <span>Ua</span>
+        </button>
+        <ul class="dropdown-menu  page-header__lang-menu">
+          <li class="active"><a class="dropdown-item" href="#">Ua</a></li>
+          <li><a class="dropdown-item" href="#">En</a></li>
+        </ul>
+      </div>
+      <button class="page-header__btn" type="button" aria-label="Search on site">
+        <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
+      </button>
+      <button class="page-header__btn" type="button" aria-label="Like">
+        <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+      </button>
+    </div>
+
+  </div>
 </header>

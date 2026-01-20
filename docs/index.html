@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
@@ -28,168 +28,1112 @@
 </head>
 
 <body>
-<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
 
   <div class="page__inner">
 
     <div class="page__content">
 
-      <header class="page-header">
-        page-header
+      <header class="container  page-header">
+        <div class="page-header__inner">
+
+          <div class="page-header__menu-wrapper">
+            <button class="page-header__menu" type="button"><span>Меню</span></button>
+            <div class="dropdown">
+              <button class="page-header__lang-switcher  page-header__lang-switcher--mob  dropdown-toggle" type="button" aria-label="Language selection" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Ua</span>
+              </button>
+              <ul class="dropdown-menu  page-header__lang-menu">
+                <li class="active"><a class="dropdown-item" href="#">Ua</a></li>
+                <li><a class="dropdown-item" href="#">En</a></li>
+                <!-- <li><a class="dropdown-item" href="#">De</a></li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="page-header__logo-wrapper">
+            <a href="index.html" class="logo" title="Lobortas Jewelry House">
+              <picture>
+                <source srcset="img/lobortas-logo.svg" media="(max-width: 767px)">
+                <img src="img/lobortas-logo-lg.svg" alt="Lobortas Jewelry logo" width="199" height="43">
+              </picture>
+            </a>
+          </div>
+
+          <div class="page-header__service-wrapper">
+            <div class="dropdown">
+              <button class="page-header__lang-switcher  page-header__lang-switcher--dt  dropdown-toggle" type="button" aria-label="Language selection" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Ua</span>
+              </button>
+              <ul class="dropdown-menu  page-header__lang-menu">
+                <li class="active"><a class="dropdown-item" href="#">Ua</a></li>
+                <li><a class="dropdown-item" href="#">En</a></li>
+              </ul>
+            </div>
+            <button class="page-header__btn" type="button" aria-label="Search on site">
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
+            </button>
+            <button class="page-header__btn" type="button" aria-label="Like">
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+            </button>
+          </div>
+
+        </div>
       </header>
 
 
       <main class="main">
+        <div class="hero">
+          <div class="hero__img">
+            <picture>
+              <source srcset="img/hero-xl.webp,
+                              img/hero-xl.webp 2x" media="(min-width: 1440px)" type="image/webp">
+              <source srcset="img/hero-xl.jpg,
+                              img/hero-xl.jpg 2x" media="(min-width: 1440px)">
+              <!-- 1920х940, 2880x1410 2x -->
+              <source srcset="img/hero-xl.webp" media="(min-width: 1280px)" type="image/webp">
+              <source srcset="img/hero-xl.jpg" media="(min-width: 1280px)">
+              <!-- 1920х940 -->
+              <source srcset="img/hero-xl.webp" media="(min-width: 1024px)" type="image/webp">
+              <source srcset="img/hero-xl.jpg" media="(min-width: 1024px)">
+              <!-- 1152х752 -->
+              <source srcset="img/hero-xl.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="img/hero-xl.jpg" media="(min-width: 768px)">
+              <!-- 1152х752 -->
+              <source srcset="img/hero-sm.webp" media="(min-width: 300px)" type="image/webp">
+              <source srcset="img/hero-sm.jpg" media="(min-width: 300px)">
+              <!-- 768х676 -->
+              <img src="img/hero-xl.jpg" alt="hero alt" width="1920" height="940">
+            </picture>
+          </div>
 
-        <div class="test">
-
-          <section class="hero">
-            <div class="hero__img">
-              <picture>
-                <source srcset="img/hero-xl.webp" media="(min-width: 768px)" type="image/webp">
-                <source srcset="img/hero-xl.jpg" media="(min-width: 768px)">
-
-                <source srcset="img/hero-sm.webp" media="(min-width: 300px)" type="image/webp">
-                <source srcset="img/hero-sm.jpg" media="(min-width: 300px)">
-
-                <img src="img/hero-xl.jpg" alt="hero alt" width="" height="">
-              </picture>
-            </div>
-
-            <div class="container  hero__text">
-              <div class="row">
-                <div class="hero__text-col">
-                  <h1 class="hero__title">Lobortas Jewelry <br> Classic House</h1>
-                  <p class="hero__descr">
-                    <span class="hero__descr-xs">Jewelry Ambassador of Ukraine</span>
-                    <span class="hero__descr-md">Unique Jewelry Craftsmanship. Based in Ukraine. Globally recognized</span>
-                  </p>
-                </div>
+          <div class="container  hero__text">
+            <div class="row">
+              <div class="hero__text-col">
+                <h1 class="hero__title">Lobortas Jewelry <br> Classic House</h1>
+                <p class="hero__descr">
+                  <span class="hero__descr-xs">Jewelry Ambassador of Ukraine</span>
+                  <span class="hero__descr-md">Unique Jewelry Craftsmanship. Based in Ukraine. Globally recognized</span>
+                </p>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
 
-          <div class="container  block-vm  test__text-block">
-            <div class="row">
-              <div class="test__text-block-col">
-                <p>Від початку часів вода - символ життя, оновлення та сили. Стародавні мудреці вбачали в дзвінких потоках джерело фізичної сили та шлях до очищення душі. Використовуючи мову золота, емалі та сапфірів, ювеліри Дома «Лобортас» втілили ідею водної сили в чудовій прикрасі, яка має назву «Джерело», передавши незмінну міць, яка струменить вічним потоком крізь століття.</p>
+        <div class="container  block-vm  text-block">
+          <div class="row">
+            <div class="text-block__col">
+              <p>Від початку часів вода - символ життя, оновлення та сили. Стародавні мудреці вбачали в дзвінких потоках джерело фізичної сили та шлях до очищення душі. Використовуючи мову золота, емалі та сапфірів, ювеліри Дома «Лобортас» втілили ідею водної сили в чудовій прикрасі, яка має назву «Джерело», передавши незмінну міць, яка струменить вічним потоком крізь століття.</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="block-vm  banner-xl">
+
+          <div class="banner-xl__bg"
+               style="color: #fff; background-color: #16203b;">
+            <div class="container  banner-xl__content">
+              <div class="row  banner-xl__row">
+
+                <div class="banner-xl__text-col">
+                  <h2 class="banner-xl__title">«Знаки зодіаку»</h2>
+                  <div class="banner-xl__text">
+                    <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
+                  </div>
+
+                  <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+                </div>
+
+                <div class="banner-xl__img-col">
+                  <div class="embed-responsive embed-responsive--1-1  banner-xl__img">
+                    <picture>
+                      <source srcset="img/banner-xl-img.webp" media="(min-width: 1440px)" type="image/webp">
+                      <source srcset="img/banner-xl-img.png" media="(min-width: 1440px)">
+                      <!-- w-1254 h-auto, h-1880 2x -->
+                      <source srcset="img/banner-xl-img.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source srcset="img/banner-xl-img.png" media="(min-width: 1280px)">
+                      <!-- w-840 h-auto -->
+                      <source srcset="img/banner-xl-img.webp" media="(min-width: 1024px)" type="image/webp">
+                      <source srcset="img/banner-xl-img.png" media="(min-width: 1024px)">
+                      <!-- w-700 h-auto -->
+                      <source srcset="img/banner-xl-img.webp" media="(min-width: 768px)" type="image/webp">
+                      <source srcset="img/banner-xl-img.png" media="(min-width: 768px)">
+                      <!-- w-570 h-auto -->
+                      <source srcset="img/banner-xl-img.webp" media="(min-width: 300px)" type="image/webp">
+                      <source srcset="img/banner-xl-img.png" media="(min-width: 300px)">
+                      <!-- w-640 h-auto -->
+
+                      <img src="img/banner-xl-img.png" alt="Banner alt" width="1880" height="1880" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
 
-          <section class="container  block-vm  banner-xl"
-                   style="color: #fff; background-color: #16203b;">
-            <div class="row  banner-xl__row">
+        </section>
 
-              <div class="banner-xl__text-col">
-                <h2 class="banner-xl__title">«Знаки зодіаку»</h2>
-                <div class="banner-xl__text">
-                  <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
+
+        <section class="container  block-vm  gallery-carousel">
+
+          <div class="gallery-carousel__header">
+            <h2 class="gallery-carousel__title">Вибір сезону</h2>
+            <div class="gallery-carousel__intro"></div>
+          </div>
+
+          <div class="gallery-carousel__inner">
+            <div class="carousel-controls">
+              <div class="swiper-button-prev  gallery-carousel__prev"></div>
+              <div class="swiper-button-next  gallery-carousel__next"></div>
+            </div>
+
+            <div class="row">
+
+              <div class="gallery-carousel__inner-col">
+                <div class="swiper  gallery-carousel__container">
+
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Натільний Хрест “Осяяння”">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Натільний Хрест “Осяяння”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Каблучка “Кольоровий шлях”">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Каблучка “Кольоровий шлях”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Ювелірний сет “Устина”">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Ювелірний сет “Устина”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Натільний Хрест “Осяяння”">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Натільний Хрест “Осяяння”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Каблучка “Кольоровий шлях”">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Каблучка “Кольоровий шлях”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Ювелірний сет “Устина”">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Ювелірний сет “Устина”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                  </div>
+
                 </div>
-
-                <a href="#" class="btn  btn__link"><span>Перейти</span></a>
               </div>
 
-              <div class="banner-xl__img-col">
-                <div class="banner-xl__img">
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="block-vm  banner-xl">
+
+          <div class="banner-xl__bg"
+               style="color: #000; background-color: #F5F5F5;">
+            <div class="container  banner-xl__content">
+              <div class="row  banner-xl__row">
+
+                <div class="banner-xl__text-col">
+                  <h2 class="banner-xl__title">Дорогоцінні витвори</h2>
+                  <div class="banner-xl__text">
+                    <p>Дорогоцінні витвори Lobortas — це унікальні об’єкти ручної роботи, створені на перетині ювелірного мистецтва, скульптури й дизайну. У цій категорії — авторські печатки, мініатюрні скульптури, інтер’єрні прикраси й функціональні.</p>
+                  </div>
+
+                  <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+                </div>
+
+                <div class="banner-xl__img-col">
+                  <div class="embed-responsive embed-responsive--1-1  banner-xl__img">
+                    <picture>
+                      <source srcset="img/banner-xl-img-2.webp" media="(min-width: 1440px)" type="image/webp">
+                      <source srcset="img/banner-xl-img-2.png" media="(min-width: 1440px)">
+                      <!-- w-1254 h-auto, h-1880 2x -->
+                      <source srcset="img/banner-xl-img-2.webp" media="(min-width: 1280px)" type="image/webp">
+                      <source srcset="img/banner-xl-img-2.png" media="(min-width: 1280px)">
+                      <!-- w-840 h-auto -->
+                      <source srcset="img/banner-xl-img-2.webp" media="(min-width: 1024px)" type="image/webp">
+                      <source srcset="img/banner-xl-img-2.png" media="(min-width: 1024px)">
+                      <!-- w-700 h-auto -->
+                      <source srcset="img/banner-xl-img-2.webp" media="(min-width: 768px)" type="image/webp">
+                      <source srcset="img/banner-xl-img-2.png" media="(min-width: 768px)">
+                      <!-- w-570 h-auto -->
+                      <source srcset="img/banner-xl-img-2.webp" media="(min-width: 300px)" type="image/webp">
+                      <source srcset="img/banner-xl-img-2.png" media="(min-width: 300px)">
+                      <!-- w-640 h-auto -->
+
+                      <img src="img/banner-xl-img-2.png" alt="Banner alt" width="1880" height="1880" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section class="container  block-vm  gallery-carousel">
+
+          <div class="gallery-carousel__header">
+            <h2 class="gallery-carousel__title">Акценти сезону</h2>
+            <div class="gallery-carousel__intro"></div>
+          </div>
+
+          <div class="gallery-carousel__inner">
+            <div class="carousel-controls">
+              <div class="swiper-button-prev  gallery-carousel__prev"></div>
+              <div class="swiper-button-next  gallery-carousel__next"></div>
+            </div>
+
+            <div class="row">
+
+              <div class="gallery-carousel__inner-col">
+                <div class="swiper  gallery-carousel__container">
+
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Натільний Хрест “Осяяння”">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Натільний Хрест “Осяяння”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Каблучка “Кольоровий шлях”">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Каблучка “Кольоровий шлях”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Ювелірний сет “Устина”">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Ювелірний сет “Устина”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Натільний Хрест “Осяяння”">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Натільний Хрест “Осяяння”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Каблучка “Кольоровий шлях”">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Каблучка “Кольоровий шлях”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Ювелірний сет “Устина”">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Ювелірний сет “Устина”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <article class="container  block-vm  season-event">
+          <h2 class="season-event__title">Подія сезону</h2>
+
+          <div class="season-event__inner">
+            <div class="row">
+              <div class="season-event__img-col">
+                <div class="embed-responsive embed-responsive--3-4  season-event__img">
                   <picture>
-                    <source srcset="img/banner-xl-img.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="img/banner-xl-img.png" media="(min-width: 768px)">
-
-                    <source srcset="img/banner-xl-img.webp" media="(min-width: 300px)" type="image/webp">
-                    <source srcset="img/banner-xl-img.png" media="(min-width: 300px)">
-
-                    <img src="img/banner-xl-img.png" alt="Banner alt" width="" height="" loading="lazy">
+                    <source srcset="img/season-event-img.webp,
+                                    img/season-event-img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                    <source srcset="img/season-event-img.jpg,
+                                    img/season-event-img.jpg 2x" media="(min-width: 1440px)">
+                    <!-- 750x1000, 1125x1500 2x -->
+                    <source srcset="img/season-event-img.webp,
+                                    img/season-event-img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                    <source srcset="img/season-event-img.jpg,
+                                    img/season-event-img.jpg 2x" media="(min-width: 1280px)">
+                    <!-- 640x853, 960x1280 2x -->
+                    <source srcset="img/season-event-img.webp,
+                                    img/season-event-img.webp 2x" media="(min-width: 1024px)" type="image/webp">
+                    <source srcset="img/season-event-img.jpg,
+                                    img/season-event-img.jpg 2x" media="(min-width: 1024px)">
+                    <!-- 594x792, 900x1200 2x -->
+                    <source srcset="img/season-event-img.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/season-event-img.jpg" media="(min-width: 480px)">
+                    <!-- 690x920 -->
+                    <source srcset="img/season-event-img.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/season-event-img.jpg" media="(min-width: 300px)">
+                    <!-- 585x780 -->
+                    <img src="img/season-event-img.jpg" alt="Alt text" width="754" height="1006" loading="lazy">
                   </picture>
                 </div>
               </div>
 
+              <div class="season-event__text-col">
+                <div class="season-event__text">
+                  <h3 class="season-event__subtitle">Lobortas at FIE Congress 2021</h3>
+                  <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine   in creating masterpieces for your Soul Satisfaction! in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!  complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
+                  <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+                </div>
+              </div>
             </div>
-          </section>
+          </div>
 
-          <section class="container  block-vm  temp-gallery">
+        </article>
 
-            <h2 class="temp-gallery__title">Вибір сезону</h2>
+        <section class="masterpieces-slider">
 
-            <div class="row  temp-gallery__card-container">
+          <div class="container  masterpieces-slider__header">
+            <h2 class="masterpieces-slider__title">Шедеври Дому Lobortas</h2>
+            <div class="masterpieces-slider__intro">
+              <p>Прикраси й об’єкти, об’єднані спільним змістом — для моментів, що вимагають особливої форми, символіки та присутності.</p>
+            </div>
+          </div>
 
-              <div class="temp-gallery__card-col">
-                <div class="temp-gallery__card">
-                  <div class="embed-responsive embed-responsive--3-4  temp-gallery__card-img">
-                    <picture>
-                      <source srcset="img/v-card-1.webp" type="image/webp">
-                      <img src="img/v-card-1.jpg" alt="" width="1139" height="1521" loading="lazy">
-                    </picture>
-                  </div>
-                  <div class="temp-gallery__card-text">
-                    <p>Натільний Хрест “Осяяння”</p>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper  masterpieces-slider__container">
 
-              <div class="temp-gallery__card-col">
-                <div class="temp-gallery__card">
-                  <div class="embed-responsive embed-responsive--3-4  temp-gallery__card-img">
-                    <picture>
-                      <source srcset="img/v-card-2.webp" type="image/webp">
-                      <img src="img/v-card-2.jpg" alt="" width="1139" height="1521" loading="lazy">
-                    </picture>
-                  </div>
-                  <div class="temp-gallery__card-text">
-                    <p>Каблучка “Кольоровий шлях”</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="temp-gallery__card-col">
-                <div class="temp-gallery__card">
-                  <div class="embed-responsive embed-responsive--3-4  temp-gallery__card-img">
-                    <picture>
-                      <source srcset="img/v-card-3.webp" type="image/webp">
-                      <img src="img/v-card-3.jpg" alt="" width="1139" height="1521" loading="lazy">
-                    </picture>
-                  </div>
-                  <div class="temp-gallery__card-text">
-                    <p>Ювелірний сет “Устина”</p>
-                  </div>
-                </div>
-              </div>
-
+            <div class="container  carousel-controls  masterpieces-slider__controls">
+              <div class="swiper-button-prev  masterpieces-slider__btn-prev"></div>
+              <div class="swiper-button-next  masterpieces-slider__btn-next"></div>
             </div>
 
-          </section>
+            <div class="swiper-wrapper">
 
-          <section class="container  block-vm  banner-xl"
-                   style="background-color: #f5f5f5;">
-            <div class="row  banner-xl__row">
-
-              <div class="banner-xl__text-col">
-                <h2 class="banner-xl__title">Дорогоцінні витвори</h2>
-                <div class="banner-xl__text">
-                  <p>Дорогоцінні витвори Lobortas — це унікальні об’єкти ручної роботи, створені на перетині ювелірного мистецтва, скульптури й дизайну. У цій категорії — авторські печатки, мініатюрні скульптури, інтер’єрні прикраси й функціональні.</p>
-                </div>
-
-                <a href="#" class="btn  btn__link"><span>Перейти</span></a>
-              </div>
-
-              <div class="banner-xl__img-col">
-                <div class="banner-xl__img">
+              <div class="swiper-slide  masterpieces-slider__slide">
+                <div class="masterpieces-slider__img">
                   <picture>
-                    <source srcset="img/banner-xl-img-2.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="img/banner-xl-img-2.png" media="(min-width: 768px)">
+                    <source srcset="img/masterpieces-img.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/masterpieces-img.jpg" media="(min-width: 768px)">
 
-                    <source srcset="img/banner-xl-img-2.webp" media="(min-width: 300px)" type="image/webp">
-                    <source srcset="img/banner-xl-img-2.png" media="(min-width: 300px)">
+                    <source srcset="img/masterpieces-img-mob.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/masterpieces-img-mob.jpg" media="(min-width: 300px)">
 
-                    <img src="img/banner-xl-img-2.png" alt="Banner alt" width="" height="" loading="lazy">
+                    <img src="img/masterpieces-img.jpg" alt="Alt text" width="1920" height="940" loading="lazy">
                   </picture>
                 </div>
+
+                <div class="container  masterpieces-slider__text">
+
+                    <div class="row">
+                      <div class="masterpieces-slider__slide-text-col">
+                        <div class="masterpieces-slider__slide-text">
+                          <h3 class="h2  masterpieces-slider__slide-title">Precious Objects</h3>
+                          <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
+                          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide  masterpieces-slider__slide">
+                <div class="masterpieces-slider__img">
+                  <picture>
+                    <source srcset="img/masterpieces-img.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/masterpieces-img.jpg" media="(min-width: 768px)">
+
+                    <source srcset="img/masterpieces-img-mob.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/masterpieces-img-mob.jpg" media="(min-width: 300px)">
+
+                    <img src="img/masterpieces-img.jpg" alt="Alt text" width="1920" height="940" loading="lazy">
+                  </picture>
+                </div>
+
+                <div class="container  masterpieces-slider__text">
+
+                    <div class="row">
+                      <div class="masterpieces-slider__slide-text-col">
+                        <div class="masterpieces-slider__slide-text">
+                          <h3 class="h2  masterpieces-slider__slide-title">Precious Objects</h3>
+                          <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
+                          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide  masterpieces-slider__slide">
+                <div class="masterpieces-slider__img">
+                  <picture>
+                    <source srcset="img/masterpieces-img.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/masterpieces-img.jpg" media="(min-width: 768px)">
+
+                    <source srcset="img/masterpieces-img-mob.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/masterpieces-img-mob.jpg" media="(min-width: 300px)">
+
+                    <img src="img/masterpieces-img.jpg" alt="Alt text" width="1920" height="940" loading="lazy">
+                  </picture>
+                </div>
+
+                <div class="container  masterpieces-slider__text">
+
+                    <div class="row">
+                      <div class="masterpieces-slider__slide-text-col">
+                        <div class="masterpieces-slider__slide-text">
+                          <h3 class="h2  masterpieces-slider__slide-title">Precious Objects</h3>
+                          <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
+                          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
               </div>
 
             </div>
-          </section>
+          </div>
 
-        </div>
+        </section>
+
+
+        <section class="container  block-vm  gallery-carousel">
+
+          <div class="gallery-carousel__header">
+            <h2 class="gallery-carousel__title">Тематичні добірки</h2>
+            <div class="gallery-carousel__intro">
+              <p>Прикраси й об’єкти, об’єднані спільним змістом — для моментів, що вимагають особливої форми, символіки та присутності.</p>
+            </div>
+          </div>
+
+          <div class="gallery-carousel__inner">
+            <div class="carousel-controls">
+              <div class="swiper-button-prev  gallery-carousel__prev"></div>
+              <div class="swiper-button-next  gallery-carousel__next"></div>
+            </div>
+
+            <div class="row">
+
+              <div class="gallery-carousel__inner-col">
+                <div class="swiper  gallery-carousel__container">
+
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Натільний Хрест “Осяяння”">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Натільний Хрест “Осяяння”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Каблучка “Кольоровий шлях”">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Каблучка “Кольоровий шлях”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Ювелірний сет “Устина”">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Ювелірний сет “Устина”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Натільний Хрест “Осяяння”">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Натільний Хрест “Осяяння”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Каблучка “Кольоровий шлях”">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Каблучка “Кольоровий шлях”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="gallery-card">
+                        <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="Ювелірний сет “Устина”">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 553x738, 840x1120 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1366px)">
+                            <!-- 393x524, 590x787 2x -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 325x433, 488x651 2x -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 486x648 -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 380x507 -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+                          </picture>
+                        </a>
+                        <figcaption class="gallery-card__text">
+                          <a href="#" class="gallery-card__text-link">Ювелірний сет “Устина”</a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <article class="block-vm  about-house">
+          <div class="container  about-house__inner">
+            <div class="row  about-house__row">
+              <div class="about-house__col">
+                <div class="about-house__text">
+                  <h2>Про Дім</h2>
+                  <p>Від заснування до міжнародного визнання - шлях, що сформував філософію Lobortas. Перші ідеї, ключові проєкти, становлення авторського почерку та пошук балансу між традицією і новаторством.</p>
+
+                  <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
 
       </main>
 
@@ -198,7 +1142,124 @@
     <div class="page__footer-wrapper">
 
       <footer class="page-footer">
-        page-footer
+
+        <div class="container  page-footer__inner">
+
+          <div class="row  page-footer__news">
+            <div class="page-footer__news-col">
+              <section class="page-footer__section">
+                <h2 class="page-footer__section-title  page-footer__section-title--news">Підписка на новини</h2>
+                <form class="page-footer__subscr-form" action="#" method="post">
+                  <div class="page-footer__input-wrapper">
+                    <label for="subscr">email</label>
+                    <input id="subscr" type="text" name="subscr" value="">
+                    <button type="submit" name="submit" aria-label="Підписатися">
+                      <svg width="22" height="5" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right-long"></use></svg>
+                    </button>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+
+          <div class="row  page-footer__main">
+
+            <div class="page-footer__main-col">
+              <section class="page-footer__section">
+                <h2 class="page-footer__section-title">Контакти</h2>
+                <ul class="list-nostyled  page-footer__list">
+                  <li class="page-footer__list-item">Email:
+                    <a href="mailto:salon@lobortas.com">salon@lobortas.com</a>
+                  </li>
+                  <li class="page-footer__list-item">Зателефонуйте нам:
+                    <a href="tel:+380672253700">+38 067 225 37 00</a>
+                    <!-- <a href="tel:+380672253700">+38 067 225 37 00</a> -->
+                  </li>
+                  <li class="page-footer__list-item">Напишіть нам:
+                    <ul class="list-nostyled  social-network">
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">WhatsApp</a>
+                      </li>
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">Telegram</a>
+                      </li>
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">Messenger</a>
+                      </li>
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">Viber</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="page-footer__main-col">
+              <section class="page-footer__section">
+                <h2 class="page-footer__section-title">Сервіси</h2>
+                <ul class="list-nostyled">
+                  <li class="social-network__item">
+                    <a href="#">Про Дім</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#">Догляд</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#">Наші послуги</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#">Створення на замовлення</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="page-footer__main-col">
+              <section class="page-footer__section">
+                <h2 class="page-footer__section-title">Соцмережі</h2>
+                <ul class="list-nostyled  social-network">
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Instagram</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Facebook</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">LinkedIn</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">WhatsApp Channel</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Pinterest</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container  page-footer__bottom">
+          <p class="page-footer__copyrights">
+            ©2024. Lobortas Classic Jewellery House. All rights Reserved.
+          </p>
+
+          <a href="index.html" class="page-footer__logo">
+            <img src="img/lobortas-logo.svg" alt="Lobortas jewelry house logo" width="35" height="47" loading="lazy">
+          </a>
+
+          <ul class="list-nostyled  page-footer__add-list">
+            <li class="page-footer__add-item">
+              <a href="#" class="page-footer__add-link">Правила та умови використання</a>
+            </li>
+            <li class="page-footer__add-item">
+              <a href="#" class="page-footer__add-link">Політика конфіденційності</a>
+            </li>
+          </ul>
+        </div>
+
       </footer>
 
     </div>

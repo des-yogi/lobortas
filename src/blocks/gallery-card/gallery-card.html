@@ -5,14 +5,34 @@
 })
 -->
 
-<div class="gallery-card">
-  <div class="embed-responsive embed-responsive--3-4  gallery-card__img">
+<figure class="gallery-card">
+  <a href="#" class="embed-responsive embed-responsive--3-4  gallery-card__img" tabindex="-1" title="@@descr">
     <picture>
-      <source srcset="img/@@img.webp" type="image/webp">
-      <img src="img/@@img.jpg" alt="" width="1139" height="1521" loading="lazy">
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1440px)">
+      <!-- 553x738, 840x1120 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1366px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1366px)">
+      <!-- 393x524, 590x787 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 325x433, 488x651 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+      <!-- 486x648 -->
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+      <!-- 380x507 -->
+      <img src="img/@@img.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
     </picture>
-  </div>
-  <div class="gallery-card__text">
-    <p>@@descr</p>
-  </div>
-</div>
+  </a>
+  <figcaption class="gallery-card__text">
+    <a href="#" class="gallery-card__text-link">@@descr</a>
+  </figcaption>
+</figure>

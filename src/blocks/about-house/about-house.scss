@@ -1,0 +1,42 @@
+.about-house {
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 560px;
+  background-color: $block-bg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 312px 420px;
+  background-image: svg-load('../blocks/about-house/bg-img/lobortas-logo.svg', fill=rgba($main-color, 0.11));
+
+  @media (min-width: $screen-xxl) {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+    @include col-offset(md, 2);
+    @include col(md, 8);
+    //@include col(xl, 8)
+  }
+
+  &__text {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+
+    * {
+      hyphens: none;
+      text-wrap: balance;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
