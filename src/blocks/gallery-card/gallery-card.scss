@@ -1,8 +1,18 @@
 .gallery-card {
   $block-name:                &; // #{$block-name}__element
 
+  margin: 0;
+
   &__img {
     background: $block-bg;
+
+    &:hover,
+    &:focus {
+
+      & + figcaption a {
+        color: $link-color--hover;
+      }
+    }
 
     img {
       object-fit: cover;
@@ -18,5 +28,11 @@
     @media (min-width: $screen-xl) {
       margin-top: 1.25rem;
     }
+  }
+
+  &__text-link {
+    text-decoration: none;
+    color: inherit;
+    //color: $text-color;
   }
 }

@@ -29,7 +29,11 @@
     "banner-xl": [],
     "gallery-carousel": [],
     "text-block": [],
-    "gallery-card": []
+    "gallery-card": [],
+    "dropdown": [],
+    "season-event": [],
+    "masterpieces-slider": [],
+    "about-house": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

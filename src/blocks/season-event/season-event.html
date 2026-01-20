@@ -1,0 +1,54 @@
+<!--DEV
+@ @include('blocks/season-event/season-event.html', {
+  "img": "",
+  "title": "Подія сезону",
+  "subtitle": "Lobortas at FIE Congress 2021",
+  "text": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine   in creating masterpieces for your Soul Satisfaction! in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!  complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>"
+})
+-->
+
+<article class="container  block-vm  season-event">
+  <h2 class="season-event__title">@@title</h2>
+
+  <div class="season-event__inner">
+    <div class="row">
+      <div class="season-event__img-col">
+        <div class="embed-responsive embed-responsive--3-4  season-event__img">
+          <picture>
+            <source srcset="img/season-event-img.webp,
+                            img/season-event-img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+            <source srcset="img/season-event-img.jpg,
+                            img/season-event-img.jpg 2x" media="(min-width: 1440px)">
+            <!-- 750x1000, 1125x1500 2x -->
+            <source srcset="img/season-event-img.webp,
+                            img/season-event-img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+            <source srcset="img/season-event-img.jpg,
+                            img/season-event-img.jpg 2x" media="(min-width: 1280px)">
+            <!-- 640x853, 960x1280 2x -->
+            <source srcset="img/season-event-img.webp,
+                            img/season-event-img.webp 2x" media="(min-width: 1024px)" type="image/webp">
+            <source srcset="img/season-event-img.jpg,
+                            img/season-event-img.jpg 2x" media="(min-width: 1024px)">
+            <!-- 594x792, 900x1200 2x -->
+            <source srcset="img/season-event-img.webp" media="(min-width: 480px)" type="image/webp">
+            <source srcset="img/season-event-img.jpg" media="(min-width: 480px)">
+            <!-- 690x920 -->
+            <source srcset="img/season-event-img.webp" media="(min-width: 300px)" type="image/webp">
+            <source srcset="img/season-event-img.jpg" media="(min-width: 300px)">
+            <!-- 585x780 -->
+            <img src="img/season-event-img.jpg" alt="Alt text" width="754" height="1006" loading="lazy">
+          </picture>
+        </div>
+      </div>
+
+      <div class="season-event__text-col">
+        <div class="season-event__text">
+          <h3 class="season-event__subtitle">@@subtitle</h3>
+          @@text
+          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</article>

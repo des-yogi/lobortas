@@ -1,14 +1,39 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/hero/hero.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="hero">content</div>
-
 -->
+<div class="hero">
+  <div class="hero__img">
+    <picture>
+      <source srcset="img/hero-xl.webp,
+                      img/hero-xl.webp 2x" media="(min-width: 1440px)" type="image/webp">
+      <source srcset="img/hero-xl.jpg,
+                      img/hero-xl.jpg 2x" media="(min-width: 1440px)">
+      <!-- 1920х940, 2880x1410 2x -->
+      <source srcset="img/hero-xl.webp" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/hero-xl.jpg" media="(min-width: 1280px)">
+      <!-- 1920х940 -->
+      <source srcset="img/hero-xl.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/hero-xl.jpg" media="(min-width: 1024px)">
+      <!-- 1152х752 -->
+      <source srcset="img/hero-xl.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/hero-xl.jpg" media="(min-width: 768px)">
+      <!-- 1152х752 -->
+      <source srcset="img/hero-sm.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/hero-sm.jpg" media="(min-width: 300px)">
+      <!-- 768х676 -->
+      <img src="img/hero-xl.jpg" alt="hero alt" width="1920" height="940">
+    </picture>
+  </div>
+
+  <div class="container  hero__text">
+    <div class="row">
+      <div class="hero__text-col">
+        <h1 class="hero__title">Lobortas Jewelry <br> Classic House</h1>
+        <p class="hero__descr">
+          <span class="hero__descr-xs">Jewelry Ambassador of Ukraine</span>
+          <span class="hero__descr-md">Unique Jewelry Craftsmanship. Based in Ukraine. Globally recognized</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

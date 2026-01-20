@@ -201,9 +201,9 @@ a {
     color: $link-color--hover;
   }
 
-  &:visited {
-   color: $secondary-color;
-  }
+  // &:visited {
+  //  color: $secondary-color;
+  // }
 
   // На больших экранах телефоны-ссылки делаем обычным текстом (если надо)
   &[href^="tel:"] {
@@ -309,7 +309,7 @@ a {
   }
 
   @media (min-width: $screen-xxl) {
-    $padding-min: 118px; // нужный отступ от краев экрана
+    $padding-min: 204px; // нужный отступ от краев экрана
     $half-screen-xxl: $screen-xxl / 2 - $padding-min;
     // padding: 1em calc(50% - 600px); //600px - это $screen-xl / 2 - нужный отступ от края экрана
     padding-left: calc(50% - #{$half-screen-xxl});
@@ -390,6 +390,13 @@ a {
   }
 }
 
+// Swiper
+
+.swiper-wrapper,
+.swiper-slide {
+  box-sizing: border-box;
+}
+
 .carousel-controls {
   position: absolute;
   z-index: 1;
@@ -404,38 +411,6 @@ a {
     transform: translateY(-22px);
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: 0;
-    margin-top: 0;
-    color: $text-color;
-
-    &:hover,
-    &:focus {
-      color: $main-color;
-    }
-
-    &:active {
-      color: $secondary-color;
-    }
-  }
-
-  .swiper-button-prev {
-    left: 0;
-
-    @media (min-width: $screen-xl) {
-      left: -56px; //44px + 12px
-    }
-  }
-
-  .swiper-button-next {
-    right: 0;
-
-    @media (min-width: $screen-xl) {
-      right: -56px; //44px + 12px
-    }
-  }
-
   .swiper-navigation-icon {
     width: 11px;
     height: 20px;
@@ -445,10 +420,119 @@ a {
       height: 44px;
     }
   }
+}
 
-  .swiper-button-disabled {
-    color: $text-color !important;
-    opacity: 0.35;
+.swiper-button-prev,
+.swiper-button-next {
+  top: 0;
+  margin-top: 0;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+
+  &:active {
+    color: $secondary-color;
+  }
+}
+
+.swiper-button-prev {
+  left: 0;
+
+  @media (min-width: $screen-xl) {
+    left: -56px; //44px + 12px
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+
+  @media (min-width: $screen-xl) {
+    right: -56px; //44px + 12px
+  }
+}
+
+.swiper-button-disabled {
+  color: $text-color !important;
+  opacity: 0.35;
+}
+
+.swiper-slide-active {
+
+  *:not(img)::selection {
+    background: none;
+  }
+}
+
+// ----------------------------
+
+.dropdown-toggle {
+
+  &:hover,
+  &:focus {
+
+    &::after {
+      background-image: svg-load('../blocks/dropdown/bg-img/arrow-down-sm.svg', fill=$main-color);
+    }
+  }
+
+  &:active {
+
+    &::after {
+      background-image: svg-load('../blocks/dropdown/bg-img/arrow-down-sm.svg', fill=$secondary-color);
+    }
+  }
+
+  &.show {
+
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &::after {
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+    background-position: center;
+    background-repeat: none;
+    background-size: 24px;
+    background-image: svg-load('../blocks/dropdown/bg-img/arrow-down-sm.svg', fill=$text-color);
+    border: none;
+    transition: all $transition-time ease;
+  }
+}
+
+.dropdown-menu {
+  min-width: 100%;
+  background: $body-bg;
+
+  & > li.active {
+
+    .dropdown-item {
+      color: $main-color;
+    }
+  }
+
+  .dropdown-item {
+    padding: 6px 12px;
+    //font-family: $font-family;
+    font-weight: 200;
+    font-size: $font-size--dt;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+
+    &:active {
+      color: $secondary-color;
+      background-color: $body-bg;
+    }
   }
 }
 
@@ -458,7 +542,6 @@ a {
 /*
 @include col(xs, 12);
 @include col(md, 6);
-@include col(lg, 4);
 @include col(xl, 3);
 @include col(xxl, 3);
 */

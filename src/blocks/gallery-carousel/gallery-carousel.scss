@@ -17,18 +17,35 @@
     }
   }
 
+  &__header {
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
   &__title {
     padding: 0 50px;
     margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
 
     @media (min-width: $screen-md) {
       padding: 0;
     }
+  }
 
-    @media (min-width: $screen-xl) {
-      margin-bottom: 40px;
+  &__intro {
+    max-width: 800px;
+    margin: 0 auto;
+
+    &:empty {
+      display: none;
+    }
+
+    & > * {
+      hyphens: none;
+      text-wrap: balance;
     }
   }
 

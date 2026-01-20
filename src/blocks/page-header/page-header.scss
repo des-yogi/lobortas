@@ -1,8 +1,116 @@
-// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 12px;
+  }
+
+  &__menu-wrapper,
+  &__service-wrapper {
+
+    @media (min-width: $screen-md) {
+      min-width: 212px;
+    }
+  }
+
+  &__btn,
+  &__menu,
+  &__lang-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 0;
+    font-family: $font-family;
+    font-size: $font-size--dt;
+    font-weight: 200;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color $transition-time ease;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+
+    &:active {
+      color: $secondary-color;
+      //background-color: $body-bg;
+    }
+  }
+
+  // &__menu {
+
+  // }
+
+  &__lang-switcher {
+
+    &--mob {
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      & + .dropdown-menu .dropdown-item {
+        padding: 10px 12px;
+      }
+    }
+
+    &--dt {
+      @media (max-width: $screen-md - 1) {
+        display: none;
+      }
+    }
+  }
+
+  // &__lang-menu {
+
+  // }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // @media (min-width: $screen-md) {
+    //   margin-left: auto;
+    //   margin-right: auto;
+    // }
+  }
+
+  &__service-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 12px;
+  }
+
+  // &__btn {
+
+  // }
 }
