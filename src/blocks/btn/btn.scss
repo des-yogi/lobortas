@@ -8,42 +8,49 @@
   justify-content: center;
   height: 44px;
   margin: 0;
-  padding: 0  $field-padding-horizontal;
-  font-size: 1rem;
-  font-family: inherit;
-  line-height: $line-height;
+  padding: 0 24px;
+  font-size: $font-size-dt;
+  font-weight: 500;
+  font-family: $font-family--headings;
+  line-height: 1.5;
   text-align: center;
   text-decoration: none;
   text-transform: none;
   white-space: nowrap;
-  color: $text-color;
+  color: $secondary-color;
   border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
+  border: 1px solid currentColor;
+  background-color: $body-bg;
   background-image: none;
   user-select: none;
   cursor: pointer;
+  transition: all $transition-time ease;
+
+  @media (min-width: $screen-md) {
+    font-size: $font-size-lg;
+    line-height: 1.3;
+  }
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
-    // background-color: darken($gray-lightest, 10%);
-    // border-color: darken($gray-lighter, 12%);
+    color: $white;
+    background-color: $main-color;
+    border-color: $main-color;
   }
 
-  &:active,
-  &:focus {
-    // @include field-focus;
+  &:active {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
   }
 
   &--disabled,
   &:disabled {
     // opacity: $opacity;
     cursor: not-allowed;
-    color: $text-color;
-    background-color: $gray-lightest;
-    border-color: $gray-lighter;
+    color: $text-muted;
+    background-color: $body-bg;
+    border-color: currentColor;
 
     @at-root a.btn--disabled {
       pointer-events: none;
@@ -62,6 +69,8 @@
     &:hover,
     &:focus {
       color: $main-color !important;
+      background-color: transparent;
+      border-color: transparent;
 
       span::after {
         animation:
@@ -75,7 +84,7 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: -2px;
+        bottom: 0;
         left: 0;
         height: 1px;
         width: 100%;

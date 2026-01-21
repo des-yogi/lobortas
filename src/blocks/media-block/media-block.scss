@@ -1,0 +1,69 @@
+.media-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  & + & {
+    margin-top: 24px;
+  }
+
+  //&__wrapper {}
+
+  &__row {
+    gap: 12px 0;
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 6);
+
+    @media (min-width: $screen-md) {
+      order: 1;
+    }
+  }
+
+  &__text-col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+    @include col-offset(md, 1);
+    @include col(md, 4);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__img {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    padding: 40px 0;
+
+    @media (min-width: $screen-md) {
+      padding: 24px 0;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &:nth-child(even),
+  &--mirrored {
+
+    #{$block-name}__img-col {
+      @include col-offset(md, 0);
+
+      @media (min-width: $screen-md) {
+        order: 0;
+      }
+    }
+  }
+}

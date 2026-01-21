@@ -1,0 +1,29 @@
+.section-header-link {
+  $block-name:                &; // #{$block-name}__element
+
+  align-items: baseline;
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-md) {
+    align-items: center;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 40px;
+  }
+
+  &__title-col {
+    @include col-offset(xs, 2);
+    @include col(xs, 8);
+  }
+
+  &__link-col {
+    @include col(xs, 2);
+    text-align: right;
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+  }
+}

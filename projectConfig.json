@@ -33,7 +33,13 @@
     "dropdown": [],
     "season-event": [],
     "masterpieces-slider": [],
-    "about-house": []
+    "about-house": [],
+    "main-header": [],
+    "cards-2-4": [],
+    "section-header-link": [],
+    "section-header-filter": [],
+    "media-block": [],
+    "variable-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

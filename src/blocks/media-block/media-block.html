@@ -1,0 +1,32 @@
+<!--DEV
+@ @include('blocks/media-block/media-block.html', {
+  "img": "media-block-img-1",
+  "title": "Відтінки емалі",
+  "text": "<p>Lobortas   Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery.</p>"
+})
+-->
+
+<section class="container  media-block">
+  <!-- доступно media-block--mirrored -->
+  <!-- loading="lazy" убрать для первого блока -->
+  <div class="row  media-block__row">
+
+    <div class="media-block__img-col">
+      <div class="embed-responsive embed-responsive--1-1  media-block__img">
+        <picture>
+          <img src="img/@@img.png" alt="Alt text" width="596" height="596" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="media-block__text-col">
+      <div class="media-block__text">
+        <h2 class="h3  media-block__title">@@title</h2>
+        @@text
+
+        <a href="#" class="btn btn__link"><span>Перейти</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>

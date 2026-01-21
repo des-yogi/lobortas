@@ -1,0 +1,17 @@
+.cards-2-4 {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 30px 0;
+
+    @media (min-width: $screen-xl) {
+      gap: 40px 0;
+    }
+  }
+
+  &__col {
+    @include col(xs, 6);
+    @include col(md, 3);
+  }
+}

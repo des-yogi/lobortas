@@ -45,8 +45,8 @@ $divider-color:               $main-color;
 // Базовая типографика
 
 $font-size:                   14px;
-$font-size--dt:               16px;
-$font-size--base:             1rem;
+$font-size-dt:                16px;
+$font-size-base:              1rem;
 $font-size-sm:                12px;
 $font-size-lg:                20px;
 
@@ -98,7 +98,7 @@ $border-radius:               0;
 $opacity:                     0.7;
 $shadow:                      0 6px 7px rgba(0, 0, 0, 0.1);
 $text-shadow:                 0 2px 5px rgba(0, 0, 0, 0.6);
-$transition-time:             0.25s;
+$transition-time:             0.35s;
 
 
 // BS4 vars for mixins

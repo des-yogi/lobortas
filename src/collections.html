@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Колекції</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        @@include('blocks/main-header/main-header.html', {
+          "h1": "Колекції",
+          "intro": ""
+        })
+
+        <div class="block-vm  media-block__wrapper">
+          @@include('blocks/media-block/media-block.html', {
+            "img": "media-block-img-1",
+            "title": "Відтінки емалі",
+            "text": "<p>Lobortas   Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery.</p>"
+          })
+
+          @@include('blocks/media-block/media-block.html', {
+            "img": "media-block-img-2",
+            "title": "Діамантовий дотик",
+            "text": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!.</p>"
+          })
+
+          @@include('blocks/media-block/media-block.html', {
+            "img": "media-block-img-3",
+            "title": "Відтінки емалі",
+            "text": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>"
+          })
+        </div>
+
+        @@include('blocks/about-house/about-house.html', {
+          "title": "Комплекти",
+          "text": "<p>Від заснування до міжнародного визнання — шлях, що сформував філософію Lobortas. Перші ідеї, ключові проєкти, становлення авторського почерку та пошук балансу між традицією і новаторством.</p>"
+        })
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Категорії</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        @@include('blocks/main-header/main-header.html', {
+          "h1": "Категорії",
+          "intro": ""
+        })
+
+        @@include('blocks/cards-2-4/cards-2-4.html')
+
+        @@include('blocks/cards-2-4/cards-2-4.html')
+
+        @@include('blocks/about-house/about-house.html', {
+          "title": "Індивідуальне замовлення",
+          "text": "<p>Від заснування до міжнародного визнання — шлях, що сформував філософію Lobortas. Перші ідеї, ключові проєкти, становлення авторського почерку та пошук балансу між традицією і новаторством.</p>"
+        })
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
