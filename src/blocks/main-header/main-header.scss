@@ -1,0 +1,59 @@
+.main-header {
+  $block-name:                &; // #{$block-name}__element
+
+  margin: 20px 0 40px;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 100px;
+  }
+
+  &__col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+    @include col-offset(xl, 2);
+    @include col(xl, 8);
+  }
+
+  &__title {
+    margin: 0;
+
+    & + #{$block-name}__intro:not(:empty) {
+      margin-top: 20px;
+    }
+  }
+
+  &__intro {
+
+    &:empty,
+    &:has(p:empty) {
+      display: none;
+    }
+
+    & > * {
+      hyphens: none;
+      text-wrap: balance;
+    }
+  }
+
+  &__filter-wrapper {
+    margin-top: 30px;
+    text-align: initial;
+
+    @media (min-width: $screen-md) {
+      margin-top: 40px;
+    }
+  }
+
+  &--filter {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+  }
+}

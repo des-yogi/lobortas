@@ -14,7 +14,7 @@
   // см. img_to_bg/to-up.svg
   // http://yoksel.github.io/url-encoder/ru/
   background-size: 30px;
-  background-image: svg-load('../blocks/sprite-svg/svg/chevron-down.svg', fill=$white);
+  background-image: svg-load('../blocks/to-top/bg-img/to-up.svg', fill=$white);
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid $white;

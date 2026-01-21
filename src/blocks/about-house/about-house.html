@@ -1,5 +1,8 @@
 <!--DEV
-@ @include('blocks/about-house/about-house.html')
+@ @include('blocks/about-house/about-house.html', {
+  "title": "Про Дім",
+  "text": "<p>Від заснування до міжнародного визнання - шлях, що сформував філософію Lobortas. Перші ідеї, ключові проєкти, становлення авторського почерку та пошук балансу між традицією і новаторством.</p>"
+})
 -->
 
 <article class="block-vm  about-house">
@@ -7,9 +10,8 @@
     <div class="row  about-house__row">
       <div class="about-house__col">
         <div class="about-house__text">
-          <h2>Про Дім</h2>
-          <p>Від заснування до міжнародного визнання - шлях, що сформував філософію Lobortas. Перші ідеї, ключові проєкти, становлення авторського почерку та пошук балансу між традицією і новаторством.</p>
-
+          <h2>@@title</h2>
+          @@text
           <a href="#" class="btn  btn__link"><span>Перейти</span></a>
         </div>
       </div>

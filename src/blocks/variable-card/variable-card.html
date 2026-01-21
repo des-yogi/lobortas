@@ -1,0 +1,23 @@
+<!--DEV
+@ @include('blocks/variable-card/variable-card.html', {
+  "largeClass": "",
+  "img": "v-card-1",
+  "collName": "Колекція",
+  "setName": "Tsavo River Maze"
+})
+-->
+
+<figure class="variable-card  @@largeClass">
+  <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
+  <a href="#" class="variable-card__img" title="@@setName" tabindex="-1">
+    <picture>
+      <source srcset="img/@@img.webp" type="image/webp">
+      <img src="img/@@img.jpg" alt="Alt text">
+    </picture>
+  </a>
+
+  <figcaption class="variable-card__caption">
+    <span class="p  variable-card__collection-name">@@collName</span>
+    <a href="#" class="display-4  variable-card__set-name">@@setName</a>
+  </figcaption>
+</figure>
