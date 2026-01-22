@@ -1,0 +1,8 @@
+.goods-text {
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+  }
+}

@@ -1,0 +1,90 @@
+<!--DEV
+@ @include('../../blocks/promo-slider/promo-slider.html', {
+  "title": "Пропонуємо розглянути"
+})
+-->
+
+<section class="container  block-vm  gallery-carousel  promo-slider">
+
+  <div class="gallery-carousel__header">
+    <h2 class="gallery-carousel__title">@@title</h2>
+    <div class="gallery-carousel__intro"></div>
+  </div>
+
+  <div class="gallery-carousel__inner">
+    <div class="carousel-controls">
+      <div class="swiper-button-prev  gallery-carousel__prev"></div>
+      <div class="swiper-button-next  gallery-carousel__next"></div>
+    </div>
+
+    <div class="row">
+
+      <div class="gallery-carousel__inner-col">
+        <div class="swiper  gallery-carousel__container">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide  gallery-carousel__slide">
+              @@include('../../blocks/variable-card/variable-card.html', {
+                "largeClass": "",
+                "img": "v-card-1",
+                "collName": "Колекція",
+                "setName": "Tsavo River Maze"
+              })
+            </div>
+
+            <div class="swiper-slide  gallery-carousel__slide">
+              @@include('../../blocks/variable-card/variable-card.html', {
+                "largeClass": "",
+                "img": "v-card-2",
+                "collName": "Колекція",
+                "setName": "Tsavo River Maze"
+              })
+            </div>
+
+            <div class="swiper-slide  gallery-carousel__slide">
+              @@include('../../blocks/variable-card/variable-card.html', {
+                "largeClass": "",
+                "img": "v-card-3",
+                "collName": "Колекція",
+                "setName": "Tsavo River Maze"
+              })
+            </div>
+
+            <div class="swiper-slide  gallery-carousel__slide">
+              @@include('../../blocks/variable-card/variable-card.html', {
+                "largeClass": "",
+                "img": "v-card-1",
+                "collName": "Колекція",
+                "setName": "Tsavo River Maze"
+              })
+            </div>
+
+            <div class="swiper-slide  gallery-carousel__slide">
+              @@include('../../blocks/variable-card/variable-card.html', {
+                "largeClass": "",
+                "img": "v-card-2",
+                "collName": "Колекція",
+                "setName": "Tsavo River Maze"
+              })
+            </div>
+
+            <div class="swiper-slide  gallery-carousel__slide">
+              @@include('../../blocks/variable-card/variable-card.html', {
+                "largeClass": "",
+                "img": "v-card-3",
+                "collName": "Колекція",
+                "setName": "Tsavo River Maze"
+              })
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

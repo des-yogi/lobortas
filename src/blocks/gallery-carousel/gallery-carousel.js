@@ -1,5 +1,10 @@
 (function(){
   document.querySelectorAll('.gallery-carousel').forEach(section => {
+    let slidesPerViewMd = 3;
+    if (section.classList.contains('promo-slider')) {
+      slidesPerViewMd = 4;
+    }
+
     const container = section.querySelector('.gallery-carousel__container');
     const nextButton = section.querySelector('.gallery-carousel__next');
     const prevButton = section.querySelector('.gallery-carousel__prev');
@@ -14,7 +19,7 @@
       // autoplay: { delay: 5000 }, // если нужно автопрокручивание
       breakpoints: {
         768: {
-          slidesPerView: 3
+          slidesPerView: slidesPerViewMd
         }
       },
       navigation: {

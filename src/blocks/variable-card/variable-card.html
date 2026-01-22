@@ -11,8 +11,36 @@
   <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
   <a href="#" class="variable-card__img" title="@@setName" tabindex="-1">
     <picture>
-      <source srcset="img/@@img.webp" type="image/webp">
-      <img src="img/@@img.jpg" alt="Alt text">
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1440px)">
+      <!-- 496x661, 744x992 2x -->
+      <!-- 1004x1449, 1500x2000 2x large -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 392x523, 588x784 2x -->
+      <!-- 796x1140, 1194x1592 2x large -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+      <!-- 550x733 -->
+      <!-- 1120x1493 large -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 330x440 -->
+      <!-- 682x909 large -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 360x480 -->
+      <!-- 735x980 large -->
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+      <!-- 285x380 -->
+      <!-- 585x780 large -->
+      <!-- размеры для 3 кол. версии -->
+      <img src="img/@@img.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
     </picture>
   </a>
 

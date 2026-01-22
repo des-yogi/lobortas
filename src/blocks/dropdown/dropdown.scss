@@ -1,9 +1,42 @@
-// В этом файле должны быть стили для БЭМ-блока dropdown, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .dropdown {
-
   $block-name:                &; // #{$block-name}__element
 
+  &__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: $font-size-dt;
+    font-family: $font-family--headings;
+    font-weight: 500;
+    //text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color $transition-time ease;
+
+    @media screen and (min-width: $screen-xl) {
+      font-size: $font-size-lg;
+    }
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+
+    &:active {
+      color: $secondary-color;
+      //background-color: $body-bg;
+    }
+  }
+
+  &__menu {
+
+  }
+
+  &__item {
+
+  }
 }

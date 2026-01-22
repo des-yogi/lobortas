@@ -1,0 +1,40 @@
+<!--DEV
+@ @include('blocks/fs-img-16-9/fs-img-16-9.html', {
+  "img": "goods-16-9-img"
+})
+-->
+
+<div class="block-vm  fs-img-16-9">
+  <div class="embed-responsive  fs-img-16-9__img">
+    <picture>
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1920px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1920px)">
+      <!-- 1920x1080, 2880x1620 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1366px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1366px)">
+      <!-- 1440x810, 2160x1215 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1200px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1200px)">
+      <!-- 1280x720, 1920x1080 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+      <!-- 1536x864 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 1152x648 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 900x506 -->
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+      <!-- 720x405 -->
+      <img src="img/@@img.jpg" alt="Alt text" width="1440" height="810" loading="lazy">
+    </picture>
+  </div>
+</div>

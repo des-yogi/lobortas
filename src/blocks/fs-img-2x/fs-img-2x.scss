@@ -1,0 +1,15 @@
+.fs-img-2x {
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  justify-content: space-between;
+  gap: 0 12px;
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__col {
+    flex: 1;
+  }
+}
