@@ -1,0 +1,9 @@
+.video-16-9 {
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 10);
+  }
+}

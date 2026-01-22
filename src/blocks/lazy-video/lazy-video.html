@@ -1,0 +1,41 @@
+<!--DEV
+@ @include('blocks/lazy-video/lazy-video.html', {
+  "code": "XZ-7gYp3lTg"
+})
+-->
+
+<a href="#" class="embed-responsive  lazy-video"
+   data-video="@@code"
+   title="Video name">
+  <picture>
+    <source srcset="img/video-placeholder.webp,
+                    img/video-placeholder.webp 2x" media="(min-width: 1440px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg,
+                    img/video-placeholder.jpg 2x" media="(min-width: 1440px)">
+      <!-- 1258x708, 1880x1058 2x -->
+    <source srcset="img/video-placeholder.webp,
+                    img/video-placeholder.webp 2x" media="(min-width: 1366px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg,
+                    img/video-placeholder.jpg 2x" media="(min-width: 1366px)">
+      <!-- 1070x602, 1605x903 2x -->
+    <source srcset="img/video-placeholder.webp,
+                    img/video-placeholder.webp 2x" media="(min-width: 1280px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg,
+                    img/video-placeholder.jpg 2x" media="(min-width: 1280px)">
+      <!-- 998x561, 1570x883 2x -->
+    <source srcset="img/video-placeholder.webp" media="(min-width: 1024px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 1024px)">
+      <!-- 1570x883 -->
+    <source srcset="img/video-placeholder.webp" media="(min-width: 768px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 768px)">
+      <!-- 860x484 -->
+    <source srcset="img/video-placeholder.webp" media="(min-width: 480px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 480px)">
+      <!-- 735x413 -->
+    <source srcset="img/video-placeholder.webp" media="(min-width: 360px)" type="image/webp">
+    <source srcset="img/video-placeholder.jpg" media="(min-width: 360px)">
+      <!-- 585x329 -->
+    <img src="img/video-placeholder.jpg" alt="Alt text" width="1880" height="1058" loading="lazy">
+  </picture>
+  <span class="lazy-video__btn" aria-hidden="true"></span>
+</a>

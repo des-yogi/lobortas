@@ -39,7 +39,15 @@
     "section-header-link": [],
     "section-header-filter": [],
     "media-block": [],
-    "variable-card": []
+    "variable-card": [],
+    "goods-showcase": [],
+    "showcase-slider": [],
+    "goods-text": [],
+    "fs-img-16-9": [],
+    "video-16-9": [],
+    "fs-img-2x": [],
+    "promo-slider": [],
+    "lazy-video": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

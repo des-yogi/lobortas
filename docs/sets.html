@@ -124,7 +124,19 @@
           </div>
 
           <div class="main-header__filter-wrapper">
+
             <div class="dropdown">
+              <button class="dropdown-toggle  dropdown__toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Фільтр</span>
+              </button>
+              <ul class="dropdown-menu  dropdown__menu">
+                <li><a class="dropdown-item  dropdown__item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item  dropdown__item" href="#">Option 2</a></li>
+                <li><a class="dropdown-item  dropdown__item" href="#">Option 3</a></li>
+              </ul>
+            </div>
+
+            <!-- <div class="dropdown">
               <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span>Фільтр</span>
               </button>
@@ -133,7 +145,7 @@
                 <li><a class="dropdown-item" href="#">Option 2</a></li>
                 <li><a class="dropdown-item" href="#">Option 3</a></li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -143,8 +155,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-1.webp" type="image/webp">
-                <img src="img/v-card-1.jpg" alt="Alt text">
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-1.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -158,8 +198,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze Tsavo River Maze Tsavo River Maze Tsavo River" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-2.webp" type="image/webp">
-                <img src="img/v-card-2.jpg" alt="Alt text">
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-2.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -173,8 +241,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-3.webp" type="image/webp">
-                <img src="img/v-card-3.jpg" alt="Alt text">
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-3.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -188,8 +284,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-1.webp" type="image/webp">
-                <img src="img/v-card-1.jpg" alt="Alt text">
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-1.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -203,8 +327,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-2.webp" type="image/webp">
-                <img src="img/v-card-2.jpg" alt="Alt text">
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-2.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -218,8 +370,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-3.webp" type="image/webp">
-                <img src="img/v-card-3.jpg" alt="Alt text">
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-3.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -233,8 +413,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-1.webp" type="image/webp">
-                <img src="img/v-card-1.jpg" alt="Alt text">
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-1.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -248,8 +456,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-2.webp" type="image/webp">
-                <img src="img/v-card-2.jpg" alt="Alt text">
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-2.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -263,8 +499,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-3.webp" type="image/webp">
-                <img src="img/v-card-3.jpg" alt="Alt text">
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-3.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -278,8 +542,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-1.webp" type="image/webp">
-                <img src="img/v-card-1.jpg" alt="Alt text">
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-1.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -293,8 +585,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-2.webp" type="image/webp">
-                <img src="img/v-card-2.jpg" alt="Alt text">
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-2.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -308,8 +628,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-3.webp" type="image/webp">
-                <img src="img/v-card-3.jpg" alt="Alt text">
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-3.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -323,8 +671,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-1.webp" type="image/webp">
-                <img src="img/v-card-1.jpg" alt="Alt text">
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-1.webp,
+                                img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg,
+                                img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-1.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -338,8 +714,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-2.webp" type="image/webp">
-                <img src="img/v-card-2.jpg" alt="Alt text">
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-2.webp,
+                                img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg,
+                                img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-2.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 
@@ -353,8 +757,36 @@
             <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
             <a href="#" class="variable-card__img" title="Tsavo River Maze" tabindex="-1">
               <picture>
-                <source srcset="img/v-card-3.webp" type="image/webp">
-                <img src="img/v-card-3.jpg" alt="Alt text">
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                <!-- 496x661, 744x992 2x -->
+                <!-- 1004x1449, 1500x2000 2x large -->
+                <source srcset="img/v-card-3.webp,
+                                img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg,
+                                img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                <!-- 392x523, 588x784 2x -->
+                <!-- 796x1140, 1194x1592 2x large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                <!-- 550x733 -->
+                <!-- 1120x1493 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 768px)">
+                <!-- 330x440 -->
+                <!-- 682x909 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 480px)">
+                <!-- 360x480 -->
+                <!-- 735x980 large -->
+                <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                <!-- 285x380 -->
+                <!-- 585x780 large -->
+                <!-- размеры для 3 кол. версии -->
+                <img src="img/v-card-3.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
               </picture>
             </a>
 

@@ -1,0 +1,49 @@
+<!--DEV
+@ @include('blocks/showcase-slider/showcase-slider.html')
+-->
+
+<div class="swiper  showcase-slider">
+
+  <div class="carousel-controls  showcase-slider__nav">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide  embed-responsive embed-responsive--3-4  showcase-slider__slide">
+      <picture>
+        <source srcset="img/v-card-1.webp,
+                        img/v-card-1.webp 2x" media="(min-width: 1366px)" type="image/webp">
+        <source srcset="img/v-card-1.jpg,
+                        img/v-card-1.jpg 2x" media="(min-width: 1366px)">
+        <!-- 640x853, 960x1280 2x -->
+        <source srcset="img/v-card-1.webp,
+                        img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+        <source srcset="img/v-card-1.jpg,
+                        img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+        <!-- 594x792, 890x1187 2x -->
+        <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+        <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+        <!-- 700x933 -->
+        <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+        <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+        <!-- 672x896 -->
+        <img src="img/v-card-1.jpg" alt="Alt text" width="960" height="1280" loading="lazy">
+      </picture>
+    </div>
+
+    <div class="swiper-slide  embed-responsive embed-responsive--3-4  showcase-slider__slide">
+      <picture>
+        <img src="img/v-card-2.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+      </picture>
+    </div>
+
+    <div class="swiper-slide  embed-responsive embed-responsive--3-4  showcase-slider__slide">
+      <picture>
+        <img src="img/v-card-3.jpg" alt="Alt text" width="1139" height="1521" loading="lazy">
+      </picture>
+    </div>
+
+  </div>
+</div>

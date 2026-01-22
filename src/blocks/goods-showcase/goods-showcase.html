@@ -1,0 +1,61 @@
+<!--DEV
+@ @include('blocks/goods-showcase/goods-showcase.html')
+-->
+
+<div class="container  goods-showcase">
+  <div class="row  goods-showcase__row">
+
+    <div class="goods-showcase__slider-col">
+      @@include('../../blocks/showcase-slider/showcase-slider.html')
+    </div>
+
+    <div class="goods-showcase__text-col">
+      <div class="goods-showcase__text">
+        <div class="goods-showcase__header">
+          <h1 class="goods-showcase__title">“Назва товару”</h1>
+          <div class="display-4  goods-showcase__descr">
+            <p>Сучасна дорогоцінна ювелірна скульптура ручної роботи</p>
+          </div>
+          <p class="goods-showcase__item-num">Н-23-08-406</p>
+        </div>
+
+        <div class="goods-showcase__info">
+          <ul class="list-nostyled  goods-showcase__opt-list">
+            <li class="goods-showcase__opt-item">
+              <span>Колекція:</span> <a href="#">Назва колекції</a>
+            </li>
+            <li class="goods-showcase__opt-item">
+              <span>Матеріали:</span> золото, діаманти, сапфір блакитний
+            </li>
+            <li class="goods-showcase__opt-item">
+              <span>Технічні характеристики:</span> 340 годин роботи
+            </li>
+          </ul>
+        </div>
+
+        <div class="goods-showcase__contrl">
+          <button class="btn" type="button"><span>Замовити</span></button>
+        </div>
+      </div>
+
+      <div class="goods-showcase__footer">
+        <button class="page-header__btn" type="button" aria-label="Додати до обраного">
+          <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+        </button>
+
+        <a href="#" class="page-header__btn" aria-label="Посилання до ???">
+          <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#link"></use></svg>
+        </a>
+
+        <button class="page-header__btn" type="button" aria-label="Додаткова інформація">
+          <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#info"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="goods-showcase__line-col">
+      <div class="goods-showcase__line"></div>
+    </div>
+
+  </div>
+</div>

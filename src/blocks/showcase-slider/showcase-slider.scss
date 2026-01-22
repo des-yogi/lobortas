@@ -1,0 +1,43 @@
+.showcase-slider {
+  $block-name:                &; // #{$block-name}__element
+
+  &__nav {
+    top: 50% !important;
+    transform: translateY(-22px) !important;
+    z-index: 2;
+    pointer-events: none;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: $white;
+      pointer-events: auto;
+
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+
+      &:active {
+        color: $secondary-color;
+      }
+
+      .swiper-navigation-icon {
+        width: 18px;
+        height: 44px;
+      }
+    }
+
+    .swiper-button-disabled {
+      color: $white !important;
+      opacity: 0.35;
+    }
+  }
+
+  &__slide {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

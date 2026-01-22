@@ -1,0 +1,7 @@
+.fs-img-16-9 {
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
