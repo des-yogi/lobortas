@@ -27,6 +27,14 @@
       }
     }
 
+    .swiper-button-prev {
+      left: 0 !important;
+    }
+
+    .swiper-button-next {
+      right: 0 !important;
+    }
+
     .swiper-button-disabled {
       color: $white !important;
       opacity: 0.35;
