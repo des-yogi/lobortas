@@ -1,0 +1,56 @@
+<!--DEV
+@ @include('blocks/presentaion/presentaion.html', {
+  "img": "season-event-img",
+  "fullName": "Імя Прізвище",
+  "position": "Посада, сан, хто це, де працє чи служить",
+  "quote": "Відгук до подарунку або цитата. Велике ізріченіє, яке приписується сме цій людині?"
+})
+-->
+
+<section class="block-vm  presentaion">
+  <div class="container  presentaion__inner">
+    <div class="row  presentaion__row">
+
+      <div class="presentaion__text-col">
+        <div class="presentaion__text">
+          <h2 class="h1  presentaion__fullname">@@fullName</h2>
+          <p class="presentaion__position">@@position</p>
+          <blockquote class="presentaion__quote">
+            <p>@@quote</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="presentaion__img-col">
+        <div class="embed-responsive embed-responsive--3-4  presentaion__img">
+          <picture>
+            <source srcset="img/@@img.webp,
+                            img/@@img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+            <source srcset="img/@@img.jpg,
+                            img/@@img.jpg 2x" media="(min-width: 1440px)">
+             <!-- 624x832, 936x1248 2x -->
+            <source srcset="img/@@img.webp,
+                            img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+            <source srcset="img/@@img.jpg,
+                            img/@@img.jpg 2x" media="(min-width: 1280px)">
+             <!-- 585x780, 880x1173 2x -->
+            <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+             <!-- 720x960 -->
+            <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+             <!-- 585x780 -->
+            <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+             <!-- 700x933 -->
+            <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+            <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+             <!-- 585x780 -->
+            <img src="img/@@img.jpg" alt="@@fullName" width="900" height="1200" loading="lazy">
+          </picture>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
