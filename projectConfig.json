@@ -47,7 +47,8 @@
     "video-16-9": [],
     "fs-img-2x": [],
     "promo-slider": [],
-    "lazy-video": []
+    "lazy-video": [],
+    "presentaion": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
