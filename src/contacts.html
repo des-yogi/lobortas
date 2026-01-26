@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Контакти</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        @@include('blocks/main-header/main-header.html', {
+          "h1": "Контакти",
+          "intro": ""
+        })
+
+        <div class="container  block-vm  contacts">
+
+          <div class="row  contacts__row">
+
+            <div class="contacts__col">
+              <section class="contacts__section">
+                <h2 class="h4  contacts__section-title">Зв’яжіться з нами</h2>
+                <p>Для запитів щодо виробів Дому, ювелірних прикрас, замовлень або консультацій з командою.</p>
+                <p>Пн-Пт: 10:00 - 18:00</p>
+                <p>Email: <a href="mailto:salon@lobortas.com">salon@lobortas.com</a></p>
+                <p>Tел.: <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+                <p>
+                  <a href="https://wa.me/[NUMBER]">WhatsApp</a>,
+                  <!-- Прямая ссылка на username -->
+                  <a href="https://t.me/username">Telegram</a>,
+                  <!-- <a href="https://t.me/+[NUMBER]">Telegram</a>, -->
+                  <a href="https://m.me/username">Messenger</a>,
+                  <a href="viber://chat?number=%2B[NUMBER]">Viber</a>
+                </p>
+              </section>
+            </div>
+
+            <div class="contacts__col">
+              <section class="contacts__section">
+                <h2 class="h4  contacts__section-title">Візит в галерею</h2>
+                <p>Заплануйте приватний візит до нашої галереї за попереднім записом, де на вас чекатиме персональний гід.</p>
+                <p>Email: <a href="mailto:salon@lobortas.com">salon@lobortas.com</a></p>
+                <p>Tел.: <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+                <p>
+                  <a href="https://wa.me/[NUMBER]">WhatsApp</a>,
+                  <!-- Прямая ссылка на username -->
+                  <a href="https://t.me/username">Telegram</a>,
+                  <!-- <a href="https://t.me/+[NUMBER]">Telegram</a>, -->
+                  <a href="https://m.me/username">Messenger</a>,
+                  <a href="viber://chat?number=%2B[NUMBER]">Viber</a>
+                </p>
+              </section>
+            </div>
+
+            <div class="contacts__col">
+              <section class="contacts__section">
+                <h2 class="h4  contacts__section-title">Співпраця та преса</h2>
+                <p>Для запитів преси, партнерств або індивідуальних колаборацій.</p>
+                <p><a href="mailto:ceo@lobortas.com">ceo@lobortas.com</a></p>
+                <p><a href="mailto:salon@lobortas.com">salon@lobortas.com</a></p>
+              </section>
+            </div>
+
+            <div class="contacts__col">
+              <section class="contacts__section">
+                <h2 class="h4  contacts__section-title">Приєднуйтесь до нас</h2>
+                <p>Запрошуємо вас до нашої онлайн-галереї у соціальних мережах.</p>
+
+                @@include('blocks/social-icons/social-icons.html')
+              </section>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

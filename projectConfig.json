@@ -48,7 +48,16 @@
     "fs-img-2x": [],
     "promo-slider": [],
     "lazy-video": [],
-    "presentaion": []
+    "presentaion": [],
+    "article": [],
+    "article-header": [],
+    "article-img2x-vert": [],
+    "article-img2x-horiz": [],
+    "article-img-sm": [],
+    "article-img-lg": [],
+    "article-text": [],
+    "contacts": [],
+    "social-icons": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

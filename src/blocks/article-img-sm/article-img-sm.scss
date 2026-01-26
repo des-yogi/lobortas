@@ -1,0 +1,17 @@
+.article-img-sm {
+  $block-name:                &; // #{$block-name}__element
+
+  @include col-offset(xs, 1);
+  @include col(xs, 10);
+  @include col-offset(md, 2);
+  @include col(md, 8);
+  @include col-offset(xl, 3);
+  @include col(xl, 6);
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}

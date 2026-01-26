@@ -1,0 +1,18 @@
+.article-img2x-vert {
+  $block-name:                &; // #{$block-name}__element
+
+  @include col-offset(xs, 1);
+  @include col(xs, 10);
+  @include col-offset(md, 2);
+  @include col(md, 8);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
