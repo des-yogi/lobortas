@@ -1,0 +1,6 @@
+.article-text {
+  $block-name:                &; // #{$block-name}__element
+
+  @include col-offset(xs, 1);
+  @include col(xs, 10);
+}

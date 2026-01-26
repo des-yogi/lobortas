@@ -98,6 +98,7 @@ h5,
 h6 {
   text-wrap: balance;
   line-height: 1.2;
+  hyphens: none;
 }
 
 .h1,
@@ -239,6 +240,7 @@ figure {
   font-size: 1rem;
   font-family: $font-family;
   font-weight: 200;
+  hyphens: none;
   line-height: $line-height;
 
   @media screen and (min-width: $screen-xl) {
@@ -258,11 +260,11 @@ figure {
 
 p {
   // http://clagnut.com/blog/2395
-  hyphens: auto;
-  hyphenate-limit-chars: 6 3 3;
-  hyphenate-limit-lines: 2;
-  hyphenate-limit-last: always;
-  hyphenate-limit-zone: 8%;
+  //hyphens: none;
+  //hyphenate-limit-chars: 6 3 3;
+  //hyphenate-limit-lines: 2;
+  //hyphenate-limit-last: always;
+  //hyphenate-limit-zone: 8%;
 }
 
 a {
@@ -285,8 +287,8 @@ ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 li {
@@ -335,7 +337,7 @@ blockquote {
   font-weight: 500;
   line-height: 1.5;
   text-align: right;
-  hyphens: none;
+  //hyphens: none;
 
   container-type: inline-size; /* Объявляем его как контейнер */
   container-name: blockquote;

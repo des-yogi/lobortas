@@ -1,0 +1,33 @@
+<!--DEV
+@ @include('blocks/article-header/article-header.html', {
+  "img": "placeholder-4-3",
+  "title": "Герцог Віндзорський — король стилю"
+})
+-->
+
+<div class="container  block-vm  article-header">
+  <div class="row  article-header__row">
+
+    <div class="article-header__text-col">
+      <div class="article-header__text">
+        <h1 class="article-header__title">@@title</h1>
+        <p class="article-header__author">Автор: Імя Фамілія</p>
+        <p class="article-header__datetime">
+          <time datetime="2025-08-09">09.08.2025</time>
+        </p>
+      </div>
+    </div>
+
+    <div class="article-header__img-col">
+      <div class="embed-responsive  embed-responsive--4-3  article-header__img">
+        <picture>
+          <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+          <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+          <!-- 00 -->
+          <img src="img/@@img.jpg" width="800" height="600">
+        </picture>
+      </div>
+    </div>
+
+  </div>
+</div>

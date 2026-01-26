@@ -1,0 +1,41 @@
+.contacts {
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 24px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 40px 0;
+    }
+  }
+
+  &__col {
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
+    @include col-offset(md, 0);
+    @include col(md, 5);
+    //@include col(xl, 3);
+
+    &:nth-child(odd) {
+      @include col-offset(md, 1);
+      @include col(md, 5);
+    }
+  }
+
+  &__section {
+    text-align: center;
+
+    & > * {
+      text-wrap: balance;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__section-title {
+    margin-top: 0 !important;
+    color: $main-color;
+  }
+}
