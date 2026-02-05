@@ -540,6 +540,37 @@ a {
   }
 }
 
+// Fancybox style over
+.fancybox__dialog {
+
+  .fancybox__backdrop {
+    opacity: 0.95 !important;
+  }
+
+  .f-caption {
+    text-align: center;
+
+    & > * {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 200;
+    }
+
+    & > a {
+      display: inline-flex;
+      margin-top: 8px;
+    }
+  }
+
+  .f-button.is-arrow.is-next,
+  .f-button.is-arrow.is-prev {
+
+    @media (max-width: $screen-md - 1) {
+      display: none;
+    }
+  }
+}
+
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
 // background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$main-color);
 

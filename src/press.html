@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Преса</title>
+  @@include('_include/page_head.html')
+
+  <link href="css/fancybox.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container  main-header">
+          <div class="row">
+            <div class="main-header__col">
+              <h1 class="main-header__title">Преса</h1>
+              <!-- <div class="main-header__intro"></div> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container  block-vm  blog">
+          <div class="row  blog__row" role="list">
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/press-card/press-card.html', {
+                "img": "v-card-1",
+                "title": "Назва статті на всякий випадок довга…"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/press-card/press-card.html', {
+                "img": "v-card-2",
+                "title": "Назва статті…"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/press-card/press-card.html', {
+                "img": "v-card-3",
+                "title": "Назва статті на всякий випадок довга щоб все було видно наглядно"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/press-card/press-card.html', {
+                "img": "v-card-1",
+                "title": "Назва статті на всякий випадок довга щоб все було видно наглядно Назва статті на всякий випадок довга щоб все було видно наглядно"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/press-card/press-card.html', {
+                "img": "v-card-2",
+                "title": "Назва статті на всякий випадок довга…"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/press-card/press-card.html', {
+                "img": "v-card-3",
+                "title": "Назва статті…"
+              })
+            </div>
+
+          </div>
+
+          @@include('blocks/pagination/pagination.html')
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <script src="js/fancybox.umd.js"></script>
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

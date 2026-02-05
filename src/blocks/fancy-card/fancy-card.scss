@@ -1,0 +1,13 @@
+.fancy-card {
+  $block-name:                &; // #{$block-name}__element
+
+  text-decoration: none;
+
+  // &:hover,
+  // &:focus {
+  // }
+
+  &__date {
+    color: $text-color !important;
+  }
+}

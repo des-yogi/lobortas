@@ -3,38 +3,45 @@ $text-color:                  hsl(0, 0%, 10%) !default;
 $border-color:                hsl(0, 0%, 60%) !default;
 
 .pagination {
+  $block-name:                &; // #{$block-name}__element
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 18px;
+  margin-top: 40px;
   //margin-bottom: 60px;
 
   @media (min-width: $screen-md) {
     //justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
-  $block-name:                &; // #{$block-name}__element
+  @media (min-width: $screen-xl) {
+    margin-top: 100px;
+  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
     list-style: none;
     margin: 0;
     padding-left: 0;
   }
 
   &__item {
-    margin-right: 0.5em;
+    //margin-right: 8px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
 
     &.active {
 
       a {
-        color: $main-color;
+        text-decoration: none;
+        color: $white;
+        background-color: $main-color;
         pointer-events: none;
       }
     }
@@ -43,9 +50,13 @@ $border-color:                hsl(0, 0%, 60%) !default;
     &--next {
 
       #{$block-name}__link {
-        background-size: 8px 14px;
+        background-size: 18px;
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (min-width: $screen-md) {
+          background-size: 36px;
+        }
       }
     }
 
@@ -58,7 +69,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
         &:hover,
         &:focus {
-          background-image: svg-load('../blocks/pagination/bg-img/right-arrow-icon.svg', fill=$white);
+          background-image: svg-load('../blocks/pagination/bg-img/right-arrow-icon.svg', fill=$main-color);
         }
 
         &--disabled {
@@ -75,7 +86,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
         &:hover,
         &:focus {
-          background-image: svg-load('../blocks/pagination/bg-img/right-arrow-icon.svg', fill=$white);
+          background-image: svg-load('../blocks/pagination/bg-img/right-arrow-icon.svg', fill=$main-color);
         }
 
         &--disabled {
@@ -89,24 +100,25 @@ $border-color:                hsl(0, 0%, 60%) !default;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
+    font-family: $font-family;
     font-size: 16px;
     font-weight: 500;
     line-height: 1;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
-    color: $text-muted;
+    color: $text-color;
     background-color: $white;
     border-radius: 0;
-    transition: all 0.2s ease-out;
+    transition: all $transition-time ease-out;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      color: $white;
-      background-color: $main-color;
+      color: $main-color;
+      background-color: $white;
     }
 
     &--disabled,

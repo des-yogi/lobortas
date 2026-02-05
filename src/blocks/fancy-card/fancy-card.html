@@ -1,0 +1,47 @@
+<!--DEV
+@ @include('blocks/fancy-card/fancy-card.html', {
+  "img": "placeholder-4-3",
+  "title": "Назва статті…"
+})
+-->
+<!-- Optional caption,&lt;br /&gt;that can contain code -->
+<a href="img/@@img.jpg"
+   class="blog-card  fancy-card"
+   data-fancybox="gallery"
+   data-caption="<p class=&quot;blog-card__date&quot;><time datetime=&quot;2025-09-10&quot;>10.09.2025</time></p>
+                <p>A photographer takes a photo in a city street</p>
+                <a href=&quot;https://google.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;>Link to somewhere</a>">
+  <div class="embed-responsive  embed-responsive--4-3  blog-card__img">
+    <picture>
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1440px)">
+      <!-- 496x372, 744x558 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 421x315, 640x480 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+      <!-- 548x411 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 460x345 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 700x525 -->
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+      <!-- 585x439 -->
+      <img src="img/@@img.jpg" alt="Alt" width="744" height="558" loading="lazy">
+    </picture>
+  </div>
+  <div class="blog-card__text">
+    <p class="blog-card__date  fancy-card__date">
+      <time datetime="2025-09-10">10.09.2025</time>
+    </p>
+    <p class="p  blog-card__caption">@@title</p>
+  </div>
+</a>
