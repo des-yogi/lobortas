@@ -1,0 +1,49 @@
+<!--DEV
+@ @include('blocks/press-card/press-card.html', {
+  "img": "placeholder-4-3",
+  "title": "Назва статті на всякий випадок довга…"
+})
+-->
+<a href="img/@@img.jpg"
+   class="blog-card  fancy-card  press-card"
+   data-fancybox="gallery"
+   data-caption="<p class=&quot;blog-card__date&quot;><time datetime=&quot;2025-09-10&quot;>10.09.2025</time></p>
+                <p>A photographer takes a photo in a city street</p>
+                <a href=&quot;https://google.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;>Link to somewhere</a>">
+  <div class="press-card__img-wrapper">
+    <div class="embed-responsive  embed-responsive--3-4  blog-card__img">
+      <picture>
+        <source srcset="img/@@img.webp,
+                        img/@@img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+        <source srcset="img/@@img.jpg,
+                        img/@@img.jpg 2x" media="(min-width: 1440px)">
+        <!-- 496x661, 744x992 2x -->
+        <source srcset="img/@@img.webp,
+                        img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+        <source srcset="img/@@img.jpg,
+                        img/@@img.jpg 2x" media="(min-width: 1280px)">
+        <!-- 392x523, 588x784 2x -->
+        <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+        <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+        <!-- 550x733 -->
+        <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+        <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+        <!-- 330x440 -->
+        <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+        <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+        <!-- 360x480 -->
+        <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+        <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+        <!-- 285x380 -->
+        <!-- размеры для 3 кол. версии -->
+        <img src="img/@@img.jpg" alt="Alt text" width="744" height="992" loading="lazy">
+      </picture>
+    </div>
+  </div>
+  <div class="blog-card__text">
+    <p class="blog-card__date  fancy-card__date">
+      <time datetime="2025-09-10">10.09.2025</time>
+    </p>
+    <p class="p  blog-card__caption">@@title</p>
+  </div>
+</a>

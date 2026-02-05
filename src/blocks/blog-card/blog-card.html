@@ -1,0 +1,42 @@
+<!--DEV
+@ @include('blocks/blog-card/blog-card.html', {
+  "img": "placeholder-4-3",
+  "title": "Назва статті…"
+})
+-->
+
+<div class="blog-card">
+  <a href="#" class="embed-responsive  embed-responsive--4-3  blog-card__img" tabindex="-1">
+    <picture>
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1440px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1440px)">
+      <!-- 496x372, 744x558 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 421x315, 640x480 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+      <!-- 548x411 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 460x345 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 700x525 -->
+      <source srcset="img/@@img.webp" media="(min-width: 300px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 300px)">
+      <!-- 585x439 -->
+      <img src="img/@@img.jpg" alt="Alt" width="744" height="558" loading="lazy">
+    </picture>
+  </a>
+  <div class="blog-card__text">
+    <p class="blog-card__date">
+      <time datetime="2025-09-10">10.09.2025</time>
+    </p>
+    <a href="#" class="p  blog-card__caption">@@title</a>
+  </div>
+</div>

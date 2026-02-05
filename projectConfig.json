@@ -57,7 +57,12 @@
     "article-img-lg": [],
     "article-text": [],
     "contacts": [],
-    "social-icons": []
+    "social-icons": [],
+    "copy-page-link": [],
+    "blog": [],
+    "blog-card": [],
+    "fancy-card": [],
+    "press-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -86,8 +91,12 @@
   "addImages": [
     "./src/img/*.{jpg,jpeg,gif,png,svg,ico,webp}"
   ],
-  "copiedCss": [],
-  "copiedJs": [],
+  "copiedCss": [
+    "./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css"
+  ],
+  "copiedJs": [
+    "./node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"
+  ],
   "dirs": {
     "srcPath": "./src/",
     "buildPath": "./build/",

@@ -1,0 +1,130 @@
+.copy-page-link {
+  $block-name:                &; // #{$block-name}__element
+
+  /* Используются модификаторы: --show, --success, --error, позиционные --top/--bottom/--left/--right */
+
+  &__toast {
+    --bg: #fff;
+    --color: #000;
+    --padding: 8px 12px;
+    --radius: 0;
+    --box-shadow: none;
+    --transition: 180ms cubic-bezier(.2,.9,.3,1);
+    /* Переменная --cpl-offset управляет расстоянием тоста от кнопки (в px). */
+    --cpl-offset: 8px;
+
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    min-width: 48px;
+    max-width: 260px;
+    min-height: 44px;
+    z-index: 999;
+    padding: var(--padding);
+    transform-origin: center;
+    transform: translateY(6px) scale(.98);
+    transition: opacity var(--transition), transform var(--transition);
+    font-size: $font-size-lg;
+    font-family: $font-family--headings;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    text-transform: initial;
+    color: var(--color);
+    background: var(--bg);
+    border: 1px solid var(--bg);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    //word-break: break-word;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    white-space: nowrap;
+
+    // @media (max-width: 420px) {
+    //   max-width: 200px;
+    //   font-size: 12px;
+    //   padding: 7px 9px;
+    // }
+
+    &--show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    &--success {
+      background: var(--bg); /* зелёный фон успеха — можно переопределить */
+      border-color: $secondary-color;
+    }
+
+    &--error {
+      background: var(--bg); /* красный фон ошибки */
+      border-color: $color-danger;
+    }
+
+    /* Позиции */
+    /* TOP - по центру над кнопкой */
+    &--top {
+      left: 50%;
+      bottom: calc(100% + var(--cpl-offset));
+      transform: translateX(-50%) translateY(6px) scale(.98);
+    }
+
+    /* TOP-LEFT - выровнять по левому краю над кнопкой */
+    &--top-left {
+      left: 0;
+      bottom: calc(100% + var(--cpl-offset));
+      transform: translateY(6px) scale(.98);
+    }
+
+    /* TOP-RIGHT - выровнять по правому краю над кнопкой */
+    &--top-right {
+      right: 0;
+      bottom: calc(100% + var(--cpl-offset));
+      transform: translateY(6px) scale(.98);
+    }
+
+    /* BOTTOM - по центру под кнопкой */
+    &--bottom {
+      left: 50%;
+      top: calc(100% + var(--cpl-offset));
+      transform: translateX(-50%) translateY(-6px) scale(.98);
+    }
+
+    /* BOTTOM-LEFT */
+    &--bottom-left {
+      left: 0;
+      top: calc(100% + var(--cpl-offset));
+      transform: translateY(-6px) scale(.98);
+    }
+
+    /* BOTTOM-RIGHT */
+    &--bottom-right {
+      right: 0;
+      top: calc(100% + var(--cpl-offset));
+      transform: translateY(-6px) scale(.98);
+    }
+
+    /* LEFT - центр слева */
+    &--left {
+      right: calc(100% + var(--cpl-offset));
+      top: 50%;
+      transform: translateX(6px) translateY(-50%) scale(.98);
+    }
+
+    /* RIGHT - центр справа */
+    &--right {
+      left: calc(100% + var(--cpl-offset));
+      top: 50%;
+      transform: translateX(-6px) translateY(-50%) scale(.98);
+    }
+
+    /* CENTER - по центру внутри кнопки (или в центре её области) */
+    &--center {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(.98);
+    }
+  }
+}

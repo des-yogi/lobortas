@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Блог</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container  main-header">
+          <div class="row">
+            <div class="main-header__col">
+              <h1 class="main-header__title">Блог</h1>
+              <!-- <div class="main-header__intro"></div> -->
+
+              <nav class="main-header__inner-nav">
+                <ul class="list-nostyled  main-header__nav-list">
+                  <li class="main-header__nav-item">
+                    <a href="#" class="btn  btn__link  main-header__nav-link">
+                      <span>Ювелірні прикраси</span>
+                    </a>
+                  </li>
+                  <li class="main-header__nav-item  active">
+                    <a href="#" class="btn  btn__link  main-header__nav-link">
+                      <span>Інтер’єрні прикраси</span>
+                    </a>
+                  </li>
+                  <li class="main-header__nav-item">
+                    <a href="#" class="btn  btn__link  main-header__nav-link">
+                      <span>Мистецтво і стиль</span>
+                    </a>
+                  </li>
+                  <li class="main-header__nav-item">
+                    <a href="#" class="btn  btn__link  main-header__nav-link">
+                      <span>Цікаве</span>
+                    </a>
+                  </li>
+                  <li class="main-header__nav-item">
+                    <a href="#" class="btn  btn__link  main-header__nav-link">
+                      <span>Спадщина Лобортас</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="container  block-vm  blog">
+          <div class="row  blog__row" role="list">
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/blog-card/blog-card.html', {
+                "img": "placeholder-4-3",
+                "title": "Назва статті на всякий випадок довга…"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/blog-card/blog-card.html', {
+                "img": "placeholder-4-3",
+                "title": "Назва статті…"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/blog-card/blog-card.html', {
+                "img": "placeholder-4-3",
+                "title": "Назва статті на всякий випадок довга щоб все було видно наглядно"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/blog-card/blog-card.html', {
+                "img": "placeholder-4-3",
+                "title": "Назва статті на всякий випадок довга щоб все було видно наглядно Назва статті на всякий випадок довга щоб все було видно наглядно"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/blog-card/blog-card.html', {
+                "img": "placeholder-4-3",
+                "title": "Назва статті на всякий випадок довга…"
+              })
+            </div>
+
+            <div class="blog__col" role="listitem">
+              @@include('blocks/blog-card/blog-card.html', {
+                "img": "placeholder-4-3",
+                "title": "Назва статті…"
+              })
+            </div>
+
+          </div>
+
+          @@include('blocks/pagination/pagination.html')
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

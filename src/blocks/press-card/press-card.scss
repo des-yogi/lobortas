@@ -1,0 +1,16 @@
+.press-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img-wrapper {
+    padding: 0 10px;
+
+    @media (min-width: $screen-md) {
+      padding: 0 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 0 36px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.blog {
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    gap: 40px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 4);
+    //@include col(xl, 3);
+  }
+}

@@ -49,6 +49,37 @@
     }
   }
 
+  &__inner-nav {
+    margin-top: 20px;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 40px;
+
+    @media (max-width: $screen-md - 1) {
+      flex-direction: column;
+    }
+  }
+
+  &__nav-item {
+
+    &.active {
+
+      #{$block-name}__nav-link {
+        color: $main-color !important;
+        background-color: transparent;
+        border-color: transparent;
+        pointer-events: none;
+      }
+    }
+  }
+
+  //&__nav-link {
+  //}
+
   &--filter {
     margin-bottom: 30px;
 
