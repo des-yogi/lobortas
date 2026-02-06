@@ -62,7 +62,8 @@
     "blog": [],
     "blog-card": [],
     "fancy-card": [],
-    "press-card": []
+    "press-card": [],
+    "masterpiece": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

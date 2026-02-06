@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Шедеври / High Jewelry</title>
+  @@include('_include/page_head.html')
+
+  <link href="css/fancybox.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container  main-header">
+          <div class="row">
+            <div class="main-header__col">
+              <h1 class="main-header__title">High Jewelry</h1>
+              <!-- <div class="main-header__intro"></div> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="block-vm  masterpiece__wrapper">
+
+          @@include('blocks/masterpiece/masterpiece.html', {
+            "flipClass": "",
+            "theme": "masterpiece--dark",
+            "img": "masterpiece-1",
+            "imgMob": "masterpiece-1-mob",
+            "title": "Лебідь-царівна",
+            "text": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>"
+          })
+
+          @@include('blocks/masterpiece/masterpiece.html', {
+            "flipClass": "",
+            "theme": "masterpiece--light",
+            "img": "masterpiece-2",
+            "imgMob": "masterpiece-2-mob",
+            "title": "Бітл",
+            "text": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>"
+          })
+
+          @@include('blocks/masterpiece/masterpiece.html', {
+            "flipClass": "",
+            "theme": "masterpiece--light",
+            "img": "masterpiece-3",
+            "imgMob": "masterpiece-3-mob",
+            "title": "Сади Версаля",
+            "text": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>"
+          })
+
+          @@include('blocks/masterpiece/masterpiece.html', {
+            "flipClass": "",
+            "theme": "masterpiece--dark",
+            "img": "masterpiece-4",
+            "imgMob": "masterpiece-4-mob",
+            "title": "Чумацький Шлях",
+            "text": "<p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>"
+          })
+
+        </div>
+
+        @@include('blocks/about-house/about-house.html', {
+          "addClass": "",
+          "title": "Спадщина",
+          "text": "<p>Від заснування до міжнародного визнання — шлях, що сформував філософію Lobortas. Перші ідеї, ключові проєкти, становлення авторського почерку та пошук балансу між традицією і новаторством.</p>"
+        })
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <script src="js/fancybox.umd.js"></script>
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
