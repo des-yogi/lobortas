@@ -1,20 +1,15 @@
-// В этом файле должны быть стили для БЭМ-блока close, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
-$toggler-part-height:         3px !default;
-$toggler-part-bg-color:       #000 !default;
+$toggler-part-height:         2px !default;
+$toggler-part-bg-color:       #646464 !default;
 
 .close {
-
   $block-name:                &; // #{$block-name}__element
 
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   user-select: none;
   cursor: pointer;
 
@@ -25,8 +20,8 @@ $toggler-part-bg-color:       #000 !default;
     background: transparent;
     position: relative;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       top: 0;
@@ -37,11 +32,11 @@ $toggler-part-bg-color:       #000 !default;
       transform-origin: 50% 50%;
     }
 
-    &:before {
+    &::before {
       transform: rotate3d(0, 0, 1, 45deg);
     }
 
-    &:after {
+    &::after {
       transform: rotate3d(0, 0, 1, -45deg);
     }
   }

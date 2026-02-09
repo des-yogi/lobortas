@@ -1,58 +1,90 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/modal/modal.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-#Button trigger modal:
-
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
-
-#Modal:
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 -->
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" aria-modal="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h4 class="h3  modal-title" id="exampleModalLabel">
+          Замовити послугу
+          <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+        </h4>
+        <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
       </div>
       <div class="modal-body">
-        ...
+        <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+
+        <div class="modal__form-wrapper">
+          <form class="form" action="#" method="post">
+            <label class="field-text">
+              <span class="field-text__name">Як до Вас звертатись?*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" name="name" value="" autocomplete="name">
+                <span class="field-text__help-text error" data-error="name"></span>
+              </span>
+            </label>
+
+            <div class="form__inputs-wrapper">
+              <label class="field-text">
+                <span class="field-text__name">Е-mail*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                  <span class="field-text__help-text error" data-error="mail"></span>
+                </span>
+              </label>
+
+              <label class="field-text">
+                <span class="field-text__name">Номер телефону</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                  <span class="field-text__help-text error" data-error="tel"></span>
+                </span>
+              </label>
+            </div>
+
+            <label class="field-text">
+              <span class="field-text__name">Опишіть ваш запит</span>
+              <span class="field-text__input-wrap">
+                <textarea class="field-text__input" name="message" rows="4"></textarea>
+                <span class="field-text__help-text error" data-error="message"></span>
+              </span>
+            </label>
+
+            <div class="form__submit-wrapper  form__agreement">
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                  <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                </label>
+              </div>
+
+              <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <p>Або оберіть дзвінок чи зручний месенджер. Наш менеджер зателефонує Вам найближчим часом!</p>
+        <p>Дзвінок <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+
+        <div class="modal__messengers">
+          <span id="social-network-title" class="p">Месенджери</span>
+          <ul class="list-nostyled  social-network" aria-labelledby="#social-network-title">
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">WhatsApp</a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">Telegram</a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">Messenger</a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">Viber</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

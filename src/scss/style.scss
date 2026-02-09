@@ -9,6 +9,7 @@
 @import '../../node_modules/bootstrap/scss/_mixins';
 @import '../../node_modules/bootstrap/scss/_dropdown';
 @import '../../node_modules/bootstrap/scss/_modal';
+@import '../../node_modules/bootstrap/scss/_offcanvas';
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
 @import '../../node_modules/swiper/swiper-bundle.min.css';
@@ -76,4 +77,7 @@
 @import './src/blocks/fancy-card/fancy-card.scss';
 @import './src/blocks/press-card/press-card.scss';
 @import './src/blocks/masterpiece/masterpiece.scss';
+@import './src/blocks/search-bar/search-bar.scss';
+@import './src/blocks/offcanvas/offcanvas.scss';
+@import './src/blocks/filter/filter.scss';
 @import './src/scss/print.scss';

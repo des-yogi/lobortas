@@ -3,7 +3,7 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 
   &__name {
     @include field-name;
@@ -17,11 +17,11 @@
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    // height: 2.125em;
+    height: 44px;
     padding: $field-padding-vertical  $field-padding-horizontal;
     margin: 0;
     line-height: $line-height;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: inherit;
     background-color: #fff;
     border: 1px solid $border-color;
@@ -35,8 +35,12 @@
     &[disabled],
     &[readonly] {
       cursor: default;
-      background-color: $gray-lighter;
+      background-color: $block-bg;
     }
+
+    // &:invalid {
+    //   border-color: $color-danger;
+    // }
 
     &[type='search']::-webkit-search-cancel-button,
     &[type='search']::-webkit-search-decoration {
