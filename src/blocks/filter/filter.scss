@@ -1,0 +1,73 @@
+.filter {
+  $block-name:                &; // #{$block-name}__element
+
+  &__toggle {
+    padding: 0 56px;
+  }
+
+  &__list {
+    max-width: 480px;
+    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.1);
+
+    &.show {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px 64px;
+      padding: 12px 56px 32px;
+      //padding-right: 56px;
+      //padding-left: 56px;
+      border-top: 1px solid $secondary-color;
+
+      @media (min-width: $screen-xl) {
+        padding-bottom: 56px;
+      }
+    }
+  }
+
+  &__list-item {
+    flex: 1;
+    //flex-basis: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 120px;
+    width: clamp(100px, 45%, 180px);
+
+    &:last-child {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: initial;
+      flex-wrap: wrap;
+      justify-content: initial;
+      gap: 0 64px;
+      width: 100%;
+
+      & > * {
+        flex: 1;
+        flex-basis: calc(50% - 32px);
+        min-width: 120px;
+      }
+    }
+
+    .field-checkbox {
+      margin-bottom: 0;
+    }
+
+    .field-checkbox__input-wrap {
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .btn.btn__link {
+      justify-content: initial;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin: 0 0 16px !important;
+    white-space: nowrap;
+  }
+}

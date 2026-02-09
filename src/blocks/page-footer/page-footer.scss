@@ -120,15 +120,19 @@
     }
   }
 
-  &__list {
-
-  }
+  //&__list {
+  //}
 
   &__list-item {
 
     & > a {
       margin-right: 8px;
+      //color: inherit;
       //font-weight: 400;
+    }
+
+    .social-network__link {
+      //color: inherit;
     }
   }
 
@@ -140,6 +144,8 @@
     padding-top: 16px;
     padding-bottom: 16px;
     text-align: center;
+    color: $text-color;
+    background-color: $body-bg;
     //box-shadow: 0 0 6.6px 2px rgba(203, 203, 203, 0.25);
     border-top: 2px solid rgba(203, 203, 203, 0.25);
 
@@ -213,6 +219,7 @@
       background: none;
       cursor: pointer;
       user-select: none;
+      transition: color $transition-time ease;
     }
   }
 

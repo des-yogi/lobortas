@@ -7,6 +7,7 @@
   width: 33px;
   height: 44px;
   //white-space: nowrap;
+  user-select: none;
 
   @media (min-width: $screen-md) {
     width: 199px;
@@ -18,5 +19,6 @@
     display: inline-flex;
     //max-height: 100%;
     //width: auto;
+    user-select: inherit;
   }
 }

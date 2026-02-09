@@ -1,0 +1,5 @@
+.offcanvas {
+  $block-name:                &; // #{$block-name}__element
+
+  background: $body-bg;
+}

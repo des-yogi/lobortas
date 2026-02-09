@@ -32,7 +32,31 @@
 
   <div class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
+
+      <div class="offcanvas offcanvas-top  search-bar" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel" role="dialog">
+        <!-- <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> -->
+        <div class="container  offcanvas-body  search-bar__body">
+          <p class="offcanvas-title  visually-hidden" id="searchBarLabel">Панель пошуку</p>
+          <div class="row">
+            <div class="search-bar__col">
+              <form class="search-bar__form" action="#" method="get">
+                <label class="field-text  search-bar__input" style="margin:0;">
+                  <span class="field-text__name  visually-hidden">Поле пошуку</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="search" name="search" value="">
+                  </span>
+                </label>
+                <button class="btn  search-bar__submit" type="submit" name="search-btn">
+                  <span>Пошук</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <header class="container  page-header">
         <div class="page-header__inner">
@@ -70,10 +94,14 @@
                 <li><a class="dropdown-item" href="#">En</a></li>
               </ul>
             </div>
-            <button class="page-header__btn" type="button" aria-label="Search on site">
+            <button class="page-header__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchBar" aria-controls="searchBar" aria-label="Search on site">
               <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
             </button>
-            <button class="page-header__btn" type="button" aria-label="Like">
+            <button class="page-header__btn"
+                    type="button"
+                    aria-label="Like"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
               <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
             </button>
           </div>
@@ -82,7 +110,7 @@
       </header>
 
 
-      <main class="main">
+      <main class="main">
 
         <nav class="container  breadcrumbs" aria-label="Breadcrumb">
           <ol class="list-nostyled breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -884,6 +912,95 @@
     </div>
 
   </div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="h3  modal-title" id="exampleModalLabel">
+          Замовити послугу
+          <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+        </h4>
+        <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+      </div>
+      <div class="modal-body">
+        <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+
+        <div class="modal__form-wrapper">
+          <form class="form" action="#" method="post">
+            <label class="field-text">
+              <span class="field-text__name">Як до Вас звертатись?*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" name="name" value="" autocomplete="name">
+                <span class="field-text__help-text error" data-error="name"></span>
+              </span>
+            </label>
+
+            <div class="form__inputs-wrapper">
+              <label class="field-text">
+                <span class="field-text__name">Е-mail*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                  <span class="field-text__help-text error" data-error="mail"></span>
+                </span>
+              </label>
+
+              <label class="field-text">
+                <span class="field-text__name">Номер телефону</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                  <span class="field-text__help-text error" data-error="tel"></span>
+                </span>
+              </label>
+            </div>
+
+            <label class="field-text">
+              <span class="field-text__name">Опишіть ваш запит</span>
+              <span class="field-text__input-wrap">
+                <textarea class="field-text__input" name="message" rows="4"></textarea>
+                <span class="field-text__help-text error" data-error="message"></span>
+              </span>
+            </label>
+
+            <div class="form__submit-wrapper  form__agreement">
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                  <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                </label>
+              </div>
+
+              <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Або оберіть дзвінок чи зручний месенджер. Наш менеджер зателефонує Вам найближчим часом!</p>
+        <p>Дзвінок <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+
+        <div class="modal__messengers">
+          <span id="social-network-title" class="p">Месенджери</span>
+          <ul class="list-nostyled  social-network" aria-labelledby="#social-network-title">
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">WhatsApp</a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">Telegram</a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">Messenger</a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">Viber</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
   <script src="js/script.min.js"></script>

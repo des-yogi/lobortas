@@ -1,0 +1,27 @@
+<!--DEV
+@ @include('blocks/search-bar/search-bar.html')
+-->
+
+<div class="offcanvas offcanvas-top  search-bar" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel" role="dialog">
+  <!-- <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div> -->
+  <div class="container  offcanvas-body  search-bar__body">
+    <p class="offcanvas-title  visually-hidden" id="searchBarLabel">Панель пошуку</p>
+    <div class="row">
+      <div class="search-bar__col">
+        <form class="search-bar__form" action="#" method="get">
+          <label class="field-text  search-bar__input" style="margin:0;">
+            <span class="field-text__name  visually-hidden">Поле пошуку</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="search" name="search" value="">
+            </span>
+          </label>
+          <button class="btn  search-bar__submit" type="submit" name="search-btn">
+            <span>Пошук</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

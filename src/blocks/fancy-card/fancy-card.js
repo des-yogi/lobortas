@@ -1,4 +1,7 @@
 (function(){
+  if (typeof Fancybox === 'undefined') return;
+  if (!document.querySelector('[data-fancybox="gallery"]')) return;
+
   Fancybox.bind('[data-fancybox="gallery"]', {
   // Your custom options for a specific gallery
     theme: "light", // "dark" - default

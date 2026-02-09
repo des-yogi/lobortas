@@ -1,3 +1,11 @@
+:root {
+  --text-color: #000000;
+  --body-bg: #ffffff;
+}
+
+$modal-backdrop-bg:                 red;
+$modal-backdrop-opacity:            .5;
+
 // Базовые цвета https://colorscheme.ru/color-converter.html
 
 $black:                       hsl(0, 0%, 0%);
@@ -95,7 +103,7 @@ $field-padding-vertical:      8px;
 $field-padding-horizontal:    16px;
 
 $border-radius:               0;
-$opacity:                     0.7;
+$opacity:                     0.65;
 $shadow:                      0 6px 7px rgba(0, 0, 0, 0.1);
 $text-shadow:                 0 2px 5px rgba(0, 0, 0, 0.6);
 $transition-time:             0.3s;
@@ -109,7 +117,8 @@ $transition-fade:                             opacity .15s linear !default;
 $transition-collapse:                         height .2s ease !default;
 
 $menu-desktop-width:          $screen-xl;
-$toggler-part-height:         3px;
-$toggler-part-bg-color:       #000;
+$toggler-part-height:         1px;
+$toggler-part-bg-color:       #646464;
 
 //$z-index-modal:               100;
+$modal-opacity:                 0.90;

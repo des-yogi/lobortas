@@ -47,7 +47,8 @@
   padding-top: 0.4em;
   font-size: $font-size-sm;
   line-height: 1.2em;
-  color: $text-muted;
+  text-align: right;
+  color: $color-danger;
 
   &:empty { // stylelint-disable-line
     display: none;
@@ -57,13 +58,20 @@
 
 @mixin field-focus {
   outline: 0;
-  box-shadow: 0 0 0 2px rgba($color-main, $opacity);
+  border-color: $main-color;
+  box-shadow: 0 0 0 3px rgba($color-main, 0.4);
 }
 
 
 @mixin field-name {
   display: block;
-  margin-bottom: 0.4em;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: $font-family--headings;
+  font-weight: 500;
   line-height: $line-height;
-  font-weight: 700;
+
+  @media (min-width: $screen-xl) {
+    font-size: 18px;
+  }
 }

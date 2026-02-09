@@ -63,7 +63,10 @@
     "blog-card": [],
     "fancy-card": [],
     "press-card": [],
-    "masterpiece": []
+    "masterpiece": [],
+    "search-bar": [],
+    "offcanvas": [],
+    "filter": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -71,6 +74,7 @@
     "../../node_modules/bootstrap/scss/_mixins",
     "../../node_modules/bootstrap/scss/_dropdown",
     "../../node_modules/bootstrap/scss/_modal",
+    "../../node_modules/bootstrap/scss/_offcanvas",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "../../node_modules/swiper/swiper-bundle.min.css"
