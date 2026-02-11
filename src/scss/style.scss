@@ -12,6 +12,7 @@
 @import '../../node_modules/bootstrap/scss/_offcanvas';
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
+@import '../../node_modules/mmenu-js/dist/mmenu.css';
 @import '../../node_modules/swiper/swiper-bundle.min.css';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/btn/btn.scss';
@@ -80,4 +81,5 @@
 @import './src/blocks/search-bar/search-bar.scss';
 @import './src/blocks/offcanvas/offcanvas.scss';
 @import './src/blocks/filter/filter.scss';
+@import './src/blocks/mmenu/mmenu.scss';
 @import './src/scss/print.scss';

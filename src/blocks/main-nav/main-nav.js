@@ -1,75 +1,63 @@
-(function(){
+// (function() {
+//   const toggler = document.getElementById('menu-dt-toggler');
+//   const mainMenu = document.getElementById('main-nav');
+//   const menuWrapper = document.querySelector('.dropdown.page-header__menu-desktop');
 
-  // Добавление/удаление модификаторов при клике на переключение видимости
-  var toggler = document.getElementById('main-nav-toggler');
-  if(toggler){
-    toggler.addEventListener('click', mainNavVisibleToggle);
+//   menuWrapper.addEventListener('show.bs.dropdown', event => {
+//     mainMenu.setAttribute('aria-hidden', false);
+//   });
 
-    function mainNavVisibleToggle(e) {
-      e.preventDefault();
-      toggler.classList.toggle('burger--close'); // модификатор иконки (должен быть .burger)
-      document.getElementById('main-nav').classList.toggle('main-nav--open');
+//   menuWrapper.addEventListener('hide.bs.dropdown', event => {
+//     mainMenu.setAttribute('aria-hidden', true);
+//   });
+// })();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainMenu = document.getElementById('main-nav');
+  const wrapper = document.querySelector('.dropdown.page-header__menu-desktop');
+  if (!mainMenu || !wrapper) return;
+
+  wrapper.addEventListener('show.bs.dropdown', () => {
+    mainMenu.setAttribute('aria-hidden','false');
+  });
+  wrapper.addEventListener('hide.bs.dropdown',  () => {
+    mainMenu.setAttribute('aria-hidden','true');
+  });
+});
+
+// Показ дивайдера
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('nav.main-nav');
+  if (!nav) return;
+
+  const parentItemSelector = '.main-nav__item';
+  const submenuSelector = '.main-nav__list-lev2';
+
+  // hover: при наведении на li, у которого есть подменю, показываем делитель
+  nav.addEventListener('mouseover', (e) => {
+    const li = e.target.closest(parentItemSelector);
+    if (li && li.querySelector(submenuSelector)) {
+      nav.classList.add('show-submenu');
     }
-  }
+  });
 
-  // Добавление/удаление модификаторов при фокусировке на ссылочном элементе
-  var linkClassName = 'main-nav__link';
-  var linkClassNameShowChild = 'main-nav__item--show-child';
-  var findLinkClassName = new RegExp(linkClassName);
-  // Слежение за всплывшим событием focus (нужно добавить класс, показывающий потомков)
-  document.addEventListener('focus', function(event) {
-    // Если событие всплыло от одной из ссылок гл. меню
-    if (findLinkClassName.test(event.target.className)) {
-      // Добавим классы, показывающие списки вложенных уровней, на всех родителей
-      event.target.parents('.main-nav__item').forEach(function(item){
-        item.classList.add(linkClassNameShowChild);
-      });
+  // при уходе курсора из nav — прячем делитель
+  nav.addEventListener('mouseleave', () => {
+    nav.classList.remove('show-submenu');
+  });
+
+  // для клавиатуры: focusin/focusout
+  nav.addEventListener('focusin', (e) => {
+    const li = e.target.closest(parentItemSelector);
+    if (li && li.querySelector(submenuSelector)) {
+      nav.classList.add('show-submenu');
     }
-  }, true);
-  // Слежение за всплывшим событием blur (нужно убрать класс, показывающий потомков)
-  document.addEventListener('blur', function(event) {
-    // Если событие всплыло от одной из ссылок гл. меню
-    if (findLinkClassName.test(event.target.className)) {
-      // Уберем все классы, показывающие списки 2+ уровней
-      // event.target.closest('.main-nav').querySelectorAll('.'+linkClassNameShowChild).forEach(function(item){
-      document.querySelectorAll('.'+linkClassNameShowChild).forEach(function(item){
-        item.classList.remove(linkClassNameShowChild);
-      });
-    }
-  }, true);
+  });
 
-
-
-  // Добавление метода .parents()
-  Element.prototype.parents = function(selector) {
-    var elements = [];
-    var elem = this;
-    var ishaveselector = selector !== undefined;
-
-    while ((elem = elem.parentElement) !== null) {
-      if (elem.nodeType !== Node.ELEMENT_NODE) {
-        continue;
-      }
-
-      if (!ishaveselector || elem.matches(selector)) {
-        elements.push(elem);
-      }
-    }
-
-    return elements;
-  };
-
-  // Добавление метода .closest() (полифил, собственно)
-  // (function(e){
-  //  e.closest = e.closest || function(css){
-  //    var node = this;
-
-  //    while (node) {
-  //       if (node.matches(css)) return node;
-  //       else node = node.parentElement;
-  //    }
-  //    return null;
-  //  }
-  // })(Element.prototype);
-
-}());
+  nav.addEventListener('focusout', () => {
+    // через таймаут проверяем, остался ли фокус в nav
+    setTimeout(() => {
+      if (!nav.contains(document.activeElement)) nav.classList.remove('show-submenu');
+    }, 0);
+  });
+});

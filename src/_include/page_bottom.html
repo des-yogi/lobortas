@@ -1,4 +1,67 @@
 @@include('../blocks/modal/modal.html')
 
+@@include('../blocks/mmenu/mmenu.html')
+
 <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
 <script src="js/script.min.js"></script>
+
+<script>
+  document.addEventListener(
+    "DOMContentLoaded", () => {
+
+      const mmenu = new Mmenu( "#mmenu", {
+        // options
+        "offCanvas": {
+          "position": "left-front"
+        },
+        "theme": "white",
+        "navbars": [
+          {
+            "position": "top",
+            "content": [
+              "prev",
+              "title"
+            ]
+          }
+        ]
+      }, {
+        // configuration
+        language: "uk", // avalaible: en, de, nl…
+        offCanvas: {
+          page: {
+            selector: "#page"
+          }
+        },
+        classNames: {
+          selected: "active"
+        }
+      });
+
+      const api = mmenu.API;
+      const toggler = document.getElementById('menu-toggler');
+      toggler.addEventListener(
+        "click", () => {
+          api.open();
+          setTogglerClose();
+        }
+      );
+
+      // Подписываемся на событие закрытия меню
+      // 100% сущестыующие события для 9.3: "open:after" и "close:after"
+      // https://mmenujs.com/docs/core/off-canvas.html - самый низ
+      api.bind("close:after", () => {
+        setTogglerBurger();
+      });
+
+      function setTogglerClose() {
+        toggler.classList.add('page-header__menu--close');
+        toggler.setAttribute('aria-expanded', true); //aria-expanded
+      }
+
+      function setTogglerBurger() {
+        toggler.classList.remove('page-header__menu--close');
+        toggler.setAttribute('aria-expanded', false);
+      }
+    }
+  );
+</script>

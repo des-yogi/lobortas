@@ -30,7 +30,7 @@
 <body>
 <noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
 
-  <div class="page__inner">
+  <div id="page" class="page__inner">
 
     <div class="page__content">
 
@@ -62,7 +62,337 @@
         <div class="page-header__inner">
 
           <div class="page-header__menu-wrapper">
-            <button class="page-header__menu" type="button"><span>Меню</span></button>
+            <div class="page-header__menu-container">
+              <button id="menu-toggler" class="page-header__menu  page-header__menu--mobile" type="button" aria-expanded="false">
+                <span>Меню</span>
+              </button>
+              <div class="dropdown  page-header__menu-desktop">
+                <button id="menu-dt-toggler"
+                        class="page-header__menu"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        aria-controls="main-nav"
+                        data-bs-auto-close="outside"
+                        data-bs-offset="-40,25">
+                  <span>Меню</span>
+                </button>
+
+                <nav id="main-nav" class="dropdown-menu  main-nav"
+                     aria-label="Головне меню сайту"
+                     aria-hidden="true">
+
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">High jewellery</a>
+                      <ul class="main-nav__list-lev2">
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Релігія</a>
+                        </li>
+                        <li class="main-nav__item-lev2  active">
+                          <a href="#" class="main-nav__link-lev2">Печаті</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">Ювелірні Прикраси</a>
+                      <ul class="main-nav__list-lev2">
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Релігія</a>
+                        </li>
+                        <li class="main-nav__item-lev2  active">
+                          <a href="#" class="main-nav__link-lev2">Печаті</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">шедеври</a>
+                      <ul class="main-nav__list-lev2">
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <source srcset="img/menu-img.webp" media="(min-width: 1440px)" type="image/webp">
+                              <source srcset="img/menu-img.jpg" media="(min-width: 1440px)">
+                              <!-- 456x197, 684x296 2x -->
+                              <source srcset="img/menu-img.webp" media="(min-width: 768px)" type="image/webp">
+                              <source srcset="img/menu-img.jpg" media="(min-width: 768px)">
+                              <!-- 310x134, 465x201 2x -->
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img  active">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">Дорогоцінні витвори</a>
+                      <ul class="main-nav__list-lev2">
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <source srcset="img/menu-img.webp" media="(min-width: 1440px)" type="image/webp">
+                              <source srcset="img/menu-img.jpg" media="(min-width: 1440px)">
+                              <!-- 456x197, 684x296 2x -->
+                              <source srcset="img/menu-img.webp" media="(min-width: 768px)" type="image/webp">
+                              <source srcset="img/menu-img.jpg" media="(min-width: 768px)">
+                              <!-- 310x134, 465x201 2x -->
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img  active">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                        <li class="main-nav__item-lev2  has-img">
+                          <a href="#" class="main-nav__link-lev2">
+                            <picture>
+                              <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                            </picture>
+                            <span class="display-4">Стрімке полювання</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item  active">
+                      <a href="#" class="main-nav__link">Micькі та меморіальні проєкти</a>
+                      <ul class="main-nav__list-lev2">
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Релігія</a>
+                        </li>
+                        <li class="main-nav__item-lev2  active">
+                          <a href="#" class="main-nav__link-lev2">Печаті</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--indent">
+                      <a href="#" class="main-nav__link">Тематичні добірки</a>
+                      <ul class="main-nav__list-lev2">
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Релігія</a>
+                        </li>
+                        <li class="main-nav__item-lev2  active">
+                          <a href="#" class="main-nav__link-lev2">Печаті</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                        </li>
+
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Релігія</a>
+                        </li>
+                        <li class="main-nav__item-lev2  active">
+                          <a href="#" class="main-nav__link-lev2">Печаті</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                        </li>
+
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Релігія</a>
+                        </li>
+                        <li class="main-nav__item-lev2  active">
+                          <a href="#" class="main-nav__link-lev2">Печаті</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                        </li>
+                        <li class="main-nav__item-lev2">
+                          <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">ПРО ДІМ</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">ЛОБОРТАС У СВІТІ</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">ПОСЛУГИ</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">КОНТАКТИ</a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#" class="main-nav__link">БЛОГ</a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--indi">
+                      <a href="#" class="main-nav__link">
+                        <span>індивідуальне замовлення</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="main-nav__divider" aria-hidden="true"></div>
+                </nav>
+
+              </div>
+            </div>
+
             <div class="dropdown">
               <button class="page-header__lang-switcher  page-header__lang-switcher--mob  dropdown-toggle" type="button" aria-label="Language selection" data-bs-toggle="dropdown" aria-expanded="false">
                 <span>Ua</span>
@@ -472,9 +802,294 @@
   </div>
 </div>
 
+  <nav id="mmenu" class="mmenu  mob-menu">
+    <ul class="mob-menu__list">
+      <li class="mob-menu__item">
+        <span class="mob-menu__link">High jewellery</span>
+        <ul class="mob-menu__list-lev2">
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">jewellery 1</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mob-menu__item">
+        <span class="mob-menu__link">Ювелірні Прикраси</span>
+      </li>
+      <li class="mob-menu__item  active">
+        <span class="mob-menu__link">шедеври</span>
+        <ul class="mob-menu__list-lev2">
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Всі шедеври</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mob-menu__item">
+        <span class="mob-menu__link">Дорогоцінні витвори</span>
+        <ul class="mob-menu__list-lev2">
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2  has-img">
+            <a href="#" class="mob-menu__link-lev2">
+              <picture>
+                <source srcset="img/menu-img.webp" type="image/webp">
+                <!-- 570x246-->
+                <img src="img/menu-img.jpg" alt="Alt" width="570" height="246" loading="lazy">
+              </picture>
+              <span class="display-4">Стрімке полювання</span>
+            </a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Всі дорогоцінні витвори</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mob-menu__item">
+        <span class="mob-menu__link">Micькі та меморіальні проєкти</span>
+      </li>
+      <li class="mob-menu__item  mob-menu__item--indent">
+        <span class="mob-menu__link">Тематичні добірки</span>
+        <ul class="mob-menu__list-lev2">
+          <li class="mob-menu__item-lev2  active">
+            <a href="#" class="mob-menu__link-lev2">Релігія</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Печаті</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Аксесуари</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Стрілкова мініатюра</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Відзнаки та нагороди</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Столове срібло</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Створення на замовлення</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Всі тематичні добірки</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link">ПРО ДІМ</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link">ЛОБОРТАС У СВІТІ</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link">ПОСЛУГИ</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link">КОНТАКТИ</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#" class="mob-menu__link">БЛОГ</a>
+      </li>
+      <li class="mob-menu__item  mob-menu__item--indi">
+        <a href="#" class="mob-menu__link">
+          <span>індивідуальне замовлення</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
   <script src="js/script.min.js"></script>
+
+  <script>
+    document.addEventListener(
+      "DOMContentLoaded", () => {
+
+        const mmenu = new Mmenu( "#mmenu", {
+          // options
+          "offCanvas": {
+            "position": "left-front"
+          },
+          "theme": "white",
+          "navbars": [
+            {
+              "position": "top",
+              "content": [
+                "prev",
+                "title"
+              ]
+            }
+          ]
+        }, {
+          // configuration
+          language: "uk", // avalaible: en, de, nl…
+          offCanvas: {
+            page: {
+              selector: "#page"
+            }
+          },
+          classNames: {
+            selected: "active"
+          }
+        });
+
+        const api = mmenu.API;
+        const toggler = document.getElementById('menu-toggler');
+        toggler.addEventListener(
+          "click", () => {
+            api.open();
+            setTogglerClose();
+          }
+        );
+
+        // Подписываемся на событие закрытия меню
+        // 100% сущестыующие события для 9.3: "open:after" и "close:after"
+        // https://mmenujs.com/docs/core/off-canvas.html - самый низ
+        api.bind("close:after", () => {
+          setTogglerBurger();
+        });
+
+        function setTogglerClose() {
+          toggler.classList.add('page-header__menu--close');
+          toggler.setAttribute('aria-expanded', true); //aria-expanded
+        }
+
+        function setTogglerBurger() {
+          toggler.classList.remove('page-header__menu--close');
+          toggler.setAttribute('aria-expanded', false);
+        }
+      }
+    );
+  </script>
 
 
 </body>
