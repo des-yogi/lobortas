@@ -63,9 +63,21 @@
     }
   }
 
-  // &__menu {
+  &__menu {
 
-  // }
+    &--mobile {
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+
+  &__menu-desktop {
+
+    @media (max-width: $screen-md - 1) {
+      display: none;
+    }
+  }
 
   &__lang-switcher {
 
