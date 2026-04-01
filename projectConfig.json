@@ -67,7 +67,8 @@
     "search-bar": [],
     "offcanvas": [],
     "filter": [],
-    "mmenu": []
+    "mmenu": [],
+    "history-slider": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
