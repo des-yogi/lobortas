@@ -81,14 +81,14 @@
   &__prev {
 
     .swiper-navigation-icon {
-      transform: rotate(180deg) scale(0.4) !important;
+      transform: rotate(180deg) scale(0.65) !important;
     }
   }
 
   &__next {
 
     .swiper-navigation-icon {
-      transform: scale(0.4) !important;
+      transform: scale(0.65) !important;
     }
   }
 }
