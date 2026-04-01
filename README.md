@@ -11,5 +11,7 @@
 * https://des-yogi.github.io/lobortas/article
 * https://des-yogi.github.io/lobortas/historic
 * https://des-yogi.github.io/lobortas/press
+* https://des-yogi.github.io/lobortas/search-result
+* https://des-yogi.github.io/lobortas/favorites
 * https://des-yogi.github.io/lobortas/contacts
 * https://des-yogi.github.io/lobortas/page-404
