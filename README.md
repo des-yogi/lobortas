@@ -7,6 +7,7 @@
 * https://des-yogi.github.io/lobortas/masterpieces
 * https://des-yogi.github.io/lobortas/goods
 * https://des-yogi.github.io/lobortas/blog
+* https://des-yogi.github.io/lobortas/history
 * https://des-yogi.github.io/lobortas/article
 * https://des-yogi.github.io/lobortas/historic
 * https://des-yogi.github.io/lobortas/press
