@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Результати пошуку</title>
+  @@include('_include/page_head.html')
+
+  <link href="css/fancybox.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/search-bar/search-bar.html')
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container  main-header">
+          <div class="row">
+            <div class="main-header__col">
+              <h1 class="main-header__title">Результати пошуку</h1>
+              <!-- <div class="main-header__intro"></div> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="block-vm">
+          <div class="search-card__wrapper">
+            @@include('blocks/search-card/search-card.html')
+            @@include('blocks/search-card/search-card.html')
+            @@include('blocks/search-card/search-card.html')
+            @@include('blocks/search-card/search-card.html')
+            @@include('blocks/search-card/search-card.html')
+            @@include('blocks/search-card/search-card.html')
+          </div>
+
+          @@include('blocks/pagination/pagination.html')
+        </div>
+
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <script src="js/fancybox.umd.js"></script>
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
