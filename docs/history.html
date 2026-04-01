@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Колекції</title>
+  <title>Наша історія</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 
@@ -25,6 +25,8 @@
 
   <link href="css/style.min.css" rel="stylesheet" media="screen">
 
+
+  <link href="css/fancybox.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
@@ -32,7 +34,7 @@
 
   <div id="page" class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
 
       <div class="offcanvas offcanvas-top  search-bar" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel" role="dialog">
         <!-- <div class="offcanvas-header">
@@ -440,7 +442,7 @@
       </header>
 
 
-      <main class="main">
+      <main class="main">
 
         <nav class="container  breadcrumbs" aria-label="Breadcrumb">
           <ol class="list-nostyled breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -470,111 +472,526 @@
             </li>
 
           </ol>
-        </nav>
+        </nav>
+
 
         <div class="container  main-header">
           <div class="row">
             <div class="main-header__col">
-              <h1 class="main-header__title">Колекції</h1>
-              <div class="main-header__intro"></div>
+              <h1 class="main-header__title">Наша історія</h1>
+              <!-- <div class="main-header__intro"></div> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="block-vm  history-slider">
+          <div class="swiper  history-slider__container">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide  history-slider__slide">
+                <!-- убрать для первого слайда loading="lazy" и добавить loading="eager"  414x736 -->
+                <picture>
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1440px)">
+                  <!-- 1920x1080, 2880x1620 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1366px)">
+                  <!-- 1440x600, 2160x1215 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 1280x533, 1920x1080 2x -->
+                  <source srcset="img/history.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 1024px)">
+                  <!-- 1536x864 -->
+                  <source srcset="img/history.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 768px)">
+                  <!-- 1160x653 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 480px)">
+                  <!-- 740x1316 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 300px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 300px)">
+                  <!-- 620x1102 -->
+                  <img src="img/history.jpg" alt="Alt text" width="1024" height="427" loading="lazy">
+                </picture>
+              </div>
+
+              <div class="swiper-slide  history-slider__slide">
+                <!-- убрать для первого слайда loading="lazy" и добавить loading="eager"  414x736 -->
+                <picture>
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1440px)">
+                  <!-- 1920x1080, 2880x1620 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1366px)">
+                  <!-- 1440x600, 2160x1215 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 1280x533, 1920x1080 2x -->
+                  <source srcset="img/history.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 1024px)">
+                  <!-- 1536x864 -->
+                  <source srcset="img/history.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 768px)">
+                  <!-- 1160x653 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 480px)">
+                  <!-- 740x1316 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 300px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 300px)">
+                  <!-- 620x1102 -->
+                  <img src="img/history.jpg" alt="Alt text" width="1024" height="427" loading="lazy">
+                </picture>
+              </div>
+
+              <div class="swiper-slide  history-slider__slide">
+                <!-- убрать для первого слайда loading="lazy" и добавить loading="eager"  414x736 -->
+                <picture>
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1440px)">
+                  <!-- 1920x1080, 2880x1620 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1366px)">
+                  <!-- 1440x600, 2160x1215 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 1280x533, 1920x1080 2x -->
+                  <source srcset="img/history.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 1024px)">
+                  <!-- 1536x864 -->
+                  <source srcset="img/history.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 768px)">
+                  <!-- 1160x653 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 480px)">
+                  <!-- 740x1316 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 300px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 300px)">
+                  <!-- 620x1102 -->
+                  <img src="img/history.jpg" alt="Alt text" width="1024" height="427" loading="lazy">
+                </picture>
+              </div>
+
+              <div class="swiper-slide  history-slider__slide">
+                <!-- убрать для первого слайда loading="lazy" и добавить loading="eager"  414x736 -->
+                <picture>
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1440px)">
+                  <!-- 1920x1080, 2880x1620 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1366px)">
+                  <!-- 1440x600, 2160x1215 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 1280x533, 1920x1080 2x -->
+                  <source srcset="img/history.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 1024px)">
+                  <!-- 1536x864 -->
+                  <source srcset="img/history.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 768px)">
+                  <!-- 1160x653 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 480px)">
+                  <!-- 740x1316 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 300px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 300px)">
+                  <!-- 620x1102 -->
+                  <img src="img/history.jpg" alt="Alt text" width="1024" height="427" loading="lazy">
+                </picture>
+              </div>
+
+              <div class="swiper-slide  history-slider__slide">
+                <!-- убрать для первого слайда loading="lazy" и добавить loading="eager"  414x736 -->
+                <picture>
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1440px)">
+                  <!-- 1920x1080, 2880x1620 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1366px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1366px)">
+                  <!-- 1440x600, 2160x1215 2x -->
+                  <source srcset="img/history.webp,
+                                  img/history.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="img/history.jpg,
+                                  img/history.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 1280x533, 1920x1080 2x -->
+                  <source srcset="img/history.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 1024px)">
+                  <!-- 1536x864 -->
+                  <source srcset="img/history.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/history.jpg" media="(min-width: 768px)">
+                  <!-- 1160x653 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 480px)">
+                  <!-- 740x1316 -->
+                  <source srcset="img/history-mob.webp" media="(min-width: 300px)" type="image/webp">
+                  <source srcset="img/history-mob.jpg" media="(min-width: 300px)">
+                  <!-- 620x1102 -->
+                  <img src="img/history.jpg" alt="Alt text" width="1024" height="427" loading="lazy">
+                </picture>
+              </div>
+
+            </div>
+
+            <div class="history-slider__controls">
+              <div class="swiper-button-prev  history-slider__prev"></div>
+              <div class="swiper-pagination  history-slider__pagination"></div>
+              <div class="swiper-button-next  history-slider__next"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container  block-vm  text-block">
+          <div class="row">
+            <div class="text-block__col">
+              <p>Від початку часів вода - символ життя, оновлення та сили. Стародавні мудреці вбачали в дзвінких потоках джерело фізичної сили та шлях до очищення душі. Використовуючи мову золота, емалі та сапфірів, ювеліри Дома «Лобортас» втілили ідею водної сили в чудовій прикрасі, яка має назву «Джерело», передавши незмінну міць, яка струменить вічним потоком крізь століття.</p><p>Золото, символізуючи твердість та незмінність, вибудовує плавні лінії, що нагадують береги стародавніх струмків, які стрімко течуть по землі. Тонкими візерунками розливається серед золотих берегів ювелірна емаль, пульсуючи життям вічних річок та озер. Разом золото й емаль утворюють стародавні візерунки, запрошуючи зануритися споглядаючого в роздуми про невидимі глибини душі та світу.</p>
             </div>
           </div>
         </div>
 
 
-        <div class="block-vm  media-block__wrapper">
+        <section class="container  block-vm  gallery-carousel  promo-slider">
 
-          <section class="container  media-block">
-            <!-- доступно media-block--mirrored -->
-            <!-- loading="lazy" убрать для первого блока -->
-            <div class="row  media-block__row">
-
-              <div class="media-block__img-col">
-                <div class="embed-responsive embed-responsive--1-1  media-block__img">
-                  <picture>
-                    <img src="img/media-block-img-1.png" alt="Alt text" width="596" height="596" loading="lazy">
-                  </picture>
-                </div>
-              </div>
-
-              <div class="media-block__text-col">
-                <div class="media-block__text">
-                  <h2 class="h3  media-block__title">Відтінки емалі</h2>
-                  <p>Lobortas   Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery.</p>
-
-                  <a href="#" class="btn btn__link"><span>Перейти</span></a>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-          <section class="container  media-block">
-            <!-- доступно media-block--mirrored -->
-            <!-- loading="lazy" убрать для первого блока -->
-            <div class="row  media-block__row">
-
-              <div class="media-block__img-col">
-                <div class="embed-responsive embed-responsive--1-1  media-block__img">
-                  <picture>
-                    <img src="img/media-block-img-2.png" alt="Alt text" width="596" height="596" loading="lazy">
-                  </picture>
-                </div>
-              </div>
-
-              <div class="media-block__text-col">
-                <div class="media-block__text">
-                  <h2 class="h3  media-block__title">Діамантовий дотик</h2>
-                  <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!.</p>
-
-                  <a href="#" class="btn btn__link"><span>Перейти</span></a>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-          <section class="container  media-block">
-            <!-- доступно media-block--mirrored -->
-            <!-- loading="lazy" убрать для первого блока -->
-            <div class="row  media-block__row">
-
-              <div class="media-block__img-col">
-                <div class="embed-responsive embed-responsive--1-1  media-block__img">
-                  <picture>
-                    <img src="img/media-block-img-3.png" alt="Alt text" width="596" height="596" loading="lazy">
-                  </picture>
-                </div>
-              </div>
-
-              <div class="media-block__text-col">
-                <div class="media-block__text">
-                  <h2 class="h3  media-block__title">Відтінки емалі</h2>
-                  <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
-
-                  <a href="#" class="btn btn__link"><span>Перейти</span></a>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-        </div>
-
-        <article class="block-vm  about-house  @@addClass">
-          <div class="container  about-house__inner">
-            <div class="row  about-house__row">
-              <div class="about-house__col">
-                <div class="about-house__text">
-                  <h2>Комплекти</h2>
-                  <p>Від заснування до міжнародного визнання — шлях, що сформував філософію Lobortas. Перші ідеї, ключові проєкти, становлення авторського почерку та пошук балансу між традицією і новаторством.</p>
-                  <a href="#" class="btn  btn__link"><span>Перейти</span></a>
-                </div>
-              </div>
-            </div>
+          <div class="gallery-carousel__header">
+            <h2 class="gallery-carousel__title">Галерея</h2>
+            <div class="gallery-carousel__intro"></div>
           </div>
-        </article>
 
+          <div class="gallery-carousel__inner">
+            <div class="carousel-controls">
+              <div class="swiper-button-prev  gallery-carousel__prev"></div>
+              <div class="swiper-button-next  gallery-carousel__next"></div>
+            </div>
+
+            <div class="row">
+
+              <div class="gallery-carousel__inner-col">
+                <div class="swiper  gallery-carousel__container">
+
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="variable-card  ">
+                        <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
+                        <a href="#" class="variable-card__img" title="" tabindex="-1">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 496x661, 744x992 2x -->
+                            <!-- 1004x1449, 1500x2000 2x large -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 392x523, 588x784 2x -->
+                            <!-- 796x1140, 1194x1592 2x large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 550x733 -->
+                            <!-- 1120x1493 large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 768px)">
+                            <!-- 330x440 -->
+                            <!-- 682x909 large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 480px)">
+                            <!-- 360x480 -->
+                            <!-- 735x980 large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 285x380 -->
+                            <!-- 585x780 large -->
+                            <!-- размеры для 3 кол. версии -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
+                          </picture>
+                        </a>
+
+                        <figcaption class="variable-card__caption">
+                          <span class="p  variable-card__collection-name"></span>
+                          <a href="#" class="display-4  variable-card__set-name"></a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="variable-card  ">
+                        <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
+                        <a href="#" class="variable-card__img" title="" tabindex="-1">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 496x661, 744x992 2x -->
+                            <!-- 1004x1449, 1500x2000 2x large -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 392x523, 588x784 2x -->
+                            <!-- 796x1140, 1194x1592 2x large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 550x733 -->
+                            <!-- 1120x1493 large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 768px)">
+                            <!-- 330x440 -->
+                            <!-- 682x909 large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 480px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 480px)">
+                            <!-- 360x480 -->
+                            <!-- 735x980 large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 285x380 -->
+                            <!-- 585x780 large -->
+                            <!-- размеры для 3 кол. версии -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
+                          </picture>
+                        </a>
+
+                        <figcaption class="variable-card__caption">
+                          <span class="p  variable-card__collection-name"></span>
+                          <a href="#" class="display-4  variable-card__set-name"></a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="variable-card  ">
+                        <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
+                        <a href="#" class="variable-card__img" title="" tabindex="-1">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 496x661, 744x992 2x -->
+                            <!-- 1004x1449, 1500x2000 2x large -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 392x523, 588x784 2x -->
+                            <!-- 796x1140, 1194x1592 2x large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 550x733 -->
+                            <!-- 1120x1493 large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 768px)">
+                            <!-- 330x440 -->
+                            <!-- 682x909 large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 480px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 480px)">
+                            <!-- 360x480 -->
+                            <!-- 735x980 large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 285x380 -->
+                            <!-- 585x780 large -->
+                            <!-- размеры для 3 кол. версии -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
+                          </picture>
+                        </a>
+
+                        <figcaption class="variable-card__caption">
+                          <span class="p  variable-card__collection-name"></span>
+                          <a href="#" class="display-4  variable-card__set-name"></a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="variable-card  ">
+                        <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
+                        <a href="#" class="variable-card__img" title="" tabindex="-1">
+                          <picture>
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 496x661, 744x992 2x -->
+                            <!-- 1004x1449, 1500x2000 2x large -->
+                            <source srcset="img/v-card-1.webp,
+                                            img/v-card-1.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg,
+                                            img/v-card-1.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 392x523, 588x784 2x -->
+                            <!-- 796x1140, 1194x1592 2x large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 1024px)">
+                            <!-- 550x733 -->
+                            <!-- 1120x1493 large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 768px)">
+                            <!-- 330x440 -->
+                            <!-- 682x909 large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 480px)">
+                            <!-- 360x480 -->
+                            <!-- 735x980 large -->
+                            <source srcset="img/v-card-1.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-1.jpg" media="(min-width: 300px)">
+                            <!-- 285x380 -->
+                            <!-- 585x780 large -->
+                            <!-- размеры для 3 кол. версии -->
+                            <img src="img/v-card-1.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
+                          </picture>
+                        </a>
+
+                        <figcaption class="variable-card__caption">
+                          <span class="p  variable-card__collection-name"></span>
+                          <a href="#" class="display-4  variable-card__set-name"></a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="variable-card  ">
+                        <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
+                        <a href="#" class="variable-card__img" title="" tabindex="-1">
+                          <picture>
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 496x661, 744x992 2x -->
+                            <!-- 1004x1449, 1500x2000 2x large -->
+                            <source srcset="img/v-card-2.webp,
+                                            img/v-card-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg,
+                                            img/v-card-2.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 392x523, 588x784 2x -->
+                            <!-- 796x1140, 1194x1592 2x large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 1024px)">
+                            <!-- 550x733 -->
+                            <!-- 1120x1493 large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 768px)">
+                            <!-- 330x440 -->
+                            <!-- 682x909 large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 480px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 480px)">
+                            <!-- 360x480 -->
+                            <!-- 735x980 large -->
+                            <source srcset="img/v-card-2.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-2.jpg" media="(min-width: 300px)">
+                            <!-- 285x380 -->
+                            <!-- 585x780 large -->
+                            <!-- размеры для 3 кол. версии -->
+                            <img src="img/v-card-2.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
+                          </picture>
+                        </a>
+
+                        <figcaption class="variable-card__caption">
+                          <span class="p  variable-card__collection-name"></span>
+                          <a href="#" class="display-4  variable-card__set-name"></a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                    <div class="swiper-slide  gallery-carousel__slide">
+
+                      <figure class="variable-card  ">
+                        <!-- class="variable-card  variable-card--large" embed-responsive  embed-responsive--3-4   -->
+                        <a href="#" class="variable-card__img" title="" tabindex="-1">
+                          <picture>
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1440px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1440px)">
+                            <!-- 496x661, 744x992 2x -->
+                            <!-- 1004x1449, 1500x2000 2x large -->
+                            <source srcset="img/v-card-3.webp,
+                                            img/v-card-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg,
+                                            img/v-card-3.jpg 2x" media="(min-width: 1280px)">
+                            <!-- 392x523, 588x784 2x -->
+                            <!-- 796x1140, 1194x1592 2x large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 1024px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 1024px)">
+                            <!-- 550x733 -->
+                            <!-- 1120x1493 large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 768px)">
+                            <!-- 330x440 -->
+                            <!-- 682x909 large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 480px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 480px)">
+                            <!-- 360x480 -->
+                            <!-- 735x980 large -->
+                            <source srcset="img/v-card-3.webp" media="(min-width: 300px)" type="image/webp">
+                            <source srcset="img/v-card-3.jpg" media="(min-width: 300px)">
+                            <!-- 285x380 -->
+                            <!-- 585x780 large -->
+                            <!-- размеры для 3 кол. версии -->
+                            <img src="img/v-card-3.jpg" alt="Alt text" width="1194" height="1592" loading="lazy">
+                          </picture>
+                        </a>
+
+                        <figcaption class="variable-card__caption">
+                          <span class="p  variable-card__collection-name"></span>
+                          <a href="#" class="display-4  variable-card__set-name"></a>
+                        </figcaption>
+                      </figure>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
 
       </main>
 
@@ -706,6 +1123,8 @@
     </div>
 
   </div>
+
+  <script src="js/fancybox.umd.js"></script>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">

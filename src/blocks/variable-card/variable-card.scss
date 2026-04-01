@@ -60,6 +60,11 @@
     gap: 6px 0; // было 8
     padding: 10px 0 0;
     text-align: center;
+
+    &:empty,
+    &:has(#{$block-name}__set-name:empty) {
+      display: none;
+    }
   }
 
   &__collection-name {
@@ -67,6 +72,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    &:empty {
+      display: none;
+    }
   }
 
   &__set-name {
@@ -86,6 +95,10 @@
 
     @media (min-width: $screen-xl) {
       height: 56px;
+    }
+
+    &:empty {
+      display: none;
     }
   }
 
