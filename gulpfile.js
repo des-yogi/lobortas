@@ -188,6 +188,19 @@ gulp.task('copy:img', function () {
     .pipe(gulp.dest(dirs.buildPath + '/img'));
 });
 
+// Копирование видеофайлов
+gulp.task('copy:video', function () {
+  console.log('---------- Копирование видеофайлов');
+  return gulp.src(lists.video)
+    .pipe(newer(dirs.buildPath + '/video'))  // оставить в потоке только изменившиеся файлы
+    .pipe(size({
+      title: 'Размер',
+      showFiles: true,
+      showTotal: false,
+    }))
+    .pipe(gulp.dest(dirs.buildPath + '/video'));
+});
+
 // Копирование JS
 gulp.task('copy:js', function (callback) {
   if(projectConfig.copiedJs.length) {
@@ -461,7 +474,7 @@ gulp.task('img:opt', function (callback) {
 gulp.task('build', gulp.series(
   'clean',
   gulp.parallel('sprite:svg', 'sprite:png'),
-  gulp.parallel('style', 'style:single', 'js', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts'),
+  gulp.parallel('style', 'style:single', 'js', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts', 'copy:video'),
   'html'
 ));
 
@@ -521,6 +534,11 @@ gulp.task('serve', gulp.series('build', function() {
     gulp.watch(lists.img, gulp.series('copy:img', reload));
   }
 
+  // Видео
+  if(lists.video.length) {
+    gulp.watch(lists.video, gulp.series('copy:video', reload));
+  }
+
   // JS-файлы, которые нужно просто копировать
   if(projectConfig.copiedJs.length) {
     gulp.watch(projectConfig.copiedJs, gulp.series('copy:js', reload));
@@ -569,6 +587,7 @@ function getFilesList(config){
     'css': [],
     'js': [],
     'img': [],
+    'video': [],
     'blocksDirs': [],
   };
 
@@ -611,6 +630,8 @@ function getFilesList(config){
       // Картинки (тупо от всех блоков, без проверки)
       res.img.push(config.dirs.srcPath + config.dirs.blocksDirName + '/' + blockName + '/img/*.{jpg,jpeg,gif,png,webp,svg}');
 
+      res.video.push(config.dirs.srcPath + config.dirs.blocksDirName + '/' + blockName + '/video/*.{mp4,webm}');
+
       // Список директорий
       res.blocksDirs.push(config.dirs.blocksDirName + '/' + blockName + '/');
 
@@ -627,6 +648,7 @@ function getFilesList(config){
   res.js = res.js.concat(config.addJsAfter);
   res.js = config.addJsBefore.concat(res.js);
   res.img = config.addImages.concat(res.img);
+  res.video = config.addVideo.concat(res.video);
 
   return res;
 }

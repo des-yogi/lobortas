@@ -1,11 +1,12 @@
 (function(){
   const container = document.querySelector('.history-slider__container');
+  if (!container) return;
   const prevButton = container.querySelector('.history-slider__prev');
   const nextButton = container.querySelector('.history-slider__next');
   const pagination = container.querySelector('.history-slider__pagination');
 
   // Пропускаем, если не нашли нужные элементы
-  if (!container || !nextButton || !prevButton || !pagination) return;
+  if (!nextButton || !prevButton || !pagination) return;
 
   new Swiper(container, {
     speed: 600,

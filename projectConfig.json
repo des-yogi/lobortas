@@ -69,7 +69,8 @@
     "filter": [],
     "mmenu": [],
     "history-slider": [],
-    "search-card": []
+    "search-card": [],
+    "video-local": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -100,6 +101,9 @@
   ],
   "addImages": [
     "./src/img/*.{jpg,jpeg,gif,png,svg,ico,webp}"
+  ],
+  "addVideo": [
+    "./src/video/*.{mp4,webm}"
   ],
   "copiedCss": [
     "./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css"
