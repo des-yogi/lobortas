@@ -78,9 +78,9 @@
   &__title {
     margin: 0 0 20px;
 
-    // @media (min-width: $screen-xl) {
-    //   margin-bottom: 20px;
-    // }
+    @media (min-width: $screen-xl) {
+      margin-top: 0 !important;
+    }
   }
 
   &__descr {
