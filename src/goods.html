@@ -138,7 +138,32 @@
 
   </div>
 
+  @@include('blocks/service-modal/service-modal.html')
+
   @@include('_include/page_bottom.html')
+
+  <script>
+    (function () {
+      const varyModalItem = document.getElementById('serviceModal');
+      if (varyModalItem) {
+        varyModalItem.addEventListener('show.bs.modal', event => {
+          // Button that triggered the modal
+          const button = event.relatedTarget;
+          // Extract info from data-bs-* attributes
+          const recipient = button.getAttribute('data-bs-whatever');
+          // If necessary, you could initiate an Ajax request here
+          // and then do the updating in a callback.
+
+          // Update the modal's content.
+          const modalTitle = varyModalItem.querySelector('.modal-title');
+          //const modalBodyInput = varyModalItem.querySelector('.modal-body input');
+
+          modalTitle.textContent = `${recipient}`;
+          //modalBodyInput.value = recipient;
+        })
+      }
+    })();
+  </script>
 
 </body>
 </html>
