@@ -45,7 +45,12 @@
 
         @@include('../../blocks/copy-page-link/copy-page-link.html')
 
-        <button class="page-header__btn" type="button" aria-label="Додаткова інформація">
+        <button class="page-header__btn"
+                type="button"
+                aria-label="Додаткова інформація"
+                data-bs-toggle="modal"
+                data-bs-target="#serviceModal"
+                data-bs-whatever="Повна назва товару!">
           <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#info"></use></svg>
         </button>
       </div>

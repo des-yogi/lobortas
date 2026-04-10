@@ -70,7 +70,8 @@
     "mmenu": [],
     "history-slider": [],
     "search-card": [],
-    "video-local": []
+    "video-local": [],
+    "service-modal": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

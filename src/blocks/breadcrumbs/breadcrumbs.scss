@@ -4,6 +4,7 @@ $text-color:                  hsl(0, 0%, 10%) !default;
 .breadcrumbs {
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-bottom: 20px;
 
   $block-name:   &; // #{$block-name}__element
 

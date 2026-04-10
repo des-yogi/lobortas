@@ -16,8 +16,8 @@
     & > #{$block-name}--flipped {
 
       #{$block-name}__text-col {
-        @include col-offset(md, 7);
-        @include col-offset(xl, 6);
+        @include col-offset(md, 6);
+        //@include col-offset(xl, 6);
       }
     }
 
@@ -65,9 +65,10 @@
 
   &__text-col {
     @include col(xs, 12);
+    @include col-offset(md, 1);
     @include col(md, 5);
-    @include col-offset(xl, 1);
-    @include col(xl, 5);
+    //@include col-offset(xl, 1);
+    //@include col(xl, 5);
   }
 
   &__text {

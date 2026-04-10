@@ -32,7 +32,7 @@
 
   <div id="page" class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
 
       <div class="offcanvas offcanvas-top  search-bar" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel" role="dialog">
         <!-- <div class="offcanvas-header">
@@ -440,7 +440,7 @@
       </header>
 
 
-      <main class="main">
+      <main class="main">
 
         <nav class="container  breadcrumbs" aria-label="Breadcrumb">
           <ol class="list-nostyled breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -571,7 +571,12 @@
                 </button>
 
 
-                <button class="page-header__btn" type="button" aria-label="Додаткова інформація">
+                <button class="page-header__btn"
+                        type="button"
+                        aria-label="Додаткова інформація"
+                        data-bs-toggle="modal"
+                        data-bs-target="#serviceModal"
+                        data-bs-whatever="Повна назва товару!">
                   <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#info"></use></svg>
                 </button>
               </div>
@@ -628,7 +633,7 @@
         </div>
 
 
-        <!-- @ @include('blocks/video-16-9/video-16-9.html') -->
+        <!-- @ @include('blocks/video-16-9/video-16-9.html') -->
 
         <div class="container  block-vm">
           <div class="row">
@@ -993,7 +998,7 @@
 
           </div>
 
-        </section>
+        </section>
 
         <section class="container  block-vm  gallery-carousel  promo-slider">
 
@@ -1438,7 +1443,50 @@
 
     </div>
 
-  </div>
+  </div>
+
+  <div class="modal  service-modal  fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="h3  modal-title" id="serviceModalLabel">
+            Назва товару
+            <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+          </h3>
+          <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+        </div>
+
+        <div class="modal-body">
+          <ul class="list-nostyled  service-modal__list">
+            <li class="service-modal__line">
+              <span>Ціна:</span>
+              <span>$1000</span>
+            </li>
+            <li class="service-modal__line">
+              <span>Місце зберігання:</span>
+              <span>Лондон</span>
+            </li>
+            <li class="service-modal__line">
+              <span>Примітки:</span>
+              <span>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quidem excepturi at mollitia consequatur itaque, officia, aliquam sunt harum dolorem suscipit voluptas natus cum ipsam!</span>
+            </li>
+            <li class="service-modal__line">
+              <span>Бірка:</span>
+              <a href="#file" download>
+                <span>Завантажити файл</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <span>Закрити</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
@@ -1817,6 +1865,29 @@
     );
   </script>
 
+
+  <script>
+    (function () {
+      const varyModalItem = document.getElementById('serviceModal');
+      if (varyModalItem) {
+        varyModalItem.addEventListener('show.bs.modal', event => {
+          // Button that triggered the modal
+          const button = event.relatedTarget;
+          // Extract info from data-bs-* attributes
+          const recipient = button.getAttribute('data-bs-whatever');
+          // If necessary, you could initiate an Ajax request here
+          // and then do the updating in a callback.
+
+          // Update the modal's content.
+          const modalTitle = varyModalItem.querySelector('.modal-title');
+          //const modalBodyInput = varyModalItem.querySelector('.modal-body input');
+
+          modalTitle.textContent = `${recipient}`;
+          //modalBodyInput.value = recipient;
+        })
+      }
+    })();
+  </script>
 
 </body>
 </html>
