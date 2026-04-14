@@ -2,13 +2,24 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  &__title {
-    margin: 0 0 40px;
+  &__header {
+    margin-bottom: 40px;
     text-align: center;
+  }
 
-    // @media (min-width: $screen-xl) {
-    //   margin-bottom: 60px;
-    // }
+  &__title {
+    margin-top: 0;
+  }
+
+  &__intro {
+    max-width: 800px;
+    margin: 0 auto;
+
+    & > * {
+      font-weight: 200;
+      hyphens: none;
+      text-wrap: balance;
+    }
   }
 
   &__inner {

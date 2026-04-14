@@ -470,12 +470,12 @@
             </li>
 
           </ol>
-        </nav>
+        </nav>
 
         <div class="container  goods-showcase">
           <div class="row  goods-showcase__row">
 
-            <div class="goods-showcase__slider-col">
+            <div class="goods-showcase__slider-col">
 
               <div class="swiper  showcase-slider">
 
@@ -557,7 +557,7 @@
               <div class="goods-showcase__footer">
                 <button class="page-header__btn" type="button" aria-label="Додати до обраного">
                   <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
-                </button>
+                </button>
 
                 <button id="currentPageLink"
                         class="copy-page-link  page-header__btn"
@@ -587,7 +587,7 @@
             </div>
 
           </div>
-        </div>
+        </div>
 
         <div class="container  block-vm  goods-text">
           <div class="row  goods-text__row">
@@ -1486,7 +1486,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
@@ -1867,23 +1867,16 @@
 
 
   <script>
+    "use-strict";
     (function () {
       const varyModalItem = document.getElementById('serviceModal');
       if (varyModalItem) {
         varyModalItem.addEventListener('show.bs.modal', event => {
-          // Button that triggered the modal
           const button = event.relatedTarget;
-          // Extract info from data-bs-* attributes
           const recipient = button.getAttribute('data-bs-whatever');
-          // If necessary, you could initiate an Ajax request here
-          // and then do the updating in a callback.
-
-          // Update the modal's content.
           const modalTitle = varyModalItem.querySelector('.modal-title');
-          //const modalBodyInput = varyModalItem.querySelector('.modal-body input');
 
           modalTitle.textContent = `${recipient}`;
-          //modalBodyInput.value = recipient;
         })
       }
     })();
