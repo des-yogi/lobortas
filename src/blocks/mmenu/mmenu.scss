@@ -140,6 +140,10 @@
 .mm-menu--position-right-front {
 }
 
+.mm-menu--position-left-front {
+  --mm-translate-horizontal: calc(-100% - 2px);
+}
+
 .mm-listview {
   padding-top: 16px;
 }
