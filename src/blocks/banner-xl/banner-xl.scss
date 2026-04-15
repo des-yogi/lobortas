@@ -5,43 +5,77 @@
     height: 676px;
   }
 
+  @media (min-width: $screen-xl) {
+    height: 940px;
+  }
+
   &__bg {
     max-width: $screen-xxl;
     height: 100%;
     padding-top: 60px;
-    padding-bottom: 32px;
+    //padding-bottom: 32px;
     margin: 0 auto;
+    overflow: hidden;
 
     @media (min-width: $screen-md) {
-      padding-top: 32px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-height: 380px;
+      padding-top: 0;
       //padding-bottom: 32px;
     }
 
-    @media (min-width: $screen-xl) {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
+    // @media (min-width: $screen-xl) {
+    //   padding-top: 60px;
+    //   padding-bottom: 60px;
+    // }
   }
 
   &__content {
     height: 100%;
+    max-height: 100%;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0 !important;
+    }
   }
 
   &__row {
+    @include row(
+      $xs-grid-gutter:  24px,
+      $sm-grid-gutter:  24px,
+      $md-grid-gutter:  $grid-gutter-width,
+      $lg-grid-gutter:  $grid-gutter-width,
+      $xl-grid-gutter:  $grid-gutter-width,
+      $xxl-grid-gutter: $grid-gutter-width
+    );
+    height: 100%;
 
     @media (max-width: $screen-md - 1) {
       // flex-direction: column;
       // justify-content: space-between;
       gap: 40px 0;
-      height: 100%;
+    }
+
+    @media (min-width: $screen-md) {
+      justify-content: space-between;
+      //height: 100%;
     }
   }
 
   &__text-col {
     @include col-offset(xs, 1);
-    @include col(xs, 10);
+    @include col(xs, 10, $grid-columns, 24px);
     @include col-offset(md, 1);
-    @include col(md, 4);
+    @include col(md, 4.6);
+    @include col-offset(xl, 1);
+    @include col(xl, 3.5);
+    @include col-offset(xxl, 2.3);
+    @include col(xxl, 3.4);
 
     @media (max-width: $screen-md - 1) {
       //padding-top: 60px;
@@ -54,6 +88,8 @@
       gap: 20px 0;
       justify-content: center;
       align-items: flex-start;
+      padding-top: 60px;
+      padding-bottom: 60px;
 
       & > * {
         margin: 0;
@@ -67,26 +103,39 @@
 
   &__img-col {
     //@include col-offset(xs, 1);
-    @include col-offset(xs, 1);
-    @include col(xs, 10);
-    @include col-offset(md, 1);
-    @include col(md, 5);
-    @include col-offset(xl, 1);
-    @include col(xl, 6);
+    //@include col-offset(xs, 1);
+    //@include col(xs, 12, $grid-columns, 0);
+    //@include col-offset(md, 1);
+    //@include col(md, 6);
+    //@include col-offset(xl, 1);
+    //@include col(xl, 6);
+    //@include col-offset(xxl, 0);
+    //@include col(xxl, 5.5);
+    max-height: 469px;
 
-    @media (max-width: $screen-md - 1) {
-      margin-top: auto;
-    }
+    // @media (max-width: $screen-md - 1) {
+    //   margin-top: auto;
+    // }
 
     @media (min-width: $screen-md) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: auto;
+      //position: absolute;
+      //top: 0;
+      //right: 0;
+      //bottom: 0;
+      max-width: calc(50% - 6px);
+      max-height: 100%;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   height: auto;
     }
   }
 
   &__img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
 
     @media (max-width: $screen-md - 1) {
      max-width: 450px;
@@ -98,8 +147,15 @@
     }
 
     img {
-      object-fit: contain;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       object-position: center;
+
+      // @media (min-width: $screen-md) {
+      //   object-fit: cover;
+      // }
     }
   }
 
