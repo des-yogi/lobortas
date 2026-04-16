@@ -30,9 +30,9 @@
             </div>
           </div>
         </div>
-
         <div class="block-vm  masterpiece__wrapper">
 
+          <!-- класс для отзеркаливания текста: masterpiece--flipped -->
           @@include('blocks/masterpiece/masterpiece.html', {
             "flipClass": "",
             "theme": "masterpiece--dark",
@@ -43,7 +43,7 @@
           })
 
           @@include('blocks/masterpiece/masterpiece.html', {
-            "flipClass": "",
+            "flipClass": "masterpiece--flipped",
             "theme": "masterpiece--light",
             "img": "masterpiece-2",
             "imgMob": "masterpiece-2-mob",
@@ -61,7 +61,7 @@
           })
 
           @@include('blocks/masterpiece/masterpiece.html', {
-            "flipClass": "",
+            "flipClass": "masterpiece--flipped",
             "theme": "masterpiece--dark",
             "img": "masterpiece-4",
             "imgMob": "masterpiece-4-mob",

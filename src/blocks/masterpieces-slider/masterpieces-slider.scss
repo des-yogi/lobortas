@@ -24,81 +24,126 @@
     }
   }
 
-  //&__container {
-  //}
+  &__container {
 
-  &__slide {
-    height: 676px;
-    background: grey;
+    // &:has(.masterpiece--light) {
 
-    @media (min-width: $screen-md) {
-      height: 940px;
-    }
-  }
+    //   #{$block-name}__btn-prev,
+    //   #{$block-name}__btn-next {
+    //     filter: drop-shadow(0 2px 1px rgba($black, 0.8));
+    //   }
+    // }
 
-  &__text {
-    height: 100%;
+    .masterpiece.masterpiece--flipped {
 
-    .row {
-      height: inherit;
-    }
-  }
-
-  &__slide-text-col {
-    //@include col-offset(xs, 1)
-    @include col(xs, 12)
-    @include col-offset(md, 1)
-    @include col(md, 5)
-    @include col-offset(xxl, 1)
-    @include col(xxl, 4)
-
-    height: 100%;
-
-    @media (min-width: $screen-md) {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-
-  &__slide-text {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    color: $white;
-
-    @media (max-width: $screen-md - 1) {
-      text-align: center;
-    }
-
-    p {
-
-      @media (max-width: $screen-md - 1) {
-        @include visually-hidden;
+      .masterpiece__text-col {
+        @include col-offset(md, 6.5);
+        @include col-offset(xl, 6);
       }
     }
   }
 
-  &__slide-title {
-    margin-top: 0 !important;
-  }
+  // Все стили, касающиеся слайда НЕ работают,
+  // так как внутри теперь тот же блок, что На Шедеврах!
+
+  // &__slide {
+  //   height: 676px;
+  //   background: grey;
+
+  //   @media (min-width: $screen-md) {
+  //     min-height: 496px;
+  //     height: auto;
+  //   }
+
+  //   @media (min-width: $screen-xl) {
+  //     height: 940px;
+  //   }
+
+  //   &--flipped {
+
+  //     .row {
+  //       flex-direction: row-reverse;
+  //     }
+
+  //     #{$block-name}__slide-text-col {
+  //       @include col-offset(md, 0);
+  //     }
+  //   }
+
+  //   &--light {
+
+  //     #{$block-name}__slide-text {
+  //       color: $text-color;
+  //     }
+  //   }
+  // }
+
+  // &__text {
+  //   height: 100%;
+
+  //   .row {
+  //     height: inherit;
+  //   }
+  // }
+
+  // &__slide-text-col {
+  //   @include col(xs, 12)
+  //   @include col-offset(md, 1)
+  //   @include col(md, 5)
+  //   @include col-offset(xxl, 1)
+  //   @include col(xxl, 4)
+
+  //   height: 100%;
+
+  //   @media (min-width: $screen-md) {
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  // }
+
+  // &__img {
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   overflow: hidden;
+
+  //   @media (min-width: $screen-md) {
+  //     height: 100%;
+  //   }
+
+  //   img {
+  //     display: block;
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //     object-position: center;
+  //   }
+  // }
+
+  // &__slide-text {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  //   color: $white;
+
+  //   @media (max-width: $screen-md - 1) {
+  //     text-align: center;
+  //   }
+
+  //   p {
+
+  //     @media (max-width: $screen-md - 1) {
+  //       @include visually-hidden;
+  //     }
+  //   }
+  // }
+
+  // &__slide-title {
+  //   margin-top: 0 !important;
+  // }
 
   &__controls {
     display: flex;
@@ -119,7 +164,8 @@
     margin: 0 !important;
     color: $white !important;
     pointer-events: initial;
-    filter: drop-shadow(0 2px 2px rgba($black, 0.6));
+    //filter: drop-shadow(0 2px 2px rgba($black, 0.6));
+    filter: drop-shadow(0 2px 1px rgba($black, 0.8));
 
     &.swiper-button-disabled {
       color: $white !important;

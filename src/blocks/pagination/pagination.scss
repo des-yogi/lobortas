@@ -20,6 +20,10 @@ $border-color:                hsl(0, 0%, 60%) !default;
     margin-top: 100px;
   }
 
+  &:has(#{$block-name}__list:empty) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

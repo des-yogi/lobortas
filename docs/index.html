@@ -32,7 +32,7 @@
 
   <div id="page" class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
 
       <div class="offcanvas offcanvas-top  search-bar" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel" role="dialog">
         <!-- <div class="offcanvas-header">
@@ -440,7 +440,7 @@
       </header>
 
 
-      <main class="main">
+      <main class="main">
         <div class="hero">
           <div class="hero__img">
             <picture>
@@ -781,7 +781,7 @@
 
           </div>
 
-        </section>
+        </section>
 
         <section class="block-vm  banner-xl">
 
@@ -1149,89 +1149,141 @@
 
             <div class="swiper-wrapper">
 
-              <div class="swiper-slide  masterpieces-slider__slide">
-                <div class="masterpieces-slider__img">
+              <article class="swiper-slide  masterpiece  masterpiece--dark  @@flipClass">
+                <div class="masterpiece__img">
+                  <!-- После выяснения поведения изображение пересчитать размер -->
                   <picture>
-                    <source srcset="img/masterpieces-img.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="img/masterpieces-img.jpg" media="(min-width: 768px)">
-
-                    <source srcset="img/masterpieces-img-mob.webp" media="(min-width: 300px)" type="image/webp">
-                    <source srcset="img/masterpieces-img-mob.jpg" media="(min-width: 300px)">
-
-                    <img src="img/masterpieces-img.jpg" alt="Alt text" width="1920" height="940" loading="lazy">
+                    <source srcset="img/masterpiece-1.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/masterpiece-1.jpg" media="(min-width: 768px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-1-mob.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/masterpiece-1-mob.jpg" media="(min-width: 480px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-1-mob.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/masterpiece-1-mob.jpg" media="(min-width: 300px)">
+                    <!-- 720x1014 -->
+                    <img src="img/masterpiece-1.jpg" width="1440" height="940" alt="Alt" loading="lazy">
                   </picture>
+                  <!-- loading="lazy" для всех кроме первого -->
                 </div>
 
-                <div class="container  masterpieces-slider__text">
+                <div class="container  masterpiece__text-container">
+                  <div class="row  masterpiece__row">
+                    <div class="masterpiece__text-col">
+                      <div class="masterpiece__text">
+                        <h2 class="masterpiece__title">Лебідь-царівна</h2>
+                        <div class="masterpiece__descr"><p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p></div>
 
-                    <div class="row">
-                      <div class="masterpieces-slider__slide-text-col">
-                        <div class="masterpieces-slider__slide-text">
-                          <h3 class="h2  masterpieces-slider__slide-title">Precious Objects</h3>
-                          <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
-                          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
-                        </div>
+                        <a href="#" class="btn  btn__link  masterpiece__link">
+                          <span>Перейти</span>
+                        </a>
                       </div>
                     </div>
-
+                  </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="swiper-slide  masterpieces-slider__slide">
-                <div class="masterpieces-slider__img">
+              <article class="swiper-slide  masterpiece  masterpiece--light  masterpiece--flipped">
+                <div class="masterpiece__img">
+                  <!-- После выяснения поведения изображение пересчитать размер -->
                   <picture>
-                    <source srcset="img/masterpieces-img.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="img/masterpieces-img.jpg" media="(min-width: 768px)">
-
-                    <source srcset="img/masterpieces-img-mob.webp" media="(min-width: 300px)" type="image/webp">
-                    <source srcset="img/masterpieces-img-mob.jpg" media="(min-width: 300px)">
-
-                    <img src="img/masterpieces-img.jpg" alt="Alt text" width="1920" height="940" loading="lazy">
+                    <source srcset="img/masterpiece-2.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/masterpiece-2.jpg" media="(min-width: 768px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-2-mob.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/masterpiece-2-mob.jpg" media="(min-width: 480px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-2-mob.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/masterpiece-2-mob.jpg" media="(min-width: 300px)">
+                    <!-- 720x1014 -->
+                    <img src="img/masterpiece-2.jpg" width="1440" height="940" alt="Alt" loading="lazy">
                   </picture>
+                  <!-- loading="lazy" для всех кроме первого -->
                 </div>
 
-                <div class="container  masterpieces-slider__text">
+                <div class="container  masterpiece__text-container">
+                  <div class="row  masterpiece__row">
+                    <div class="masterpiece__text-col">
+                      <div class="masterpiece__text">
+                        <h2 class="masterpiece__title">Лебідь-царівна</h2>
+                        <div class="masterpiece__descr"><p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p></div>
 
-                    <div class="row">
-                      <div class="masterpieces-slider__slide-text-col">
-                        <div class="masterpieces-slider__slide-text">
-                          <h3 class="h2  masterpieces-slider__slide-title">Precious Objects</h3>
-                          <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
-                          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
-                        </div>
+                        <a href="#" class="btn  btn__link  masterpiece__link">
+                          <span>Перейти</span>
+                        </a>
                       </div>
                     </div>
-
+                  </div>
                 </div>
-              </div>
+              </article>
 
-              <div class="swiper-slide  masterpieces-slider__slide">
-                <div class="masterpieces-slider__img">
+              <article class="swiper-slide  masterpiece  masterpiece--dark  @@flipClass">
+                <div class="masterpiece__img">
+                  <!-- После выяснения поведения изображение пересчитать размер -->
                   <picture>
-                    <source srcset="img/masterpieces-img.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="img/masterpieces-img.jpg" media="(min-width: 768px)">
-
-                    <source srcset="img/masterpieces-img-mob.webp" media="(min-width: 300px)" type="image/webp">
-                    <source srcset="img/masterpieces-img-mob.jpg" media="(min-width: 300px)">
-
-                    <img src="img/masterpieces-img.jpg" alt="Alt text" width="1920" height="940" loading="lazy">
+                    <source srcset="img/masterpiece-1.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/masterpiece-1.jpg" media="(min-width: 768px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-1-mob.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/masterpiece-1-mob.jpg" media="(min-width: 480px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-1-mob.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/masterpiece-1-mob.jpg" media="(min-width: 300px)">
+                    <!-- 720x1014 -->
+                    <img src="img/masterpiece-1.jpg" width="1440" height="940" alt="Alt" loading="lazy">
                   </picture>
+                  <!-- loading="lazy" для всех кроме первого -->
                 </div>
 
-                <div class="container  masterpieces-slider__text">
+                <div class="container  masterpiece__text-container">
+                  <div class="row  masterpiece__row">
+                    <div class="masterpiece__text-col">
+                      <div class="masterpiece__text">
+                        <h2 class="masterpiece__title">Лебідь-царівна</h2>
+                        <div class="masterpiece__descr"><p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p></div>
 
-                    <div class="row">
-                      <div class="masterpieces-slider__slide-text-col">
-                        <div class="masterpieces-slider__slide-text">
-                          <h3 class="h2  masterpieces-slider__slide-title">Precious Objects</h3>
-                          <p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p>
-                          <a href="#" class="btn  btn__link"><span>Перейти</span></a>
-                        </div>
+                        <a href="#" class="btn  btn__link  masterpiece__link">
+                          <span>Перейти</span>
+                        </a>
                       </div>
                     </div>
-
+                  </div>
                 </div>
-              </div>
+              </article>
+
+              <article class="swiper-slide  masterpiece  masterpiece--light  masterpiece--flipped">
+                <div class="masterpiece__img">
+                  <!-- После выяснения поведения изображение пересчитать размер -->
+                  <picture>
+                    <source srcset="img/masterpiece-2.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/masterpiece-2.jpg" media="(min-width: 768px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-2-mob.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/masterpiece-2-mob.jpg" media="(min-width: 480px)">
+                    <!-- 1152x1014 -->
+                    <source srcset="img/masterpiece-2-mob.webp" media="(min-width: 300px)" type="image/webp">
+                    <source srcset="img/masterpiece-2-mob.jpg" media="(min-width: 300px)">
+                    <!-- 720x1014 -->
+                    <img src="img/masterpiece-2.jpg" width="1440" height="940" alt="Alt" loading="lazy">
+                  </picture>
+                  <!-- loading="lazy" для всех кроме первого -->
+                </div>
+
+                <div class="container  masterpiece__text-container">
+                  <div class="row  masterpiece__row">
+                    <div class="masterpiece__text-col">
+                      <div class="masterpiece__text">
+                        <h2 class="masterpiece__title">Лебідь-царівна</h2>
+                        <div class="masterpiece__descr"><p>Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction! Lobortas Classic Jewellery House is specified in complex architectural fine decisions in creating masterpieces for your Soul Satisfaction!</p></div>
+
+                        <a href="#" class="btn  btn__link  masterpiece__link">
+                          <span>Перейти</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
 
             </div>
           </div>
@@ -1486,7 +1538,7 @@
 
           </div>
 
-        </section>
+        </section>
 
         <article class="block-vm  about-house  @@addClass">
           <div class="container  about-house__inner">
@@ -1632,7 +1684,7 @@
 
     </div>
 
-  </div>
+  </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
