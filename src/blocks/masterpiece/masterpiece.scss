@@ -12,21 +12,23 @@
     flex-direction: column;
     gap: 24px 0;
 
-    & > *:nth-child(even),
+    // "ручная"" реализация отражения текстового блока
+    //& > *:nth-child(even),
     & > #{$block-name}--flipped {
 
       #{$block-name}__text-col {
-        @include col-offset(md, 6);
-        //@include col-offset(xl, 6);
+        @include col-offset(md, 7);
+        @include col-offset(xl, 6);
       }
     }
 
-    & > #{$block-name}--flipped {
+    // "ручная"" реализация отражения текстового блока
+    // & > #{$block-name}--flipped {
 
-      #{$block-name}__img {
-        transform: scale(-1, 1);
-      }
-    }
+    //   #{$block-name}__img {
+    //     transform: scale(-1, 1);
+    //   }
+    // }
   }
 
   &__img {
