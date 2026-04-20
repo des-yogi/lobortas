@@ -71,7 +71,10 @@
     "history-slider": [],
     "search-card": [],
     "video-local": [],
-    "service-modal": []
+    "service-modal": [],
+    "article-video-16-9": [],
+    "article-slider": [],
+    "video-9-16": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

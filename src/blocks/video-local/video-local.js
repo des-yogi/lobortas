@@ -1,27 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
   const lazyVideos = document.querySelectorAll('video.lazy');
-  if (!lazyVideos.length) return; // нет видео — выходим сразу
+  if (!lazyVideos.length || !('IntersectionObserver' in window)) {
+    return;
+  }
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries, observerInstance) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
 
       const video = entry.target;
+      const sources = video.querySelectorAll('source[data-src]');
 
-      // Подставляем src из data-src для каждого <source>
-      video.querySelectorAll('source[data-src]').forEach(source => {
+      sources.forEach(source => {
         source.src = source.dataset.src;
+        source.removeAttribute('data-src');
       });
 
-      // Говорим видео перезагрузить источники
       video.load();
       video.classList.remove('lazy');
-
-      // Отписываемся — грузить повторно не нужно
-      observer.unobserve(video);
+      observerInstance.unobserve(video);
     });
   }, {
-    rootMargin: '200px', // начинаем загрузку чуть заранее до появления в viewport
+    rootMargin: '200px 0px',
     threshold: 0
   });
 

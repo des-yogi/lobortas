@@ -1,0 +1,10 @@
+.article-slider {
+  $block-name:                &; // #{$block-name}__element
+
+  // @include col-offset(xs, 1);
+  // @include col(xs, 10);
+  // @include col-offset(md, 0);
+  // @include col(md, 12);
+  // @include col-offset(xl, 1);
+  // @include col(xl, 10);
+}

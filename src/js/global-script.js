@@ -143,3 +143,7 @@ window.addEventListener('resize', () => {
   }
 
 })();*/
+
+// Fancybox.bind("[data-fancybox]", {
+//   // Your custom options
+// });

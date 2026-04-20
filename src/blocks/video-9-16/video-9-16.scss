@@ -1,0 +1,88 @@
+.video-9-16 {
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  background-color: $body-bg;
+  overflow: hidden;
+
+  &__video {
+    //flex: 1;
+    //display: block;
+    //min-height: 0;
+    //aspect-ratio: 9 / 16;
+    //overflow: hidden;
+
+    &:hover,
+    &:focus {
+
+      & + #{$block-name}__caption a {
+        color: $main-color;
+      }
+    }
+
+    video,
+    img {
+      //display: block;
+      //width: 100%;
+      //height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    video {
+      cursor: pointer;
+    }
+  }
+
+  &__caption {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0; // было 8
+    padding: 10px 0 0;
+    text-align: center;
+
+    &:empty,
+    &:has(#{$block-name}__set-name:empty) {
+      display: none;
+    }
+  }
+
+  &__collection-name {
+    margin: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__set-name {
+    margin: 0 !important;
+    text-decoration: none;
+    line-height: 1.3 !important;
+    outline-offset: -2px; // при фокусе рамка внутрь
+
+    /* Ограничение в 2 строки */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    /* Фиксированная высота под 2 строки: ~ 16px × 1.3 × 2  */
+    height: 38px;
+
+    @media (min-width: $screen-xl) {
+      height: 56px;
+    }
+
+    &:empty {
+      display: none;
+    }
+  }
+}

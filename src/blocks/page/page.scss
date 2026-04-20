@@ -470,6 +470,10 @@ a {
   box-sizing: border-box;
 }
 
+.swiper-slide {
+  height: auto;
+}
+
 .carousel-controls {
   position: absolute;
   z-index: 1;
