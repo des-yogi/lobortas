@@ -1,4 +1,10 @@
 .article {
   $block-name:                &; // #{$block-name}__element
 
+  &__row {
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
