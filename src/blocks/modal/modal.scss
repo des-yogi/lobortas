@@ -153,8 +153,11 @@
   margin: 0;
 }
 
-.modal-backdrop.fade.show {
+.modal-backdrop {
   background-color: $white;
-  opacity: 0.95;
+}
+
+.modal-backdrop.fade.show {
+  opacity: 0.9;
 }
 

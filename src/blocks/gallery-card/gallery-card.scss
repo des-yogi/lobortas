@@ -12,11 +12,16 @@
       & + figcaption a {
         color: $link-color--hover;
       }
+
+      img {
+        transform: scale(1.05);
+      }
     }
 
     img {
       object-fit: cover;
       object-position: center;
+      transition: transform $transition-time ease;
     }
   }
 

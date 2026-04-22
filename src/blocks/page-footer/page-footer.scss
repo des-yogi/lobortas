@@ -11,17 +11,18 @@
   &__inner {
     padding-top: 40px;
     margin-bottom: 40px;
+    border-top: 1px solid $border-color;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 1px;
-      background: $border-color;
-    }
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   width: 100%;
+    //   height: 1px;
+    //   background: $border-color;
+    // }
 
     @media (min-width: $screen-md) {
       padding-top: 60px;
@@ -70,9 +71,8 @@
     }
   }
 
-  &__news-title {
-
-  }
+  //&__news-title {
+  //}
 
   &__main {
     gap: 40px 0;

@@ -2,9 +2,29 @@
   $block-name:                &; // #{$block-name}__element
 
   &__row {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 40px 0;
 
     & > *:last-child {
       margin-bottom: 0;
+    }
+
+    & > * {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+
+    & > * {
+      margin: 0;
     }
   }
 }
