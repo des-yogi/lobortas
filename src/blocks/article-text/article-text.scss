@@ -3,4 +3,8 @@
 
   @include col-offset(xs, 1);
   @include col(xs, 10);
+
+  & > *:first-child {
+    margin-top: 0;
+  }
 }

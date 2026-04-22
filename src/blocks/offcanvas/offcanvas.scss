@@ -2,4 +2,9 @@
   $block-name:                &; // #{$block-name}__element
 
   background: $body-bg;
+
+}
+
+.offcanvas-backdrop {
+  background-color: $white;
 }

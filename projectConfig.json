@@ -74,7 +74,8 @@
     "service-modal": [],
     "article-video-16-9": [],
     "article-slider": [],
-    "video-9-16": []
+    "video-9-16": [],
+    "press-links": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

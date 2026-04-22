@@ -53,9 +53,10 @@
 
   &__line {
     //width: 100%;
-    height: 1px;
-    background-color: $border-color;
-
+    box-sizing: content-box;
+    overflow: visible;
+    height: 0;
+    border-top: 1px solid $border-color;
   }
 
   &__text {

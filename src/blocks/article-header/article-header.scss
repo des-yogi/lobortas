@@ -26,6 +26,10 @@
     height: 100%;
     padding: 20px 0 0;
 
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+    }
+
     @media (min-width: $screen-xl) {
       gap: 30px 0;
     }

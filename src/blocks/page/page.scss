@@ -291,7 +291,8 @@ a {
 }
 
 .fade {
-  @include transition($transition-fade);
+  //@include transition($transition-fade);
+  transition: opacity 0.2s linear;
 
   &:not(.show) {
     opacity: 0;
