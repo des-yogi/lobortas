@@ -6,8 +6,6 @@
   }
 
   &__list {
-
-    //max-width: 480px;
     max-width: 100%;
     width: 100%;
     box-shadow: 0 6px 7px rgba(0, 0, 0, 0.1);
@@ -15,44 +13,52 @@
     &.show {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px 64px;
+      gap: 28px 56px;
       padding: 12px 56px 32px;
-      //padding-right: 56px;
-      //padding-left: 56px;
       border-top: 1px solid $secondary-color;
 
       @media (min-width: $screen-xl) {
+        gap: 28px 80px;
         padding-bottom: 56px;
       }
     }
 
-    & > *:first-child {
-      position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -32px;
-        bottom: 0;
-        width: 1px;
-        background: $main-color;
+    &--double {
+
+      & > *:first-child {
+
+        @media (min-width: $screen-md) {
+          position: relative;
+        }
+
+        &::after {
+
+          @media (min-width: $screen-md) {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -32px;
+            bottom: 0;
+            width: 1px;
+            background: $main-color;
+          }
+        }
       }
     }
   }
 
   &__list-item {
-    flex: 1;
-    //flex-basis: min-content;
+    flex: 1 1 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: 120px;
-    width: clamp(100px, 45%, 180px);
+    width: 100%;
 
-    &:not(:last-child) {
-      //max-height: 440px;
-      //overflow-x: auto;
+    @media (min-width: $screen-md) {
+      flex-basis: clamp(100px, 45%, 180px);
+      width: clamp(100px, 45%, 180px);
     }
 
     &:last-child {
@@ -60,22 +66,29 @@
       display: flex;
       flex-direction: initial;
       flex-wrap: wrap;
-      justify-content: initial;
-      gap: 0 64px;
+      justify-content: center;
+      gap: 8px 40px;
       width: 100%;
 
       & > * {
-        flex: 1;
-        flex-basis: calc(50% - 32px);
+        flex: 0 0 auto;
+        //flex-basis: calc(50% - 32px);
+        display: flex;
+        justify-content: center;
         min-width: 120px;
       }
     }
 
     .field-checkbox {
       margin-bottom: 0;
+      min-width: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .field-checkbox__input-wrap {
+      padding-left: 4px;
 
       &:last-child {
         margin-bottom: 0;
@@ -88,21 +101,49 @@
   }
 
   &__scrollable {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    //flex-direction: column;
-    max-height: 340px;
-    overflow: auto;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 0;
+    padding-top: 4px;
+    padding-bottom: 16px;
+    scrollbar-gutter: stable;
+    display: block;
+  }
 
-    .field-checkbox__input-wrap {
-      width: calc(100% / 3 - 8px);
+  &__columns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    width: max-content;
+    min-width: 100%;
+  }
+
+  &__column {
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  &__column .field-checkbox__input-wrap {
+    width: auto;
+    margin-bottom: 1.2em;
+
+    &:last-child {
       margin-bottom: 0;
     }
+  }
 
-    .field-checkbox__name-text {
-      white-space: nowrap;
-    }
+  &__column .field-checkbox__name {
+    display: inline-flex;
+    align-items: flex-start;
+    max-width: 100%;
+    //min-height: 36px;
+  }
+
+  &__column .field-checkbox__name-text {
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   &__subtitle {
