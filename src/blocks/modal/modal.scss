@@ -74,6 +74,15 @@
     height: 44px;
     flex: 0 0 44px;
   }
+
+  // для теста
+  &--mod {
+
+    &::before {
+      width: 1px;
+      height: 1px;
+    }
+  }
 }
 
 .modal-title {
