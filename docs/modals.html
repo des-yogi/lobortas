@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Індивідуальне замовлення</title>
+  <title>Варіанти модалок</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 
@@ -32,7 +32,7 @@
 
   <div id="page" class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
 
       <div class="offcanvas offcanvas-top  search-bar" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel" role="dialog">
         <!-- <div class="offcanvas-header">
@@ -440,7 +440,7 @@
       </header>
 
 
-      <main class="main">
+      <main class="main">
 
         <nav class="container  breadcrumbs" aria-label="Breadcrumb">
           <ol class="list-nostyled breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -475,151 +475,45 @@
         <div class="container  main-header">
           <div class="row">
             <div class="main-header__col">
-              <h1 class="main-header__title">Оформити індивідуальне замовлення</h1>
-              <div class="main-header__intro"><p>Ми цінуємо ваші ідеї.</p><p>Будь ласка, заповніть форму нижче — і наші майстри зв’яжуться з вами, щоб розпочати шлях до створення унікального витвору.</p></div>
+              <h1 class="main-header__title">Варіанти модалок</h1>
+              <div class="main-header__intro"></div>
             </div>
           </div>
         </div>
 
 
-        <div class="container  block-vm  custom-order">
-          <div class="row  custom-order__row">
-            <div class="custom-order__inner">
-              <form class="custom-order__form" action="#" method="post" enctype="multipart/form-data">
+        <div class="container  block-vm  contacts">
 
-                <div class="custom-order__form-content">
-                  <label class="field-text">
-                    <span class="field-text__name">Як до Вас звертатись?*</span>
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" name="name" value="">
-                      <span class="field-text__help-text" data-error="name"></span>
-                    </span>
-                  </label>
+          <ul class="list-nostyled">
+            <li>
+              <button class="page-header__btn"
+                      type="button"
+                      aria-label="Like"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button class="page-header__btn"
+                      type="button"
+                      aria-label="Like"
+                      data-bs-toggle="modal"
+                      data-bs-target="#example2Modal">
+                <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button class="page-header__btn"
+                      type="button"
+                      aria-label="Like"
+                      data-bs-toggle="modal"
+                      data-bs-target="#example3Modal">
+                <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+              </button>
+            </li>
+          </ul>
 
-                  <label class="field-text">
-                    <span class="field-text__name">Е-mail*</span>
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="email" name="mail" value="">
-                      <span class="field-text__help-text" data-error="mail"></span>
-                    </span>
-                  </label>
-
-                  <label class="field-text">
-                    <span class="field-text__name">Номер телефону</span>
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="tel" name="tel" value="">
-                      <span class="field-text__help-text" data-error="tel"></span>
-                    </span>
-                  </label>
-
-                  <div class="field-checkbox">
-                    <div class="field-text__name">Як Вам буде зручніше спілкуватися з нами?</div>
-
-                    <div class="connection-type">
-                      <div class="field-checkbox__input-wrap">
-                        <label class="field-checkbox__name">
-                          <input class="field-checkbox__input" type="checkbox" checked>
-                          <span class="field-checkbox__name-text">Telegram</span>
-                        </label>
-                      </div>
-                      <div class="field-checkbox__input-wrap">
-                        <label class="field-checkbox__name">
-                          <input class="field-checkbox__input" type="checkbox">
-                          <span class="field-checkbox__name-text">Дзвінок</span>
-                        </label>
-                      </div>
-                      <div class="field-checkbox__input-wrap">
-                        <label class="field-checkbox__name">
-                          <input class="field-checkbox__input" type="checkbox">
-                          <span class="field-checkbox__name-text">Whats App</span>
-                        </label>
-                      </div>
-                      <div class="field-checkbox__input-wrap">
-                        <label class="field-checkbox__name">
-                          <input class="field-checkbox__input" type="checkbox">
-                          <span class="field-checkbox__name-text">E-mail</span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="field-select">
-                    <label class="field-select__select-wrap">
-                      <span class="field-text__name">Вид предмета</span>
-
-                      <select class="field-select__select  slim-select" name="item-type">
-                        <option data-paceholder="true"></option>
-                        <option value="value1">Вид 1</option>
-                        <option value="value2">Вид 2</option>
-                        <option value="value3">Вид 3</option>
-                        <option value="value4">Вид 4</option>
-                      </select>
-                    </label>
-                  </div>
-
-                  <label class="field-text">
-                    <span class="field-text__name">Будь ласка, опишіть свою ідею, або  прикрипіть посилання із виробом що вас надихнув</span>
-                    <span class="field-text__input-wrap">
-                      <textarea class="field-text__input" name="message" rows="1"></textarea>
-                      <span class="field-text__help-text" data-error="tel"></span>
-                    </span>
-                  </label>
-
-                  <div class="custom-order__download">
-                    <p class="display-4">Якщо у Вас є ескіз або фотографії, які можуть дати нам краще уявлення про витвір, який Ви хотіли б, щоб ми створили, завантажте їх нижче.</p>
-
-                    <div class="field-file">
-                      <div class="field-file__name  visually-hidden">Выбір файлів</div>
-                      <label class="field-file__input-wrap">
-                        <input class="field-file__input" type="file" data-multiple-caption="файлів обрано: {count}" multiple>
-                        <span class="display-4  field-file__name-text" data-button-text="Вибрати файл(и)">
-                          <span class="field-file__value">Нічого не вибрано</span>
-                        </span>
-                        <div class="field-file__help-text"></div>
-                      </label>
-                    </div>
-                  </div>
-
-                  <div class="field-checkbox">
-                    <label class="field-checkbox__name">
-                      <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
-                      <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
-                    </label>
-                  </div>
-
-                </div>
-
-                <div class="custom-order__form-section">
-                  <p class="display-4">Після надсилання форми наш спеціаліст зв’яжеться з вами, щоб узгодити наступні кроки.</p>
-                </div>
-
-                <div class="custom-order__form-section">
-                  <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
-                </div>
-
-                <div class="custom-order__form-section  modal-footer">
-                  <div class="modal__messengers">
-                    <p class="p">Месенджери:</p>
-                    <ul class="list-nostyled  social-network">
-                      <li class="social-network__item">
-                        <a href="#" class="social-network__link">WhatsApp</a>
-                      </li>
-                      <li class="social-network__item">
-                        <a href="#" class="social-network__link">Telegram</a>
-                      </li>
-                      <li class="social-network__item">
-                        <a href="#" class="social-network__link">Messenger</a>
-                      </li>
-                      <li class="social-network__item">
-                        <a href="#" class="social-network__link">Viber</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-              </form>
-            </div>
-          </div>
         </div>
 
       </main>
@@ -751,7 +645,220 @@
 
     </div>
 
-  </div>
+  </div>
+
+  <div class="modal fade" id="example2Modal" tabindex="-1" aria-labelledby="example2ModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header  modal-header--mod" style="padding-bottom: 0;">
+          <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="h3  modal-title" id="example2ModalLabel">
+            Замовити послугу
+            <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+          </h3>
+          <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+
+          <div class="modal__form-wrapper">
+            <form class="form" action="#" method="post">
+              <label class="field-text">
+                <span class="field-text__name">Як до Вас звертатись?*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" name="name" value="" autocomplete="name">
+                  <span class="field-text__help-text error" data-error="name"></span>
+                </span>
+              </label>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <label class="field-text">
+                <span class="field-text__name">Опишіть ваш запит</span>
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" name="message" rows="4"></textarea>
+                  <span class="field-text__help-text error" data-error="message"></span>
+                </span>
+              </label>
+
+              <div class="form__submit-wrapper  form__agreement">
+                <div class="field-checkbox">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                    <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                  </label>
+                </div>
+
+                <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+              </div>
+
+              <p>Або оберіть дзвінок чи зручний месенджер. Наш менеджер зателефонує Вам найближчим часом!</p>
+              <p>Дзвінок <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+
+              <div class="modal__messengers" style="flex-wrap: nowrap;">
+                <p class="p">Месенджери</p>
+                <ul class="list-nostyled  social-network" style="display: flex; gap: 8px;">
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">WhatsApp</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Telegram</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Messenger</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Viber</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="example3Modal" tabindex="-1" aria-labelledby="example3ModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="h3  modal-title" id="example3ModalLabel">
+            Замовити послугу
+            <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+          </h3>
+          <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+        </div>
+        <div class="modal-body">
+          <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+
+          <div class="modal__form-wrapper">
+            <form class="form" action="#" method="post">
+              <label class="field-text">
+                <span class="field-text__name">Як до Вас звертатись?*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" name="name" value="" autocomplete="name">
+                  <span class="field-text__help-text error" data-error="name"></span>
+                </span>
+              </label>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <label class="field-text">
+                <span class="field-text__name">Опишіть ваш запит</span>
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" name="message" rows="4"></textarea>
+                  <span class="field-text__help-text error" data-error="message"></span>
+                </span>
+              </label>
+
+              <div class="form__submit-wrapper  form__agreement">
+                <div class="field-checkbox">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                    <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                  </label>
+                </div>
+
+                <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>Або оберіть дзвінок чи зручний месенджер. Наш менеджер зателефонує Вам найближчим часом!</p>
+          <p>Дзвінок <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+
+          <div class="modal__messengers">
+            <p class="p">Месенджери</p>
+            <ul class="list-nostyled  social-network">
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">WhatsApp</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Telegram</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Messenger</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Viber</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
