@@ -75,7 +75,8 @@
     "article-video-16-9": [],
     "article-slider": [],
     "video-9-16": [],
-    "press-links": []
+    "press-links": [],
+    "custom-order": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -87,6 +88,7 @@
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "../../node_modules/mmenu-js/dist/mmenu.css",
+    "../../node_modules/slim-select/dist/slimselect.css",
     "../../node_modules/swiper/swiper-bundle.min.css"
   ],
   "addCssAfter": [
@@ -99,6 +101,7 @@
     "./node_modules/focus-visible/dist/focus-visible.min.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/autosize/dist/autosize.min.js",
+    "./node_modules/slim-select/dist/slimselect.iife.js",
     "./node_modules/mmenu-js/dist/mmenu.js"
   ],
   "addJsAfter": [

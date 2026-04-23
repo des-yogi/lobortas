@@ -45,9 +45,9 @@
         top: 50%;
         right: -13px;
         transform: translateY(-50%);
-        width: 1px;
+        width: 0;
         height: 24px;
-        background-color: $border-color;
+        border-left: 1px solid $border-color;
       }
     }
   }

@@ -1,6 +1,15 @@
 :root {
   --text-color: #000000;
   --body-bg: #ffffff;
+
+  // Slim Select variable
+  --ss-main-height: 44px;
+  --ss-option-height: 36px;
+  --ss-primary-color: #c7a252;
+  --ss-font-color: #000000;
+  --ss-spacing-l: 16px;
+  --ss-border-radius: 0;
+  --ss-animation-timing: 0.25s;
 }
 
 $modal-backdrop-bg:                 red;

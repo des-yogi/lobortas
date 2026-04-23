@@ -30,7 +30,7 @@
     font-size: $font-size-sm;
     font-weight: 200;
     line-height: $line-height;
-    cursor: pointer;
+    //cursor: pointer;
 
     &:hover {
 
@@ -58,6 +58,7 @@
       height: 20px;
       border: 1px solid $border-color;
       border-radius: 2px;
+      cursor: pointer;
 
       @at-root input:checked ~ & {
         background-color: $main-color;
