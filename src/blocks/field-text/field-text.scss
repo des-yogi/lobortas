@@ -3,7 +3,7 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   &__name {
     @include field-name;
@@ -22,7 +22,8 @@
     margin: 0;
     line-height: $line-height;
     font-size: 1rem;
-    font-family: inherit;
+    font-family: $font-family;
+    font-weight: 200;
     background-color: #fff;
     border: 1px solid $border-color;
     border-radius: $border-radius;
@@ -66,7 +67,7 @@
       $textarea-height: ($line-height * 2) + ($field-padding-vertical * 2);
 
       height: auto;
-      min-height: calc(#{$textarea-height} + 2px);
+      min-height: 44px; //calc(#{$textarea-height} + 2px)
       resize: vertical;
     }
   }

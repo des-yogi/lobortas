@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Індивідуальне замовлення</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/search-bar/search-bar.html')
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        @@include('blocks/main-header/main-header.html', {
+          "h1": "Оформити індивідуальне замовлення",
+          "intro": "<p>Ми цінуємо ваші ідеї.</p><p>Будь ласка, заповніть форму нижче — і наші майстри зв’яжуться з вами, щоб розпочати шлях до створення унікального витвору.</p>"
+        })
+
+        <div class="container  block-vm  custom-order">
+          <div class="row  custom-order__row">
+            <div class="custom-order__inner">
+              <form class="custom-order__form" action="#" method="post" enctype="multipart/form-data">
+
+                <div class="custom-order__form-content">
+                  <label class="field-text">
+                    <span class="field-text__name">Як до Вас звертатись?*</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" name="name" value="">
+                      <span class="field-text__help-text" data-error="name"></span>
+                    </span>
+                  </label>
+
+                  <label class="field-text">
+                    <span class="field-text__name">Е-mail*</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="email" name="mail" value="">
+                      <span class="field-text__help-text" data-error="mail"></span>
+                    </span>
+                  </label>
+
+                  <label class="field-text">
+                    <span class="field-text__name">Номер телефону</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="tel" name="tel" value="">
+                      <span class="field-text__help-text" data-error="tel"></span>
+                    </span>
+                  </label>
+
+                  <div class="field-checkbox">
+                    <div class="field-text__name">Як Вам буде зручніше спілкуватися з нами?</div>
+
+                    <div class="connection-type">
+                      <div class="field-checkbox__input-wrap">
+                        <label class="field-checkbox__name">
+                          <input class="field-checkbox__input" type="checkbox" checked>
+                          <span class="field-checkbox__name-text">Telegram</span>
+                        </label>
+                      </div>
+                      <div class="field-checkbox__input-wrap">
+                        <label class="field-checkbox__name">
+                          <input class="field-checkbox__input" type="checkbox">
+                          <span class="field-checkbox__name-text">Дзвінок</span>
+                        </label>
+                      </div>
+                      <div class="field-checkbox__input-wrap">
+                        <label class="field-checkbox__name">
+                          <input class="field-checkbox__input" type="checkbox">
+                          <span class="field-checkbox__name-text">Whats App</span>
+                        </label>
+                      </div>
+                      <div class="field-checkbox__input-wrap">
+                        <label class="field-checkbox__name">
+                          <input class="field-checkbox__input" type="checkbox">
+                          <span class="field-checkbox__name-text">E-mail</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="field-select">
+                    <label class="field-select__select-wrap">
+                      <span class="field-text__name">Вид предмета</span>
+
+                      <select class="field-select__select  slim-select" name="item-type">
+                        <option data-paceholder="true"></option>
+                        <option value="value1">Вид 1</option>
+                        <option value="value2">Вид 2</option>
+                        <option value="value3">Вид 3</option>
+                        <option value="value4">Вид 4</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <label class="field-text">
+                    <span class="field-text__name">Будь ласка, опишіть свою ідею, або  прикрипіть посилання із виробом що вас надихнув</span>
+                    <span class="field-text__input-wrap">
+                      <textarea class="field-text__input" name="message" rows="1"></textarea>
+                      <span class="field-text__help-text" data-error="tel"></span>
+                    </span>
+                  </label>
+
+                  <div class="custom-order__download">
+                    <p class="display-4">Якщо у Вас є ескіз або фотографії, які можуть дати нам краще уявлення про витвір, який Ви хотіли б, щоб ми створили, завантажте їх нижче.</p>
+
+                    <div class="field-file">
+                      <div class="field-file__name  visually-hidden">Выбір файлів</div>
+                      <label class="field-file__input-wrap">
+                        <input class="field-file__input" type="file" data-multiple-caption="файлів обрано: {count}" multiple>
+                        <span class="display-4  field-file__name-text" data-button-text="Вибрати файл(и)">
+                          <span class="field-file__value">Нічого не вибрано</span>
+                        </span>
+                        <div class="field-file__help-text"></div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="field-checkbox">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                      <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="custom-order__form-section">
+                  <p class="display-4">Після надсилання форми наш спеціаліст зв’яжеться з вами, щоб узгодити наступні кроки.</p>
+                </div>
+
+                <div class="custom-order__form-section">
+                  <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+                </div>
+
+                <div class="custom-order__form-section  modal-footer">
+                  <div class="modal__messengers">
+                    <p class="p">Месенджери:</p>
+                    <ul class="list-nostyled  social-network">
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">WhatsApp</a>
+                      </li>
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">Telegram</a>
+                      </li>
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">Messenger</a>
+                      </li>
+                      <li class="social-network__item">
+                        <a href="#" class="social-network__link">Viber</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

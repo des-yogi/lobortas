@@ -649,6 +649,23 @@ a {
   }
 }
 
+.connection-type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+
+  .field-checkbox__input-wrap {
+    margin-bottom: 0;
+  }
+
+  .field-checkbox__name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
 // background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$main-color);
 

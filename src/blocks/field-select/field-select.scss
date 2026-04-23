@@ -1,9 +1,9 @@
 .field-select {
-
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  position: relative;
 
   &__name {
     @include field-name;
@@ -14,20 +14,21 @@
   }
 
   &__select {
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-flex;
+    //vertical-align: middle;
     width: 100%;
-    padding: $field-padding-vertical $field-padding-horizontal;
-    font-size: inherit;
-    font-weight: inherit;
-    font-family: inherit;
-    line-height: inherit;
+    height: 44px;
+    padding: $field-padding-vertical  $field-padding-horizontal;
+    font-size: 1rem;
+    font-family: $font-family;
+    font-weight: 200;
+    line-height: $line-height;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     appearance: none;
     color: $title-color;
     background-color: $white;
-    background-image: svg-load('../blocks/field-select/bg-img/select-down.svg', fill=$border-color);
+    //background-image: svg-load('../blocks/field-select/bg-img/select-down.svg', fill=$border-color);
     background-repeat: no-repeat;
     background-position: right 12px center;
     background-size: 20px;
@@ -42,7 +43,7 @@
     }
 
     &:hover {
-      border-color: $link-color--hover;
+      //border-color: $link-color--hover;
     }
 
     &:active,
@@ -57,9 +58,56 @@
       border-color: $text-muted;
       background-color: $white;
     }
+
+    &.ss-open {
+      height: auto;
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
   &__help-text {
     @include field-help-text;
+  }
+
+  .ss-main .ss-arrow {
+    display: block;
+    margin: 0;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-down-sm.svg', fill=$text-color);
+    transition: transform $transition-time;
+
+    path {
+      display: none;
+    }
+  }
+}
+
+.field-select .ss-main[aria-expanded=true] .ss-arrow {
+  transform: scale(1, -1);
+  background-image: svg-load('../blocks/sprite-svg/svg/arrow-down-sm.svg', fill=$main-color);
+}
+
+.ss-content .ss-list .ss-option {
+  //transition: background $transition-time;
+
+  .ss-selected {
+    background-color: $main-color;
+  }
+
+  &:hover:not(.ss-disabled) {
+    border-left: none;
+    //transition: none;
+  }
+}
+
+.field-select__select.ss-open {
+
+  @media (max-width: $screen-md - 1) {
+    left: 12px !important;
+    //margin-top: -1px !important;
   }
 }

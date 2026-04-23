@@ -13,6 +13,7 @@
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
 @import '../../node_modules/mmenu-js/dist/mmenu.css';
+@import '../../node_modules/slim-select/dist/slimselect.css';
 @import '../../node_modules/swiper/swiper-bundle.min.css';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/btn/btn.scss';
@@ -90,4 +91,5 @@
 @import './src/blocks/article-slider/article-slider.scss';
 @import './src/blocks/video-9-16/video-9-16.scss';
 @import './src/blocks/press-links/press-links.scss';
+@import './src/blocks/custom-order/custom-order.scss';
 @import './src/scss/print.scss';
