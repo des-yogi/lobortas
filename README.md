@@ -15,5 +15,5 @@
 * https://des-yogi.github.io/lobortas/favorites
 * https://des-yogi.github.io/lobortas/contacts
 * https://des-yogi.github.io/lobortas/page-404
-  Демо
-* https://des-yogi.github.io/lobortas/modals
+
+* Демо: https://des-yogi.github.io/lobortas/modals
