@@ -76,6 +76,7 @@
     "mmenu-js": "^9.3.0",
     "slim-select": "^3.4.3",
     "svg4everybody": "^2.1.9",
+    "sweetalert2": "^11.26.24",
     "swiper": "^12.0.3"
   }
 }

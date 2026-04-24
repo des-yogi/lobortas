@@ -76,7 +76,8 @@
     "article-slider": [],
     "video-9-16": [],
     "press-links": [],
-    "custom-order": []
+    "custom-order": [],
+    "product-modal": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
