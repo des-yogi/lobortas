@@ -17,8 +17,8 @@
 * https://des-yogi.github.io/lobortas/contacts
 * https://des-yogi.github.io/lobortas/page-404
 * https://des-yogi.github.io/lobortas/custom-order
-Демо:
-Desktop menu with total scroll:
-* https://des-yogi.github.io/lobortas/modals
-Desktop menu with inner block scroll:
-* https://des-yogi.github.io/lobortas/modals2
+## Демо
+### Desktop menu with total scroll:
+https://des-yogi.github.io/lobortas/modals
+### Desktop menu with inner block scroll:
+https://des-yogi.github.io/lobortas/modals2
