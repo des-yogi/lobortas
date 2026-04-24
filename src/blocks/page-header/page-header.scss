@@ -2,7 +2,8 @@
   $block-name:                &; // #{$block-name}__element
 
   position: relative;
-  z-index: 5;
+  z-index: 100;
+  transform: translateZ(0);
   background-color: $body-bg;
 
   &__inner {

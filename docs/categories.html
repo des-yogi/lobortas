@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>
 
       <header class="container  page-header">
         <div class="page-header__inner">
@@ -67,7 +67,7 @@
                 <span>Меню</span>
               </button>
               <div class="dropdown  page-header__menu-desktop">
-                <button id="menu-dt-toggler"
+                <!-- <button id="menu-dt-toggler"
                         class="page-header__menu"
                         type="button"
                         data-bs-toggle="dropdown"
@@ -76,7 +76,15 @@
                         data-bs-auto-close="outside"
                         data-bs-offset="-40,25">
                   <span>Меню</span>
-                </button>
+                </button> -->
+                <button id="menu-dt-toggler"
+                        class="page-header__menu"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop-1"
+                        aria-controls="offcanvasTop-1">
+                  <span>Меню</span>
+                </button>
 
                 <nav id="main-nav" class="dropdown-menu  main-nav"
                      aria-label="Головне меню сайту"
