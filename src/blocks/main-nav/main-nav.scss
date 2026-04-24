@@ -1,6 +1,10 @@
 .main-nav {
   $block-name:                &; // #{$block-name}__element
 
+  position: relative;
+  height: 100%;
+  //overflow-y: auto;
+
   &.dropdown-menu {
     position: relative;
     z-index: 5;
@@ -14,21 +18,11 @@
       opacity: 1;
       visibility: visible;
     }
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 12px;
-    //   bottom: 12px;
-    //   right: 0;
-    //   width: 1px;
-    //   background-color: $border-color;
-    //   pointer-events: none;
-    // }
   }
 
   &__list,
-  &__list-lev2 {
+  &__list-lev2,
+  &__list-lev3 {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -36,8 +30,15 @@
   }
 
   &__list {
-    padding-left: 40px;
+    width: 33.3333%;
+    //max-width: 300px;
+    //padding-right: 20px;
+    //padding-left: 40px;
     //text-transform: uppercase;
+
+    @media (min-width: $screen-xl) {
+      width: 25%;
+    }
   }
 
   &__list-lev2 {
@@ -46,20 +47,68 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: fit-content;
+    left: 33.3%;
+    //width: fit-content;
+    width: calc(100% - 33.3333%);
     min-width: 390px;
-    padding: 12px 40px 12px;
-    overflow-y: auto;
-    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.1s;
+    padding: 0 0 0 20px;
+    //overflow-y: auto;
+    //box-shadow: 0 6px 7px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.25s;
     // скрытие до инициации
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 
     @media (min-width: $screen-xl) {
-      min-width: 536px;
+      left: 24.9999%;
+      width: calc(100% - 25%);
+      //min-width: 536px;
+      padding-left: 40px;
+    }
+
+    &--lvl3-include {
+      flex-direction: initial;
+      gap: 0 20px;
+      max-height: 100%;
+
+      @media (min-width: $screen-xl) {
+        gap: 0 40px;
+      }
+
+      @media (min-width: $screen-xxl) {
+        gap: 0 60px;
+      }
+
+      .main-nav__item-lev2 {
+        margin-top: 0 !important;
+
+        & > a {
+          width: 100%;
+          text-transform: uppercase;
+          border-bottom: 1px solid $main-color;
+        }
+
+        &:nth-child(2) {
+
+          @media (min-width: $screen-xl) {
+            flex: 1 1 auto;
+            max-height: 100%;
+            padding-right: 12px;
+            overflow: hidden;
+          }
+
+          .main-nav__list-lev3 {
+
+            @media (min-width: $screen-xl) {
+              max-height: 100%;
+              column-count: 3;
+              column-gap: 30px;
+              column-fill: auto;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -85,7 +134,7 @@
 
     &.active {
 
-      #{$block-name}__link {
+      & > #{$block-name}__link {
         text-decoration: underline;
         color: $secondary-color;
         pointer-events: none;
@@ -138,7 +187,7 @@
 
     &.active {
 
-      #{$block-name}__link-lev2 {
+      & > #{$block-name}__link-lev2 {
         text-decoration: underline;
         color: $secondary-color;
         pointer-events: none;
@@ -156,6 +205,7 @@
         display: block;
         position: relative;
         width: 100%;
+        max-width: 498px;
         height: 100%;
         aspect-ratio: 482 / 208;
         padding: 0;
@@ -192,9 +242,13 @@
 
   &__link {
     display: block;
-    padding: 7px 40px 7px 0;
+    padding: 7px 20px 0 0;
     text-decoration: none;
     background-color: #fff;
+
+    @media (min-width: $screen-xl) {
+      padding-right: 40px;
+    }
 
     &:hover,
     &:focus {

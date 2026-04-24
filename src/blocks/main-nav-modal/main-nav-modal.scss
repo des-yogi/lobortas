@@ -1,0 +1,42 @@
+.main-nav-modal {
+  $block-name:                &; // #{$block-name}__element
+
+  &.offcanvas.offcanvas-top {
+    top: 96px; //96
+    --bs-offcanvas-height: calc(100vh - 96px);
+    z-index: 90;
+    background: $body-bg;
+  }
+
+  .offcanvas-header {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 16px;
+
+    button {
+      margin: 0;
+      transform: none;
+    }
+  }
+
+  .offcanvas-body {
+    //overflow-y: hidden;
+  }
+
+  // .main-nav__list {
+  //   padding-left: 0;
+  // }
+
+  &--inner-scroll {
+
+    .offcanvas-body {
+      overflow-y: hidden;
+    }
+
+    .main-nav__list,
+    .main-nav__list-lev2 {
+      max-height: 100%;
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Варіанти модалок</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо свої вибачення, але це ускладнює використання даного сайту.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/search-bar/search-bar.html')
+
+      <header class="container  page-header">
+        <div class="page-header__inner">
+
+          <div class="page-header__menu-wrapper">
+            <div class="page-header__menu-container">
+              <button id="menu-toggler" class="page-header__menu  page-header__menu--mobile" type="button" aria-expanded="false">
+                <span>Меню</span>
+              </button>
+              <div class="dropdown  page-header__menu-desktop">
+                <!-- <button id="menu-dt-toggler"
+                        class="page-header__menu"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        aria-controls="main-nav"
+                        data-bs-auto-close="outside"
+                        data-bs-offset="-40,25">
+                  <span>Меню</span>
+                </button> -->
+                <button id="menu-dt-toggler"
+                        class="page-header__menu"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop-2"
+                        aria-controls="offcanvasTop-2">
+                  <span>Меню</span>
+                </button>
+
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="page-header__lang-switcher  page-header__lang-switcher--mob  dropdown-toggle" type="button" aria-label="Language selection" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Ua</span>
+              </button>
+              <ul class="dropdown-menu  page-header__lang-menu">
+                <li class="active"><a class="dropdown-item" href="#">Ua</a></li>
+                <li><a class="dropdown-item" href="#">En</a></li>
+                <!-- <li><a class="dropdown-item" href="#">De</a></li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="page-header__logo-wrapper">
+            <a href="index.html" class="logo" title="Lobortas Jewelry House">
+              <picture>
+                <source srcset="img/lobortas-logo.svg" media="(max-width: 767px)">
+                <img src="img/lobortas-logo-lg.svg" alt="Lobortas Jewelry logo" width="199" height="43">
+              </picture>
+            </a>
+          </div>
+
+          <div class="page-header__service-wrapper">
+            <div class="dropdown">
+              <button class="page-header__lang-switcher  page-header__lang-switcher--dt  dropdown-toggle" type="button" aria-label="Language selection" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Ua</span>
+              </button>
+              <ul class="dropdown-menu  page-header__lang-menu">
+                <li class="active"><a class="dropdown-item" href="#">Ua</a></li>
+                <li><a class="dropdown-item" href="#">En</a></li>
+              </ul>
+            </div>
+            <button class="page-header__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchBar" aria-controls="searchBar" aria-label="Search on site">
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
+            </button>
+            <button class="page-header__btn"
+                    type="button"
+                    aria-label="Like"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+            </button>
+          </div>
+
+        </div>
+      </header>
+
+      <div class="offcanvas offcanvas-top  main-nav-modal  main-nav-modal--inner-scroll"
+           tabindex="-1"
+           id="offcanvasTop-2"
+           aria-labelledby="offcanvasTop-2-Label"
+           data-bs-backdrop="false">
+        <div class="container  offcanvas-header">
+          <h5 class="offcanvas-title  visually-hidden" id="offcanvasTop-2-Label">Offcanvas top</h5>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        </div>
+        <div class="container  offcanvas-body">
+
+          <nav id="main-nav" class="main-nav"
+           aria-label="Головне меню сайту"
+           >
+
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">High jewellery</a>
+                <ul class="main-nav__list-lev2">
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Релігія</a>
+                  </li>
+                  <li class="main-nav__item-lev2  active">
+                    <a href="#" class="main-nav__link-lev2">Печаті</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Ювелірні Прикраси</a>
+                <ul class="main-nav__list-lev2  main-nav__list-lev2--lvl3-include">
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Категорії</a>
+                    <ul class="main-nav__list-lev3">
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Каблучки</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Сережки</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Браслети</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Підвіски та намиста</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Крести та натільні ікони</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Брошки та шпильки</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Комлекти</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Запонки та значки</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Створення під замовлення</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Всі категорії</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Колекції</a>
+                    <ul class="main-nav__list-lev3">
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">One of a kind</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Діамантовий дотик</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Калейдоскопи</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Задзеркалля</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Супрематизм</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Відтінки емалі</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Король на троні</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Етнічний код</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">ЕКО-колекція</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Для нього</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Релігійні прикраси</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Ангелятка</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Весільні обручки</a>
+                      </li>
+
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">One of a kind</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Діамантовий дотик</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Калейдоскопи</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Задзеркалля</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Супрематизм</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Відтінки емалі</a>
+                      </li>
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Король на троні</a>
+                      </li>
+
+                      <li class="main-nav__item-lev3">
+                        <a href="#" class="main-nav__link-lev2">Всі колекції</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Шедеври</a>
+                <ul class="main-nav__list-lev2">
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <source srcset="img/menu-img.webp" media="(min-width: 1440px)" type="image/webp">
+                        <source srcset="img/menu-img.jpg" media="(min-width: 1440px)">
+                        <!-- 456x197, 684x296 2x -->
+                        <source srcset="img/menu-img.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="img/menu-img.jpg" media="(min-width: 768px)">
+                        <!-- 310x134, 465x201 2x -->
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img  active">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Дорогоцінні витвори</a>
+                <ul class="main-nav__list-lev2">
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <source srcset="img/menu-img.webp" media="(min-width: 1440px)" type="image/webp">
+                        <source srcset="img/menu-img.jpg" media="(min-width: 1440px)">
+                        <!-- 456x197, 684x296 2x -->
+                        <source srcset="img/menu-img.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="img/menu-img.jpg" media="(min-width: 768px)">
+                        <!-- 310x134, 465x201 2x -->
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img  active">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item-lev2  has-img">
+                    <a href="#" class="main-nav__link-lev2">
+                      <picture>
+                        <img src="img/menu-img.jpg" alt="Alt" width="482" height="208" loading="lazy">
+                      </picture>
+                      <span class="display-4">Стрімке полювання</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item  active">
+                <a href="#" class="main-nav__link">Micькі та меморіальні проєкти</a>
+                <ul class="main-nav__list-lev2">
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Релігія</a>
+                  </li>
+                  <li class="main-nav__item-lev2  active">
+                    <a href="#" class="main-nav__link-lev2">Печаті</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item  main-nav__item--indent">
+                <a href="#" class="main-nav__link">Тематичні добірки</a>
+                <ul class="main-nav__list-lev2">
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Релігія</a>
+                  </li>
+                  <li class="main-nav__item-lev2  active">
+                    <a href="#" class="main-nav__link-lev2">Печаті</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                  </li>
+
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Релігія</a>
+                  </li>
+                  <li class="main-nav__item-lev2  active">
+                    <a href="#" class="main-nav__link-lev2">Печаті</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                  </li>
+
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Релігія</a>
+                  </li>
+                  <li class="main-nav__item-lev2  active">
+                    <a href="#" class="main-nav__link-lev2">Печаті</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Аксесуари</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Стрілкова мініатюра</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Відзнаки та нагороди</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Столове срібло</a>
+                  </li>
+                  <li class="main-nav__item-lev2">
+                    <a href="#" class="main-nav__link-lev2">Створення на замовлення</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">ПРО ДІМ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">ЛОБОРТАС У СВІТІ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">ПОСЛУГИ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">КОНТАКТИ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">БЛОГ</a>
+              </li>
+              <li class="main-nav__item  main-nav__item--indi">
+                <a href="#" class="main-nav__link">
+                  <span>індивідуальне замовлення</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="main-nav__divider" aria-hidden="true"></div>
+          </nav>
+
+        </div>
+      </div>
+
+      <main class="main">
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        @@include('blocks/main-header/main-header.html', {
+          "h1": "Варіанти модалок",
+          "intro": ""
+        })
+
+        <div class="container  block-vm  contacts">
+
+          <ul class="list-nostyled">
+            <li>
+              <button class="page-header__btn"
+                      type="button"
+                      aria-label="Like"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button class="page-header__btn"
+                      type="button"
+                      aria-label="Like"
+                      data-bs-toggle="modal"
+                      data-bs-target="#example2Modal">
+                <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button class="page-header__btn"
+                      type="button"
+                      aria-label="Like"
+                      data-bs-toggle="modal"
+                      data-bs-target="#example3Modal">
+                <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#like"></use></svg>
+              </button>
+            </li>
+          </ul>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <div class="modal fade" id="example2Modal" tabindex="-1" aria-labelledby="example2ModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header  modal-header--mod" style="padding-bottom: 0;">
+          <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="h3  modal-title" id="example2ModalLabel">
+            Замовити послугу
+            <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+          </h3>
+          <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+
+          <div class="modal__form-wrapper">
+            <form class="form" action="#" method="post">
+              <label class="field-text">
+                <span class="field-text__name">Як до Вас звертатись?*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" name="name" value="" autocomplete="name">
+                  <span class="field-text__help-text error" data-error="name"></span>
+                </span>
+              </label>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <label class="field-text">
+                <span class="field-text__name">Опишіть ваш запит</span>
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" name="message" rows="4"></textarea>
+                  <span class="field-text__help-text error" data-error="message"></span>
+                </span>
+              </label>
+
+              <div class="form__submit-wrapper  form__agreement">
+                <div class="field-checkbox">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                    <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                  </label>
+                </div>
+
+                <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+              </div>
+
+              <p>Або оберіть дзвінок чи зручний месенджер. Наш менеджер зателефонує Вам найближчим часом!</p>
+              <p>Дзвінок <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+
+              <div class="modal__messengers" style="flex-wrap: nowrap;">
+                <p class="p">Месенджери</p>
+                <ul class="list-nostyled  social-network" style="display: flex; gap: 8px;">
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">WhatsApp</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Telegram</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Messenger</a>
+                  </li>
+                  <li class="social-network__item">
+                    <a href="#" class="social-network__link">Viber</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="example3Modal" tabindex="-1" aria-labelledby="example3ModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="h3  modal-title" id="example3ModalLabel">
+            Замовити послугу
+            <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+          </h3>
+          <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+        </div>
+        <div class="modal-body">
+          <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+
+          <div class="modal__form-wrapper">
+            <form class="form" action="#" method="post">
+              <label class="field-text">
+                <span class="field-text__name">Як до Вас звертатись?*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" name="name" value="" autocomplete="name">
+                  <span class="field-text__help-text error" data-error="name"></span>
+                </span>
+              </label>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <label class="field-text">
+                <span class="field-text__name">Опишіть ваш запит</span>
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" name="message" rows="4"></textarea>
+                  <span class="field-text__help-text error" data-error="message"></span>
+                </span>
+              </label>
+
+              <div class="form__submit-wrapper  form__agreement">
+                <div class="field-checkbox">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                    <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                  </label>
+                </div>
+
+                <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>Або оберіть дзвінок чи зручний месенджер. Наш менеджер зателефонує Вам найближчим часом!</p>
+          <p>Дзвінок <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+
+          <div class="modal__messengers">
+            <p class="p">Месенджери</p>
+            <ul class="list-nostyled  social-network">
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">WhatsApp</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Telegram</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Messenger</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Viber</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

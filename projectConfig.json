@@ -77,7 +77,9 @@
     "video-9-16": [],
     "press-links": [],
     "custom-order": [],
-    "product-modal": []
+    "product-modal": [],
+    "main-nav-2": [],
+    "main-nav-modal": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

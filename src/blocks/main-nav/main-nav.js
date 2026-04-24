@@ -12,7 +12,7 @@
 //   });
 // })();
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   const mainMenu = document.getElementById('main-nav');
   const wrapper = document.querySelector('.dropdown.page-header__menu-desktop');
   if (!mainMenu || !wrapper) return;
@@ -60,4 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!nav.contains(document.activeElement)) nav.classList.remove('show-submenu');
     }, 0);
   });
-});
+});*/
