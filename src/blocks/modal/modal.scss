@@ -2,7 +2,11 @@
   $block-name:                &; // #{$block-name}__element
 
   &__form-wrapper {
-    margin: 32px 0;
+    margin: 20px 0;
+
+    @media (min-width: $screen-xl) {
+      margin: 32px 0;
+    }
   }
 
   &__messengers {
@@ -92,6 +96,8 @@
 
   span {
     display: block;
+    margin: 8px 0 0 !important;
+    line-height: 1.1 !important;
   }
 }
 
@@ -122,6 +128,7 @@
   padding-bottom: 0;
 
   p {
+    font-size: $font-size;
     text-align: center;
   }
 }

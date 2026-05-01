@@ -40,6 +40,21 @@
     //gap: 8px 0;
   }
 
+  &__img {
+
+    &:hover,
+    &:focus {
+
+      img {
+        transform: scale(1.05);
+      }
+    }
+
+    img {
+      transition: transform $transition-time ease;
+    }
+  }
+
   &__text {
     flex: 1;
     display: flex;

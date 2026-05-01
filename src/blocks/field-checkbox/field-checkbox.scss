@@ -5,6 +5,10 @@
   display: block;
   margin-bottom: 20px;
 
+  @media (min-width: $screen-xl) {
+    margin-bottom: 24px;
+  }
+
   &__title {
     display: block;
     margin-bottom: 16px;
