@@ -3,7 +3,11 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 32px;
+  }
 
   &__name {
     @include field-name;

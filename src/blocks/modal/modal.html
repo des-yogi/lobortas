@@ -6,14 +6,14 @@
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="h3  modal-title" id="exampleModalLabel">
-          Замовити послугу
-          <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+        <h3 class="p  modal-title" id="exampleModalLabel">
+          Замовити
+          <span class="h3">Реставрація та ремонт ювелірних і декоративних предметів</span>
         </h3>
         <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
       </div>
       <div class="modal-body">
-        <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+        <p>Ми зв’яжемося з Вами особисто, щоб надати деталі та запропонувати найкращий формат знайомства з прикрасою.</p>
 
         <div class="modal__form-wrapper">
           <form class="form" action="#" method="post">
@@ -43,13 +43,58 @@
               </label>
             </div>
 
+            <div class="field-checkbox">
+              <div class="field-text__name">Як Вам буде зручніше спілкуватися з нами?</div>
+
+              <div class="connection-type">
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" checked>
+                    <span class="field-checkbox__name-text">Telegram</span>
+                  </label>
+                </div>
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox">
+                    <span class="field-checkbox__name-text">Дзвінок</span>
+                  </label>
+                </div>
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox">
+                    <span class="field-checkbox__name-text">Whats App</span>
+                  </label>
+                </div>
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox">
+                    <span class="field-checkbox__name-text">E-mail</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
             <label class="field-text">
               <span class="field-text__name">Опишіть ваш запит</span>
               <span class="field-text__input-wrap">
-                <textarea class="field-text__input" name="message" rows="4"></textarea>
+                <textarea class="field-text__input" name="message" rows="1"></textarea>
                 <span class="field-text__help-text error" data-error="message"></span>
               </span>
             </label>
+
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" name="item-details" value="">
+                <span class="field-checkbox__name-text">Дізнатися деталі про прикрасу</span>
+              </label>
+            </div>
+
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" name="show-room" value="">
+                <span class="field-checkbox__name-text">Бажаю відвідати приватний перегляд у галереї в Києві</span>
+              </label>
+            </div>
 
             <div class="form__submit-wrapper  form__agreement">
               <div class="field-checkbox">

@@ -10,6 +10,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#ffffff">
   <!-- OpenGraph microdata
   <meta property="og:url"      content="https://www.your-domain.com/your-page.html">
   <meta property="og:type"          content="website">
@@ -58,7 +59,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>
 
       <header class="container  page-header">
         <div class="page-header__inner">
@@ -947,20 +948,20 @@
 
     </div>
 
-  </div>
+  </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="h3  modal-title" id="exampleModalLabel">
-          Замовити послугу
-          <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+        <h3 class="p  modal-title" id="exampleModalLabel">
+          Замовити
+          <span class="h3">Реставрація та ремонт ювелірних і декоративних предметів</span>
         </h3>
         <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
       </div>
       <div class="modal-body">
-        <p>Залиште коротке повідомлення або оберіть зручний спосіб зв’язку — ми з вами зв’яжемось найближчим часом.</p>
+        <p>Ми зв’яжемося з Вами особисто, щоб надати деталі та запропонувати найкращий формат знайомства з прикрасою.</p>
 
         <div class="modal__form-wrapper">
           <form class="form" action="#" method="post">
@@ -990,13 +991,58 @@
               </label>
             </div>
 
+            <div class="field-checkbox">
+              <div class="field-text__name">Як Вам буде зручніше спілкуватися з нами?</div>
+
+              <div class="connection-type">
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" checked>
+                    <span class="field-checkbox__name-text">Telegram</span>
+                  </label>
+                </div>
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox">
+                    <span class="field-checkbox__name-text">Дзвінок</span>
+                  </label>
+                </div>
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox">
+                    <span class="field-checkbox__name-text">Whats App</span>
+                  </label>
+                </div>
+                <div class="field-checkbox__input-wrap">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox">
+                    <span class="field-checkbox__name-text">E-mail</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
             <label class="field-text">
               <span class="field-text__name">Опишіть ваш запит</span>
               <span class="field-text__input-wrap">
-                <textarea class="field-text__input" name="message" rows="4"></textarea>
+                <textarea class="field-text__input" name="message" rows="1"></textarea>
                 <span class="field-text__help-text error" data-error="message"></span>
               </span>
             </label>
+
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" name="item-details" value="">
+                <span class="field-checkbox__name-text">Дізнатися деталі про прикрасу</span>
+              </label>
+            </div>
+
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" name="show-room" value="">
+                <span class="field-checkbox__name-text">Бажаю відвідати приватний перегляд у галереї в Києві</span>
+              </label>
+            </div>
 
             <div class="form__submit-wrapper  form__agreement">
               <div class="field-checkbox">
@@ -1035,7 +1081,184 @@
       </div>
     </div>
   </div>
-</div>
+</div>
+
+
+  <div class="modal fade" id="servModal" tabindex="-1" aria-labelledby="servModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="p  modal-title" id="servModalLabel">
+            Замовити послугу
+            <span class="h3">Реставрація та ремонт ювелірних і декоративних предметів</span>
+          </h3>
+          <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+        </div>
+        <div class="modal-body">
+          <!-- <p>Ми зв’яжемося з Вами особисто, щоб надати деталі та запропонувати найкращий формат знайомства з прикрасою.</p> -->
+
+          <div class="modal__form-wrapper">
+            <form class="form" action="#" method="post">
+              <label class="field-text">
+                <span class="field-text__name">Як до Вас звертатись?*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" name="name" value="" autocomplete="name">
+                  <span class="field-text__help-text error" data-error="name"></span>
+                </span>
+              </label>
+
+              <div class="form__inputs-wrapper">
+                <label class="field-text">
+                  <span class="field-text__name">Е-mail*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="email" name="mail" value="" autocomplete="email">
+                    <span class="field-text__help-text error" data-error="mail"></span>
+                  </span>
+                </label>
+
+                <label class="field-text">
+                  <span class="field-text__name">Номер телефону</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" name="tel" value="" autocomplete="tel">
+                    <span class="field-text__help-text error" data-error="tel"></span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="field-checkbox">
+                <div class="field-text__name">Як Вам буде зручніше спілкуватися з нами?</div>
+
+                <div class="connection-type">
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" checked>
+                      <span class="field-checkbox__name-text">Telegram</span>
+                    </label>
+                  </div>
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox">
+                      <span class="field-checkbox__name-text">Дзвінок</span>
+                    </label>
+                  </div>
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox">
+                      <span class="field-checkbox__name-text">Whats App</span>
+                    </label>
+                  </div>
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox">
+                      <span class="field-checkbox__name-text">E-mail</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <label class="field-text">
+                <span class="field-text__name">Опишіть ваш запит</span>
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" name="message" rows="1"></textarea>
+                  <span class="field-text__help-text error" data-error="message"></span>
+                </span>
+              </label>
+
+              <!-- <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="item-details" value="">
+                  <span class="field-checkbox__name-text">Дізнатися деталі про прикрасу</span>
+                </label>
+              </div>
+
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="show-room" value="">
+                  <span class="field-checkbox__name-text">Бажаю відвідати приватний перегляд у галереї в Києві</span>
+                </label>
+              </div> -->
+
+              <div class="form__submit-wrapper  form__agreement">
+                <div class="field-checkbox">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+                    <span class="field-checkbox__name-text">Я погоджуюсь на обробку персональних даних згідно <a href="#">Політики конфінденсійності</a></span>
+                  </label>
+                </div>
+
+                <button class="btn" type="submit" name="submit"><span>Надіслати</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>Або оберіть дзвінок чи зручний месенджер. Наш менеджер зателефонує Вам найближчим часом!</p>
+          <p>Дзвінок <a href="tel:+380673353700">+380 67 335 37 00</a></p>
+
+          <div class="modal__messengers">
+            <p class="p">Месенджери</p>
+            <ul class="list-nostyled  social-network">
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">WhatsApp</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Telegram</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Messenger</a>
+              </li>
+              <li class="social-network__item">
+                <a href="#" class="social-network__link">Viber</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal  service-modal  fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="h3  modal-title" id="serviceModalLabel">
+            Назва товару
+            <!-- <span>Реставрація та ремонт ювелірних і декоративних предметів</span> -->
+          </h3>
+          <button class="page-header__btn  modal-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="close"><span></span></span></button>
+        </div>
+
+        <div class="modal-body">
+          <ul class="list-nostyled  service-modal__list">
+            <li class="service-modal__line">
+              <span>Ціна:</span>
+              <span>$1000</span>
+            </li>
+            <li class="service-modal__line">
+              <span>Місце зберігання:</span>
+              <span>Лондон</span>
+            </li>
+            <li class="service-modal__line">
+              <span>Примітки:</span>
+              <span>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quidem excepturi at mollitia consequatur itaque, officia, aliquam sunt harum dolorem suscipit voluptas natus cum ipsam!</span>
+            </li>
+            <li class="service-modal__line">
+              <span>Бірка:</span>
+              <a href="#file" download>
+                <span>Завантажити файл</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <span>Закрити</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <nav id="mmenu" class="mmenu  mob-menu">
     <ul class="mob-menu__list">
@@ -1049,8 +1272,16 @@
       </li>
       <li class="mob-menu__item">
         <span class="mob-menu__link">Ювелірні Прикраси</span>
+        <ul class="mob-menu__list-lev2">
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Колекції</a>
+          </li>
+          <li class="mob-menu__item-lev2">
+            <a href="#" class="mob-menu__link-lev2">Категорії</a>
+          </li>
+        </ul>
       </li>
-      <li class="mob-menu__item  active">
+      <li class="mob-menu__item">
         <span class="mob-menu__link">шедеври</span>
         <ul class="mob-menu__list-lev2">
           <li class="mob-menu__item-lev2  has-img">
@@ -1212,7 +1443,7 @@
       <li class="mob-menu__item  mob-menu__item--indent">
         <span class="mob-menu__link">Тематичні добірки</span>
         <ul class="mob-menu__list-lev2">
-          <li class="mob-menu__item-lev2  active">
+          <li class="mob-menu__item-lev2">
             <a href="#" class="mob-menu__link-lev2">Релігія</a>
           </li>
           <li class="mob-menu__item-lev2">
@@ -1265,6 +1496,22 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
   <script src="js/fancybox.umd.js"></script>
   <script src="js/script.min.js"></script>
+
+  <script>
+    "use-strict";
+    (function () {
+      const varyModalItem = document.getElementById('exampleModal');
+      if (varyModalItem) {
+        varyModalItem.addEventListener('show.bs.modal', event => {
+          const button = event.relatedTarget;
+          const recipient = button.getAttribute('data-bs-whatever');
+          const modalTitle = varyModalItem.querySelector('.modal-title span');
+
+          modalTitle.textContent = `${recipient}`;
+        })
+      }
+    })();
+  </script>
 
   <script>
     document.addEventListener(
