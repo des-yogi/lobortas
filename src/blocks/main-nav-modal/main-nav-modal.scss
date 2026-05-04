@@ -3,23 +3,42 @@
 
   &.offcanvas.offcanvas-top {
     top: 96px; //96
-    --bs-offcanvas-height: calc(100vh - 96px);
+    bottom: unset;
+    //--bs-offcanvas-height: calc(100vh - 96px);
+    --bs-offcanvas-height: auto;
     z-index: 90;
     background: $body-bg;
+    border-top: 1px solid $main-color;
   }
 
   .offcanvas-header {
     padding-top: 0;
     padding-bottom: 0;
-    height: 16px;
+    height: 20px;
 
-    button {
-      margin: 0;
-      transform: none;
+    &__inner {
+      position: relative;
+    }
+
+    .page-header__btn {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      z-index: 1;
+
+      @media (max-width: $screen-xxl - 1) and (hover: hover) and (pointer: fine) {
+        right: 10px;
+      }
+
+      @media (min-width: $screen-xxl) and (hover: hover) and (pointer: fine) {
+        right: 5px;
+      }
     }
   }
 
   .offcanvas-body {
+    padding-top: 0;
+    padding-bottom: 20px;
     //overflow-y: hidden;
   }
 
