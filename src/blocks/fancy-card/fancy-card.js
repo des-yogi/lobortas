@@ -4,7 +4,7 @@
 
   Fancybox.bind('[data-fancybox="gallery"]', {
   // Your custom options for a specific gallery
-    theme: "light", // "dark" - default
+    theme: "dark", // "light || dark" - default
     Carousel: {
       Toolbar: {
         display: {
@@ -19,7 +19,7 @@
           //   "flipY",
           //   "reset",
           // ],
-          right: ["toggleFull", "autoplay", "close"],//"fullscreen",
+          right: ["close"],//""toggleFull", "autoplay", fullscreen",
         },
       },
       Thumbs: {
