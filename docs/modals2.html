@@ -33,7 +33,7 @@
 
   <div id="page" class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content">
 
       <div class="offcanvas offcanvas-top  search-bar" tabindex="-1" id="searchBar" aria-labelledby="searchBarLabel" role="dialog">
         <!-- <div class="offcanvas-header">
@@ -553,7 +553,7 @@
         </div>
       </div>
 
-      <main class="main">
+      <main class="main">
 
         <nav class="container  breadcrumbs" aria-label="Breadcrumb">
           <ol class="list-nostyled breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -736,7 +736,7 @@
 
     </div>
 
-  </div>
+  </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
   <div class="modal-dialog  modal-dialog-centered  modal-dialog-scrollable">
@@ -1049,6 +1049,7 @@
   </div>
 
   <nav id="mmenu" class="mmenu  mob-menu">
+
     <ul class="mob-menu__list">
       <li class="mob-menu__item">
         <span class="mob-menu__link">High jewellery</span>
@@ -1063,9 +1064,47 @@
         <ul class="mob-menu__list-lev2">
           <li class="mob-menu__item-lev2">
             <a href="#" class="mob-menu__link-lev2">Колекції</a>
+            <div>
+              <ul class="list-nostyled">
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="mob-menu__item-lev2">
             <a href="#" class="mob-menu__link-lev2">Категорії</a>
+            <div>
+              <ul class="list-nostyled">
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+                <li>
+                  <a href="#">Item 1</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </li>
@@ -1307,6 +1346,7 @@
 
         const mmenu = new Mmenu( "#mmenu", {
           // options
+          slidingSubmenus: true,
           "offCanvas": {
             "position": "left-front"
           },
@@ -1315,8 +1355,19 @@
             {
               "position": "top",
               "content": [
-                "prev",
-                "title"
+                 "prev",
+                //"title",
+                '<div class="mob-menu__logo-wrapper">' +
+                  '<a href="#" class="logo">' +
+                    '<picture>' +
+                      '<img src="img/lobortas-logo.svg" alt="Lobortas Jewelry logo" width="33" height="44">' +
+                    '</picture>' +
+                  '</a>' +
+                '</div>',
+                // Кнопка закриття справа
+                '<a id="menu-close" class="mm-btn mm-btn--close mm-navbar__btn  mob-menu__close" href="#">' +
+                  '<span class="visually-hidden">Закрити</span>' +
+                '</a>'
               ]
             }
           ]
@@ -1334,11 +1385,20 @@
         });
 
         const api = mmenu.API;
-        const toggler = document.getElementById('menu-toggler');
-        toggler.addEventListener(
+        const menuOpen = document.getElementById('menu-toggler');
+        const menuClose = document.getElementById('menu-close');
+
+        menuOpen.addEventListener(
           "click", () => {
             api.open();
             setTogglerClose();
+          }
+        );
+
+        menuClose.addEventListener(
+          "click", () => {
+            api.close();
+            setTogglerBurger();
           }
         );
 
@@ -1350,13 +1410,13 @@
         });
 
         function setTogglerClose() {
-          toggler.classList.add('page-header__menu--close');
-          toggler.setAttribute('aria-expanded', true); //aria-expanded
+          menuOpen.classList.add('page-header__menu--close');
+          menuOpen.setAttribute('aria-expanded', true); //aria-expanded
         }
 
         function setTogglerBurger() {
-          toggler.classList.remove('page-header__menu--close');
-          toggler.setAttribute('aria-expanded', false);
+          menuOpen.classList.remove('page-header__menu--close');
+          menuOpen.setAttribute('aria-expanded', false);
         }
       }
     );

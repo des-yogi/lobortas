@@ -163,6 +163,7 @@
 
       const mmenu = new Mmenu( "#mmenu", {
         // options
+        slidingSubmenus: true,
         "offCanvas": {
           "position": "left-front"
         },
@@ -171,8 +172,19 @@
           {
             "position": "top",
             "content": [
-              "prev",
-              "title"
+               "prev",
+              //"title",
+              '<div class="mob-menu__logo-wrapper">' +
+                '<a href="#" class="logo">' +
+                  '<picture>' +
+                    '<img src="img/lobortas-logo.svg" alt="Lobortas Jewelry logo" width="33" height="44">' +
+                  '</picture>' +
+                '</a>' +
+              '</div>',
+              // Кнопка закриття справа
+              '<a id="menu-close" class="mm-btn mm-btn--close mm-navbar__btn  mob-menu__close" href="#">' +
+                '<span class="visually-hidden">Закрити</span>' +
+              '</a>'
             ]
           }
         ]
@@ -190,11 +202,20 @@
       });
 
       const api = mmenu.API;
-      const toggler = document.getElementById('menu-toggler');
-      toggler.addEventListener(
+      const menuOpen = document.getElementById('menu-toggler');
+      const menuClose = document.getElementById('menu-close');
+
+      menuOpen.addEventListener(
         "click", () => {
           api.open();
           setTogglerClose();
+        }
+      );
+
+      menuClose.addEventListener(
+        "click", () => {
+          api.close();
+          setTogglerBurger();
         }
       );
 
@@ -206,13 +227,13 @@
       });
 
       function setTogglerClose() {
-        toggler.classList.add('page-header__menu--close');
-        toggler.setAttribute('aria-expanded', true); //aria-expanded
+        menuOpen.classList.add('page-header__menu--close');
+        menuOpen.setAttribute('aria-expanded', true); //aria-expanded
       }
 
       function setTogglerBurger() {
-        toggler.classList.remove('page-header__menu--close');
-        toggler.setAttribute('aria-expanded', false);
+        menuOpen.classList.remove('page-header__menu--close');
+        menuOpen.setAttribute('aria-expanded', false);
       }
     }
   );
