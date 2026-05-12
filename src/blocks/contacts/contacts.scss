@@ -10,8 +10,8 @@
   }
 
   &__col {
-    @include col-offset(xs, 1);
-    @include col(xs, 10);
+    //@include col-offset(xs, 1);
+    @include col(xs, 12);
     @include col-offset(md, 0);
     @include col(md, 5);
     //@include col(xl, 3);
@@ -31,6 +31,14 @@
 
     a {
       text-decoration: none;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+
+      @media (min-width: $screen-md) and (max-width: 862px) {
+        padding: 0 20px;
+      }
     }
   }
 

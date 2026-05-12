@@ -1,15 +1,40 @@
 .fs-img-2x {
   $block-name:                &; // #{$block-name}__element
 
-  display: flex;
-  justify-content: space-between;
-  gap: 0 12px;
-  width: 100%;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
+  &__row {
+    @include row(
+      $xs-grid-gutter:  24px,
+      $sm-grid-gutter:  24px,
+      $md-grid-gutter:  $grid-gutter-width,
+      $lg-grid-gutter:  $grid-gutter-width,
+      $xl-grid-gutter:  $grid-gutter-width,
+      $xxl-grid-gutter: $grid-gutter-width
+    );
+  }
 
   &__col {
-    flex: 1;
+    //flex: 1;
+    @include col(xs, 6);
+    @include col(xl, 5);
+    @include col(xxl, 5);
+
+    &:first-child {
+
+      @media (max-width: $screen-md - 1) {
+        padding-left: 0;
+      }
+
+      @media (min-width: $screen-xl) {
+        @include col-offset(xl, 1);
+        @include col-offset(xxl, 1);
+      }
+    }
+
+    &:last-child {
+
+      @media (max-width: $screen-md - 1) {
+        padding-right: 0;
+      }
+    }
   }
 }

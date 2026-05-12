@@ -79,7 +79,8 @@
     "custom-order": [],
     "product-modal": [],
     "main-nav-2": [],
-    "main-nav-modal": []
+    "main-nav-modal": [],
+    "fs-img-2x-horiz": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

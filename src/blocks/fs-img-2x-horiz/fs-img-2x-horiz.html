@@ -1,0 +1,41 @@
+<!--DEV
+@ @include('blocks/fs-img-2x-horiz/fs-img-2x-horiz.html')
+-->
+
+<div class="block-vm  fs-img-2x-horiz">
+  <div class="fs-img-2x-horiz__inner">
+    <div class="embed-responsive  fs-img-2x-horiz__img">
+      <picture>
+        <source srcset="img/goods-16-9-img.webp,
+                        img/goods-16-9-img.webp 2x" media="(min-width: 1920px)" type="image/webp">
+        <source srcset="img/goods-16-9-img.jpg,
+                        img/goods-16-9-img.jpg 2x" media="(min-width: 1920px)">
+        <!-- 954x537, 1440x810 2x -->
+        <source srcset="img/goods-16-9-img.webp,
+                        img/goods-16-9-img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+        <source srcset="img/goods-16-9-img.jpg,
+                        img/goods-16-9-img.jpg 2x" media="(min-width: 1280px)">
+        <!-- 714x402, 1080x608 2x -->
+        <source srcset="img/goods-16-9-img.webp" media="(min-width: 1024px)" type="image/webp">
+        <source srcset="img/goods-16-9-img.jpg" media="(min-width: 1024px)">
+        <!-- 870x489 -->
+        <source srcset="img/goods-16-9-img.webp" media="(min-width: 768px)" type="image/webp">
+        <source srcset="img/goods-16-9-img.jpg" media="(min-width: 768px)">
+        <!-- 570x321 -->
+        <source srcset="img/goods-16-9-img.webp" media="(min-width: 480px)" type="image/webp">
+        <source srcset="img/goods-16-9-img.jpg" media="(min-width: 480px)">
+        <!-- 840x472 -->
+        <source srcset="img/goods-16-9-img.webp" media="(min-width: 300px)" type="image/webp">
+        <source srcset="img/goods-16-9-img.jpg" media="(min-width: 300px)">
+        <!-- 615x346 -->
+        <img src="img/goods-16-9-img.jpg" alt="Alt text" width="" height="" loading="lazy">
+      </picture>
+    </div>
+
+    <div class="embed-responsive  fs-img-2x-horiz__img">
+      <picture>
+        <img src="img/goods-16-9-img.jpg" alt="Alt text" width="" height="" loading="lazy">
+      </picture>
+    </div>
+  </div>
+</div>

@@ -15,13 +15,16 @@
   &__text-col {
     @include col(xs, 12);
     @include col(md, 6);
-    //@include col(xl, 3);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 5);
   }
 
   &__img-col {
     @include col(xs, 12);
     @include col-offset(md, 1);
     @include col(md, 5);
+    @include col-offset(xxl, 1);
+    @include col(xxl, 4);
   }
 
   &__text {
