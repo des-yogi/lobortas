@@ -666,6 +666,29 @@ a {
   }
 }
 
+// SweetAlert2 custom styles
+.swal2-container {
+
+  .swal2-popup,
+  .swal2-modal {
+    border-radius: 0;
+  }
+}
+
+.swal2-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-family: Inter, sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.swal2-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+}
+
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
 // background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$main-color);
 

@@ -1,0 +1,25 @@
+.fs-img-2x-horiz {
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (min-width: $screen-md) {
+      flex-direction: initial;
+    }
+  }
+
+  &__img {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
