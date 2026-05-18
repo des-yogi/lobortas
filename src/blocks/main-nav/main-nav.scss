@@ -177,7 +177,6 @@
       line-height: 1.15;
       letter-spacing: 0.05em;
       white-space: normal;
-      //overflow: visible;
     }
 
     &--indent {
@@ -186,16 +185,17 @@
 
     &--indi {
       padding: 20px 0;
-      margin-top: 26px !important;
+      margin-top: 25px !important;
 
       a > span {
         display: inline-flex;
         position: relative;
 
         &::before {
+          box-sizing: content-box;
           content: "";
           position: absolute;
-          top: -30px;
+          top: -25px;
           right: 0;
           left: 0;
           z-index: 1;
@@ -229,11 +229,15 @@
         margin-top: 12px;
       }
 
-      // &:first-child {
-      //   margin-top: 56px;
+      &.active {
 
-      //   @media (min-width: $screen-md) {}
-      // }
+        #{$block-name}__link-lev2 {
+
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
 
       #{$block-name}__link-lev2 {
         display: block;
@@ -246,6 +250,14 @@
         overflow: hidden;
         color: $white;
         pointer-events: auto;
+
+        &:hover,
+        &:focus {
+
+          span {
+            text-decoration: underline;
+          }
+        }
       }
 
       img {
@@ -312,13 +324,5 @@
     visibility: hidden;
     transition: opacity 0.15s;
   }
-
-  //&--focus,
-  //&--focus-within {
-
-    // #{$block-name}__divider {
-    //   display: block;
-    // }
-  //}
 }
 
