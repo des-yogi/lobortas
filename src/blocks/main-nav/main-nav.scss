@@ -3,7 +3,6 @@
 
   position: relative;
   height: 100%;
-  //overflow-y: auto;
 
   &.dropdown-menu {
     position: relative;
@@ -26,15 +25,12 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: $body-bg; //lightgray
+    background-color: $body-bg; // lightgray
   }
 
   &__list {
     width: 33.3333%;
     max-width: 280px;
-    //padding-right: 20px;
-    //padding-left: 40px;
-    //text-transform: uppercase;
 
     @media (min-width: 992px) {
       width: 280px;
@@ -51,19 +47,18 @@
     width: calc(100% - 33.3333%);
     min-width: 390px;
     padding: 0 0 0 20px;
-    //box-shadow: 0 6px 7px rgba(0, 0, 0, 0.1);
     transition: opacity 0.25s;
-    // скрытие до инициации
+
+    // скрытие до инициации / по умолчанию
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
     border-left: 1px solid $border-color;
 
     @media (min-width: 992px) {
-      //left: 24.9999%;
       left: 280px;
       width: calc(100% - 280px);
-      //min-width: 536px;
       padding-left: 20px;
     }
 
@@ -71,6 +66,8 @@
       padding-left: 40px;
     }
 
+    // ВАЖНО: оставляю :has(...) как у тебя (он про паддинг, не про ключевую логику).
+    // Если захочешь, позже заменим на класс (например main-nav__list-lev2--has-img).
     &:has(#{$block-name}__item-lev2.has-img) {
       padding-right: 64px;
     }
@@ -92,13 +89,11 @@
         margin-top: 0 !important;
 
         & > a {
-          //width: 100%;
           text-transform: uppercase;
         }
 
         .main-nav__list-lev3 {
           position: relative;
-          //overflow: auto;
 
           &::after {
             content: "";
@@ -140,20 +135,27 @@
     }
   }
 
+  // ------------------------------------------------------------
+  // STATE HELPERS
+  // ------------------------------------------------------------
+  // has-children / open будут навешиваться JS-ом на любые уровни,
+  // но раскрытие lev2 сейчас касается только item 1 уровня.
+  // Для будущего расширения мы не ограничиваем сами классы,
+  // но CSS-раскрытие делаем точечно (без лишней магии).
+  // ------------------------------------------------------------
+
   &__item {
-    //position: relative;
 
     & + & {
       margin-top: 12px;
     }
 
-    //&:hover,
-    &:focus,
+    // Раскрытие: через класс .open (для JS) и через :focus-within (клавиатура)
+    // :focus на li не нужен (li не фокусируемый)
+    &.open,
     &:focus-within {
 
       & > #{$block-name}__list-lev2 {
-        //display: flex;
-        //flex-direction: column;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -165,7 +167,11 @@
       & > #{$block-name}__link {
         text-decoration: underline;
         color: $secondary-color;
-        pointer-events: none;
+        //pointer-events: none;
+
+        span {
+          text-decoration: inherit;
+        }
       }
     }
 
@@ -187,7 +193,8 @@
       padding: 20px 0;
       margin-top: 25px !important;
 
-      a > span {
+      a > span,
+      span > span {
         display: inline-flex;
         position: relative;
 
@@ -206,7 +213,6 @@
     }
   }
 
-
   &__item-lev2 {
 
     & + & {
@@ -218,12 +224,12 @@
       & > #{$block-name}__link-lev2 {
         text-decoration: underline;
         color: $secondary-color;
-        pointer-events: none;
+        //pointer-events: none;
       }
     }
 
-    &.has-img,
-    &:has(img) {
+    // УБРАЛ &:has(img). Оставляем только явный класс.
+    &.has-img {
 
       & + & {
         margin-top: 12px;
@@ -291,6 +297,7 @@
     padding: 4px 20px 4px 0;
     text-decoration: none;
     background-color: #fff;
+    cursor: pointer;
 
     @media (min-width: $screen-xl) {
       padding-right: 40px;
@@ -309,10 +316,10 @@
     text-decoration: none;
     word-break: normal;
     white-space: nowrap;
+    cursor: pointer;
   }
 
   &__divider {
-    //display: none;
     position: absolute;
     top: 12px;
     bottom: 12px;
@@ -325,4 +332,3 @@
     transition: opacity 0.15s;
   }
 }
-
