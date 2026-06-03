@@ -43,6 +43,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
     &.active {
 
       a {
+        font-weight: 500;
         text-decoration: none;
         color: $white;
         background-color: $main-color;
@@ -108,7 +109,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
     height: 44px;
     font-family: $font-family;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 200;
     line-height: 1;
     text-align: center;
     text-decoration: none;

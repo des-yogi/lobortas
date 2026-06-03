@@ -689,6 +689,16 @@ a {
   font-weight: 500;
 }
 
+.rememberadd {
+
+  &.active {
+
+    svg {
+      fill: $main-color;
+    }
+  }
+}
+
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
 // background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$main-color);
 

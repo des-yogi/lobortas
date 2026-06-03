@@ -260,8 +260,11 @@
         &:hover,
         &:focus {
 
-          span {
-            text-decoration: underline;
+          // span {
+          //   text-decoration: underline;
+          // }
+          img {
+            transform: scale(1.07);
           }
         }
       }
@@ -272,6 +275,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        transition: transform $transition-time;
       }
 
       span {

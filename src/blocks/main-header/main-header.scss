@@ -74,12 +74,23 @@
         background-color: transparent;
         border-color: transparent;
         pointer-events: none;
+
+        span::after {
+          display: block;
+        }
       }
     }
   }
 
-  //&__nav-link {
-  //}
+  &__nav-link {
+
+    span {
+
+      &::after {
+        display: none;
+      }
+    }
+  }
 
   &--filter {
     margin-bottom: 30px;

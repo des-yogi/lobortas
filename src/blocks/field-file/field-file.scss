@@ -3,7 +3,9 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 20px;
+  min-width: 275px;
+  //margin-top: 20px;
+  //margin-bottom: 20px;
 
   @media (min-width: $screen-xl) {
     margin-bottom: 32px;
@@ -47,9 +49,9 @@
     flex-direction: column;
     align-items: baseline;
     width: 100%;
+
     padding: 0;
     margin: 0 !important;
-
     background-color: $white;
     border-radius: $border-radius;
     white-space: nowrap;
@@ -62,14 +64,17 @@
       height: 44px;
       width: 100%;
       margin-right: 0;
-      margin-bottom: 8px;
-      padding: $field-padding-vertical $field-padding-horizontal;
+      margin-bottom: 16px;
+      padding-top: $field-padding-vertical;
+      padding-bottom: $field-padding-vertical;
+      padding-left: 46px;
       padding-right: 60px;
-      line-height: $line-height;
+      font-size: 20px;
+      line-height: 1.4;
       color: $text-color;
       //background-color: $white;
       background-repeat: no-repeat;
-      background-position: right 12px center;
+      background-position: right 44px center;
       background-size: 20px;
       background-image: svg-load('../blocks/field-file/bg-img/plus.svg', fill=$text-color);
       border: 1px solid $border-color;
@@ -91,9 +96,8 @@
       }
     }
 
-    span {
-
-    }
+    //span {
+    //}
   }
 
   &__file-name {
@@ -111,13 +115,15 @@
   &__value {
     display: block;
     width: 100%;
-    padding: 0 0 0 16px;
+    //padding: 0 16px;
     font-size: 16px;
-    font-family: $font-family--headings;
-    font-weight: 500;
+    font-family: $font-family;
+    font-weight: 200;
     line-height: 1.5;
+    text-align: center;
     overflow-x: hidden;
     text-overflow: ellipsis;
+    color: $text-muted;
 
     @media screen and (min-width: $screen-xl) {
       font-size: 20px;

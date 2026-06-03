@@ -126,7 +126,16 @@
     gap: 0 12px;
   }
 
-  // &__btn {
+  &__btn {
 
-  // }
+    &--favorites {
+
+      &.active {
+
+        svg {
+          fill: $main-color;
+        }
+      }
+    }
+  }
 }

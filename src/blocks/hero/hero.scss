@@ -68,12 +68,12 @@
   &__descr {
     text-wrap: balance;
 
-    @media (min-width: $screen-xl) {
-     font-weight: 600;
-    }
+    // @media (min-width: $screen-xl) {
+    // }
   }
 
   &__descr-xs {
+    font-weight: 200;
 
     @media (min-width: $screen-md) {
       display: none;
@@ -81,6 +81,7 @@
   }
 
   &__descr-md {
+    font-weight: 500;
 
     @media (max-width: $screen-md - 1) {
       display: none;
