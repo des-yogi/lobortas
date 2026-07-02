@@ -80,13 +80,17 @@
     "product-modal": [],
     "main-nav-2": [],
     "main-nav-modal": [],
-    "fs-img-2x-horiz": []
+    "fs-img-2x-horiz": [],
+    "custom-made": [],
+    "custom-made-tab": [],
+    "custom-made-gallery": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
     "../../node_modules/bootstrap/scss/_variables",
     "../../node_modules/bootstrap/scss/_mixins",
     "../../node_modules/bootstrap/scss/_dropdown",
+    "../../node_modules/bootstrap/scss/_nav",
     "../../node_modules/bootstrap/scss/_modal",
     "../../node_modules/bootstrap/scss/_offcanvas",
     "./src/scss/variables.scss",

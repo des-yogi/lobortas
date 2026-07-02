@@ -8,6 +8,7 @@
 @import '../../node_modules/bootstrap/scss/_variables';
 @import '../../node_modules/bootstrap/scss/_mixins';
 @import '../../node_modules/bootstrap/scss/_dropdown';
+@import '../../node_modules/bootstrap/scss/_nav';
 @import '../../node_modules/bootstrap/scss/_modal';
 @import '../../node_modules/bootstrap/scss/_offcanvas';
 @import './src/scss/variables.scss';
@@ -96,4 +97,7 @@
 @import './src/blocks/main-nav-2/main-nav-2.scss';
 @import './src/blocks/main-nav-modal/main-nav-modal.scss';
 @import './src/blocks/fs-img-2x-horiz/fs-img-2x-horiz.scss';
+@import './src/blocks/custom-made/custom-made.scss';
+@import './src/blocks/custom-made-tab/custom-made-tab.scss';
+@import './src/blocks/custom-made-gallery/custom-made-gallery.scss';
 @import './src/scss/print.scss';
