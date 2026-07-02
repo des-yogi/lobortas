@@ -123,7 +123,7 @@ $transition-time:             0.3s;
 // BS4 vars for mixins
 $enable-transitions:                          true !default;
 $enable-prefers-reduced-motion-media-query:   true !default;
-$transition-base:                             all .2s ease-in-out !default;
+$transition-base:                             all .25s ease-in-out !default;
 $transition-fade:                             opacity .15s linear !default;
 $transition-collapse:                         height .2s ease !default;
 

@@ -492,6 +492,7 @@ a {
   .swiper-navigation-icon {
     width: 11px;
     height: 20px;
+    transition: $transition-base;
 
     @media (min-width: $screen-xl) {
       width: 18px;
