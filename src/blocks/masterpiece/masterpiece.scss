@@ -92,8 +92,19 @@
 
   &__descr {
 
-    @media (max-width: $screen-md - 1) {
-      @include visually-hidden;
+    &:not(#{$block-name}__descr--hero) {
+
+      @media (max-width: $screen-md - 1) {
+        @include visually-hidden;
+      }
+    }
+
+    &#{$block-name}__descr--hero {
+      margin-top: 30px;
+
+      @media (min-width: $screen-xl) {
+        margin-top: 40px;
+      }
     }
   }
 
